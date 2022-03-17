@@ -5,6 +5,7 @@
 }
 a {
   text-decoration: none;
+  color: black;
 }
 ul,
 ol {
@@ -12,6 +13,7 @@ ol {
   display: flex;
   padding: 10px;
   align-items: center;
+  justify-content: space-between;
 }
 .container {
   margin: 0 auto;
@@ -19,12 +21,19 @@ ol {
 }
 
 img {
-  width: 10%;
+  width: 100%;
+  display: inline-block;
 }
 
 .logo_link {
   display: flex;
   border-radius: 50%;
-  width: 10%;
+  width: 100%;
   box-sizing: border-box;
+}
+
+.logo_item {
+  display: flex;
+  box-sizing: border-box;
+  width: 77.39px;
 }
