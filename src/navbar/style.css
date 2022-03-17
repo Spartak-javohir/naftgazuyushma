@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  width: 1240px;
+}
+
+img {
+  width: 10%;
+}
+
+.logo_link {
+  display: flex;
+  border-radius: 50%;
+  width: 10%;
+  box-sizing: border-box;
+}
