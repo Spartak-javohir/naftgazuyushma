@@ -1,13 +1,21 @@
 import "./style.css";
-import logo from "./img/logo1.pngs";
-const navbar = () => {
+import Logo from "./img/logo1.pngs";
+
+function navbar() {
+  var burgerMenu = document.getElementById("burger-menu");
+  var overlay = document.getElementById("menu");
+  burgerMenu.addEventListener("click", function () {
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+  });
+
   return (
     <nav class="navbar">
       <div class="container">
         <ul>
           <li class="logo_item">
             <a class="logo_link" href="#">
-              <img src={logo} alt="logo" class="logo" />
+              <img src={Logo} alt="logo" class="logo" />
             </a>
           </li>
 
@@ -64,6 +72,6 @@ const navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default navbar;
