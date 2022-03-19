@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Spartak-javohir/naftgazuyushma/issues"
   },
-  "homepage": "https://github.com/Spartak-javohir/naftgazuyushma#readme"
+  "homepage": "https://github.com/Spartak-javohir/naftgazuyushma#readme",
+  "dependencies": {
+    "create-react-app": "^5.0.0"
+  }
 }
