@@ -3,7 +3,7 @@ import Singup from "../components/singup/singup";
 const home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Singup />
     </>
   );
