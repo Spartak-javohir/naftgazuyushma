@@ -1,15 +1,20 @@
+import "./burger.css";
+
+import React from "react";
+import styled from "styled-components";
+
 const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #effffa;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(200%)")};
   height: 100vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   transition: transform 0.3s ease-in-out;
 
   @media (max-width: 576px) {
@@ -40,24 +45,26 @@ const StyledMenu = styled.nav`
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <a href="/">
-        <span role="img" aria-label="about us">
-          💁🏻‍♂️
-        </span>
-        About us
-      </a>
-      <a href="/">
-        <span role="img" aria-label="price">
-          💸
-        </span>
-        Pricing
-      </a>
-      <a href="/">
-        <span role="img" aria-label="contact">
-          📩
-        </span>
-        Contact
-      </a>
+      <ul>
+        <li>
+          <a href="#"> Markaz haqida </a>
+        </li>
+        <li>
+          <a href="#"> Tadqiqot laboratoriyasi </a>
+        </li>
+        <li>
+          <a href="#"> Online kurslar</a>
+        </li>
+        <li>
+          <a href="#"> Neft va gaz uyushmasi </a>
+        </li>
+        <li>
+          <a href="#"> Neft va gaz kutubxonasi </a>
+        </li>
+        <li>
+          <a href="#"> Ilmiy tex jurnal </a>
+        </li>
+      </ul>
     </StyledMenu>
   );
 };
@@ -120,17 +127,6 @@ const App = () => {
   const node = React.useRef();
   return (
     <div>
-      <div>
-        <h1>Hello. This is burger menu tutorial</h1>
-        <img
-          src="https://image.flaticon.com/icons/svg/2016/2016012.svg"
-          alt="burger icon"
-        />
-        <small>
-          Icon made by <a href="https://www.freepik.com/home">Freepik</a> from{" "}
-          <a href="https://www.flaticon.com">www.flaticon.com</a>
-        </small>
-      </div>
       <div ref={node}>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
@@ -138,8 +134,6 @@ const App = () => {
     </div>
   );
 };
-
-ReactDOM.render(<App />, document.getElementById("app"));
 
 const useOnClickOutside = (ref, handler) => {
   React.useEffect(() => {
@@ -156,3 +150,5 @@ const useOnClickOutside = (ref, handler) => {
     };
   }, [ref, handler]);
 };
+
+export default App;
