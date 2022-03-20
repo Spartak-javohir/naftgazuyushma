@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./pages/home";
+import App from "./components/navbar/navbar";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(

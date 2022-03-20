@@ -4,7 +4,7 @@ const home = () => {
   return (
     <>
       <Navbar />
-      <Singup />
+      {/* <Singup /> */}
     </>
   );
 };
