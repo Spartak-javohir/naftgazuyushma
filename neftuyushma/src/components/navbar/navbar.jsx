@@ -1,6 +1,8 @@
 import logo from "./img/logo1.png";
 import "./style.css";
+
 import { useState } from "react";
+import App from "../burger/burger";
 const nav = () => {
   return (
     <section className="navbar">
@@ -13,7 +15,7 @@ const nav = () => {
           </li>
 
           {/* <!-- burger menu --> */}
-
+          <App />
           {/* <!-- burger menu tugadi --> */}
           <li>
             <a href="#"> Markaz haqida </a>
