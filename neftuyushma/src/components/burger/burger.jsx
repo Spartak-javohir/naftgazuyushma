@@ -127,7 +127,7 @@ const App = () => {
   const node = React.useRef();
   return (
     <div>
-      <div ref={node}>
+      <div className="burger__menu" ref={node}>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
       </div>
