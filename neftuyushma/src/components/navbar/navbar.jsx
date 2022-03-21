@@ -17,22 +17,22 @@ const nav = () => {
           {/* <!-- burger menu --> */}
           <App />
           {/* <!-- burger menu tugadi --> */}
-          <li>
+          <li className="list_items">
             <a href="#"> Markaz haqida </a>
           </li>
-          <li>
+          <li className="list_items">
             <a href="#"> Tadqiqot laboratoriyasi </a>
           </li>
-          <li>
+          <li className="list_items">
             <a href="#"> Online kurslar</a>
           </li>
-          <li>
+          <li className="list_items">
             <a href="#"> Neft va gaz uyushmasi </a>
           </li>
-          <li>
+          <li className="list_items">
             <a href="#"> Neft va gaz kutubxonasi </a>
           </li>
-          <li>
+          <li className="list_items">
             <a href="#"> Ilmiy tex jurnal </a>
           </li>
         </ul>
