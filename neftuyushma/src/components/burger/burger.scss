@@ -54,3 +54,8 @@ a {
     display: block;
   }
 }
+@media (max-width: 769px) {
+  .burger__menu {
+    width: 90%;
+  }
+}

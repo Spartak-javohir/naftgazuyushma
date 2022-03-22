@@ -65,9 +65,12 @@ img {
     width: 900px;
   }
 }
-@media (max-width: 901) {
+@media (max-width: 901px) {
   .container {
     width: 768px;
+  }
+  .logo_item {
+    width: 5%;
   }
   .list_items {
     display: none;
@@ -82,5 +85,8 @@ img {
 @media (max-width: 769px) {
   .container {
     width: 425px;
+  }
+  .logo_item {
+    width: 10%;
   }
 }
