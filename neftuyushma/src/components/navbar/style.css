@@ -72,12 +72,27 @@ img {
   }
 }
 
-@media (max_width: 1240px) {
+@media (max-width: 1240px) {
   .container {
     width: 1140px;
   }
   .logo_item {
-    width: 6%;
+    width: 30%;
+  }
+  .list_items {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 990px;
   }
 }
 /*# sourceMappingURL=style.css.map */
