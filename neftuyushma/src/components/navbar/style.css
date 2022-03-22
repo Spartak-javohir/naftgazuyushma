@@ -60,12 +60,6 @@ img {
 }
 
 /* burger menu */
-@media (min-width: 991px) {
-  .burger__menu {
-    display: block;
-  }
-}
-
 @media (max-width: 1240px) {
   .container {
     width: 1140px;
@@ -96,6 +90,12 @@ img {
   }
   .list_items {
     display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .burger__menu {
+    display: block;
   }
 }
 

@@ -40,6 +40,10 @@ small {
           flex-direction: column;
 }
 
+.list:nth-child(*) {
+  padding: 10px;
+}
+
 a {
   color: #343078;
   text-decoration: none;
