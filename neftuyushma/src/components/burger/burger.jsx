@@ -45,7 +45,7 @@ const StyledMenu = styled.nav`
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <ul>
+      <ul className="list">
         <li>
           <a href="#"> Markaz haqida </a>
         </li>

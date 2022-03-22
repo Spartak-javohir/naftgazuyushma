@@ -60,18 +60,23 @@ img {
     width: 80%;
   }
 }
-@media (max-width: 1140px) {
+@media (max-width: 1141px) {
   .container {
-    width: 990px;
+    width: 1000px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1001px) {
   .container {
-    width: 990px;
+    width: 900px;
+  }
+}
+@media (max-width: 901) {
+  .container {
+    width: 768px;
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 769px) {
   .list_items {
     display: none;
   }

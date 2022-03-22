@@ -33,17 +33,20 @@ div {
 small {
   display: block;
 }
-
+.list {
+  display: flex;
+  flex-direction: column;
+}
 a {
   color: #343078;
   text-decoration: none;
 }
-@media (min-width: 991px) {
+@media (min-width: 769px) {
   .burger__menu {
     display: none;
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 768px) {
   .burger__menu {
     display: block;
   }

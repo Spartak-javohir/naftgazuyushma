@@ -30,18 +30,28 @@ small {
   display: block;
 }
 
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 a {
   color: #343078;
   text-decoration: none;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 769px) {
   .burger__menu {
     display: none;
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 768px) {
   .burger__menu {
     display: block;
   }
