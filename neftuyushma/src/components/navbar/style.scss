@@ -74,6 +74,12 @@ img {
   .container {
     width: 768px;
   }
+  .list_items {
+    width: 20%;
+    a {
+      font-size: 5px;
+    }
+  }
 }
 
 @media (max-width: 769px) {
