@@ -35,6 +35,9 @@ const nav = () => {
           <li className="list_items">
             <a href="#"> Ilmiy tex jurnal </a>
           </li>
+          <li className="list_items">
+            <a href="#"> Kontaktlar </a>
+          </li>
         </ul>
       </div>
     </section>

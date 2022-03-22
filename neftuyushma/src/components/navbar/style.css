@@ -56,7 +56,7 @@ img {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 77.39px;
+  width: 7%;
 }
 
 /* burger menu */
@@ -69,6 +69,15 @@ img {
 @media (max-width: 990px) {
   .list_items {
     display: none;
+  }
+}
+
+@media (max_width: 1240px) {
+  .container {
+    width: 1140px;
+  }
+  .logo_item {
+    width: 6%;
   }
 }
 /*# sourceMappingURL=style.css.map */

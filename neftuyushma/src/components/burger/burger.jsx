@@ -64,6 +64,9 @@ const Menu = ({ open }) => {
         <li>
           <a href="#"> Ilmiy tex jurnal </a>
         </li>
+        <li>
+          <a href="#"> Kontaktlar </a>
+        </li>
       </ul>
     </StyledMenu>
   );
