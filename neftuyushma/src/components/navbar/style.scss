@@ -48,11 +48,6 @@ img {
     display: block;
   }
 }
-@media (max-width: 990px) {
-  .list_items {
-    display: none;
-  }
-}
 
 @media (max-width: 1240px) {
   .container {
@@ -73,5 +68,11 @@ img {
 @media (max-width: 1000px) {
   .container {
     width: 990px;
+  }
+}
+
+@media (max-width: 990px) {
+  .list_items {
+    display: none;
   }
 }
