@@ -3,6 +3,7 @@ import "./style.css";
 
 import { useState } from "react";
 import App from "../burger/burger";
+import linkl from "../login/login";
 const nav = () => {
   return (
     <section className="navbar">
@@ -24,7 +25,7 @@ const nav = () => {
             <a href="#"> Tadqiqot laboratoriyasi </a>
           </li>
           <li className="list_items">
-            <a href="#"> Online kurslar</a>
+            <a href="../login/login"> Online kurslar</a>
           </li>
           <li className="list_items">
             <a href="#"> Neft va gaz uyushmasi </a>
