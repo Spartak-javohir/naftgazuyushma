@@ -10,7 +10,7 @@ const nav = () => {
       <div className="container">
         <ul>
           <li className="logo_item">
-            <Link className="logo_link" to="#">
+            <Link className="logo_link" to="/info">
               <img src={logo} alt="logo" className="logo" />
             </Link>
           </li>
@@ -19,10 +19,10 @@ const nav = () => {
           <App />
           {/* <!-- burger menu tugadi --> */}
           <li className="list_items">
-            <Link to="#"> Markaz haqida </Link>
+            <Link to="/info"> Markaz haqida </Link>
           </li>
           <li className="list_items">
-            <Link to="#"> Tadqiqot laboratoriyasi </Link>
+            <Link to=""> Tadqiqot laboratoriyasi </Link>
           </li>
           <li className="list_items">
             <Link to="/login"> Online kurslar</Link>

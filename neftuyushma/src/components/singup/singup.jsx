@@ -56,7 +56,7 @@ const singup = () => {
         </div>
         <div class="bottom__cart">
           <p>
-            Agar ro'yxatdan o'tgan bo'lsangiz <Link to="/login">sing in</Link>{" "}
+            Agar ro'yxatdan o'tgan bo'lsangiz <Link to="/login">sing in</Link>
             orqali kiring
           </p>
         </div>

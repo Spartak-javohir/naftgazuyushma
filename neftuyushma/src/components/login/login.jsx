@@ -33,7 +33,7 @@ const login = () => {
         </div>
         <div className="bottom__cart">
           <p>
-            Agar ro'yxatdan o'tmagan bo'lsangiz{" "}
+            Agar ro'yxatdan o'tmagan bo'lsangiz
             <Link to="/register">sing up</Link>
             orqali ro'yxardan o'ting
           </p>
