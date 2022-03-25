@@ -1,6 +1,6 @@
 import logo from "./img/logo1.png";
 import "./style.css";
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import App from "../burger/burger";
 import linkl from "../login/login";
@@ -10,34 +10,34 @@ const nav = () => {
       <div className="container">
         <ul>
           <li className="logo_item">
-            <a className="logo_link" href="#">
+            <Link className="logo_link" to="#">
               <img src={logo} alt="logo" className="logo" />
-            </a>
+            </Link>
           </li>
 
           {/* <!-- burger menu --> */}
           <App />
           {/* <!-- burger menu tugadi --> */}
           <li className="list_items">
-            <a href="#"> Markaz haqida </a>
+            <Link to="#"> Markaz haqida </Link>
           </li>
           <li className="list_items">
-            <a href="#"> Tadqiqot laboratoriyasi </a>
+            <Link to="#"> Tadqiqot laboratoriyasi </Link>
           </li>
           <li className="list_items">
-            <a href="../login/login"> Online kurslar</a>
+            <Link to="/login"> Online kurslar</Link>
           </li>
           <li className="list_items">
-            <a href="#"> Neft va gaz uyushmasi </a>
+            <Link to="#"> Neft va gaz uyushmasi </Link>
           </li>
           <li className="list_items">
-            <a href="#"> Neft va gaz kutubxonasi </a>
+            <Link to="#"> Neft va gaz kutubxonasi </Link>
           </li>
           <li className="list_items">
-            <a href="#"> Ilmiy tex jurnal </a>
+            <Link to="#"> Ilmiy tex jurnal </Link>
           </li>
           <li className="list_items">
-            <a href="#"> Kontaktlar </a>
+            <Link to="#"> Kontaktlar </Link>
           </li>
         </ul>
       </div>

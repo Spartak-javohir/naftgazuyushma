@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./login.css";
 
 const login = () => {
@@ -32,8 +33,9 @@ const login = () => {
         </div>
         <div className="bottom__cart">
           <p>
-            Agar ro'yxatdan o'tmagan bo'lsangiz <a href="#">sing up</a> orqali
-            ro'yxardan o'ting
+            Agar ro'yxatdan o'tmagan bo'lsangiz{" "}
+            <Link to="/register">sing up</Link>
+            orqali ro'yxardan o'ting
           </p>
         </div>
       </div>

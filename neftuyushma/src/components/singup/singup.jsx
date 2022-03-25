@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./singup.css";
 
 const singup = () => {
@@ -55,8 +56,8 @@ const singup = () => {
         </div>
         <div class="bottom__cart">
           <p>
-            Agar ro'yxatdan o'tgan bo'lsangiz <a href="#">sing in</a> orqali
-            kiring
+            Agar ro'yxatdan o'tgan bo'lsangiz <Link to="/login">sing in</Link>{" "}
+            orqali kiring
           </p>
         </div>
       </div>
