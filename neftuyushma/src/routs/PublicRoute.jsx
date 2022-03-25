@@ -1,5 +1,5 @@
 // import { useAuth } from "../contexts/AuthContext";
-import { Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 export default function PublicRoute(props) {
   // const [token] = useAuth();
@@ -8,5 +8,9 @@ export default function PublicRoute(props) {
   // 	return <Redirect to="/" />;
   // }
 
-  return <Route {...props} />;
+  return (
+    <Routes>
+      <Route {...props} />
+    </Routes>
+  );
 }
