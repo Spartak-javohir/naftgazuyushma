@@ -1,158 +1,318 @@
-import "./burger.css";
-
 import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-const StyledMenu = styled.nav`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #effffa;
-  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-300%)")};
-  height: 100vh;
-  text-align: left;
-  padding: 2rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transition: transform 0.3s ease-in-out;
-
-  @media (max-width: 576px) {
-    width: 100%;
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuOpen: false,
+    };
   }
 
-  Link {
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding: 2rem 0;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-    color: #0d0c1d;
-    text-decoration: none;
-    transition: color 0.3s linear;
+  handleMenuClick() {
+    this.setState({ menuOpen: !this.state.menuOpen });
+  }
 
-    @media (max-width: 576px) {
-      font-size: 1.5rem;
-      text-align: center;
-    }
+  handleLinkClick() {
+    this.setState({ menuOpen: false });
+  }
 
-    &:hover {
-      color: #343078;
+  render() {
+    const styles = {
+      container: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        zIndex: "99",
+        opacity: 0.9,
+        display: "flex",
+        alignItems: "center",
+        background: "black",
+        width: "100%",
+        color: "white",
+        fontFamily: "Lobster",
+      },
+      logo: {
+        margin: "0 auto",
+      },
+      body: {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "100vw",
+        height: "100vh",
+        filter: this.state.menuOpen ? "blur(2px)" : null,
+        transition: "filter 0.5s ease",
+      },
+    };
+    const menu = ["About Us", "Our Products", "Services", "FAQ", "Contact Us"];
+    const menuItems = menu.map((val, index) => {
+      return (
+        <MenuItem
+          key={index}
+          delay={`${index * 0.1}s`}
+          onClick={() => {
+            this.handleLinkClick();
+          }}
+        >
+          {val}
+        </MenuItem>
+      );
+    });
+
+    return (
+      <div>
+        <div style={styles.container}>
+          <MenuButton
+            open={this.state.menuOpen}
+            onClick={() => this.handleMenuClick()}
+            color="white"
+          />
+          <div style={styles.logo}>Logo</div>
+        </div>
+        <Menu open={this.state.menuOpen}>{menuItems}</Menu>
+        <div style={styles.body}>
+          <Footer name="Menu" />
+        </div>
+      </div>
+    );
+  }
+}
+
+/* MenuItem.jsx*/
+class MenuItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hover: false,
+    };
+  }
+
+  handleHover() {
+    this.setState({ hover: !this.state.hover });
+  }
+
+  render() {
+    const styles = {
+      container: {
+        opacity: 0,
+        animation: "1s appear forwards",
+        animationDelay: this.props.delay,
+      },
+      menuItem: {
+        fontFamily: `'Open Sans', sans-serif`,
+        fontSize: "1.2rem",
+        padding: "1rem 0",
+        margin: "0 5%",
+        cursor: "pointer",
+        color: this.state.hover ? "gray" : "#fafafa",
+        transition: "color 0.2s ease-in-out",
+        animation: "0.5s slideIn forwards",
+        animationDelay: this.props.delay,
+      },
+      line: {
+        width: "90%",
+        height: "1px",
+        background: "gray",
+        margin: "0 auto",
+        animation: "0.5s shrink forwards",
+        animationDelay: this.props.delay,
+      },
+    };
+    return (
+      <div style={styles.container}>
+        <div
+          style={styles.menuItem}
+          onMouseEnter={() => {
+            this.handleHover();
+          }}
+          onMouseLeave={() => {
+            this.handleHover();
+          }}
+          onClick={this.props.onClick}
+        >
+          {this.props.children}
+        </div>
+        <div style={styles.line} />
+      </div>
+    );
+  }
+}
+
+/* Menu.jsx */
+class Menu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: this.props.open ? this.props.open : false,
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.open !== this.state.open) {
+      this.setState({ open: nextProps.open });
     }
   }
-`;
 
-const Menu = ({ open }) => {
+  render() {
+    const styles = {
+      container: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        height: this.state.open ? "100%" : 0,
+        width: "100vw",
+        display: "flex",
+        flexDirection: "column",
+        background: "black",
+        opacity: 0.95,
+        color: "#fafafa",
+        transition: "height 0.3s ease",
+        zIndex: 2,
+      },
+      menuList: {
+        paddingTop: "3rem",
+      },
+    };
+    return (
+      <div style={styles.container}>
+        {this.state.open ? (
+          <div style={styles.menuList}>{this.props.children}</div>
+        ) : null}
+      </div>
+    );
+  }
+}
+
+/* MenuButton.jsx */
+class MenuButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: this.props.open ? this.props.open : false,
+      color: this.props.color ? this.props.color : "black",
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.open !== this.state.open) {
+      this.setState({ open: nextProps.open });
+    }
+  }
+
+  handleClick() {
+    this.setState({ open: !this.state.open });
+  }
+
+  render() {
+    const styles = {
+      container: {
+        height: "32px",
+        width: "32px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        cursor: "pointer",
+        padding: "4px",
+      },
+      line: {
+        height: "2px",
+        width: "20px",
+        background: this.state.color,
+        transition: "all 0.2s ease",
+      },
+      lineTop: {
+        transform: this.state.open ? "rotate(45deg)" : "none",
+        transformOrigin: "top left",
+        marginBottom: "5px",
+      },
+      lineMiddle: {
+        opacity: this.state.open ? 0 : 1,
+        transform: this.state.open ? "translateX(-16px)" : "none",
+      },
+      lineBottom: {
+        transform: this.state.open ? "translateX(-1px) rotate(-45deg)" : "none",
+        transformOrigin: "top left",
+        marginTop: "5px",
+      },
+    };
+    return (
+      <div
+        style={styles.container}
+        onClick={
+          this.props.onClick
+            ? this.props.onClick
+            : () => {
+                this.handleClick();
+              }
+        }
+      >
+        <div style={{ ...styles.line, ...styles.lineTop }} />
+        <div style={{ ...styles.line, ...styles.lineMiddle }} />
+        <div style={{ ...styles.line, ...styles.lineBottom }} />
+      </div>
+    );
+  }
+}
+
+/* Footer.jsx */
+function Footer(props) {
+  const styles = {
+    footer: {
+      position: "absolute",
+      bottom: 0,
+      width: "100%",
+      marginTop: "1rem",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      color: props.color,
+    },
+    line: {
+      height: "1px",
+      width: "90%",
+      background: props.color,
+    },
+    text: {
+      padding: "0.5rem",
+    },
+  };
+
   return (
-    <StyledMenu open={open}>
-      <ul className="list">
-        <li>
-          <Link to="/info"> Markaz haqida </Link>
-        </li>
-        <li>
-          <Link to="#"> Tadqiqot laboratoriyasi </Link>
-        </li>
-        <li>
-          <Link to="/Login"> Online kurslar</Link>
-        </li>
-        <li>
-          <Link to="#"> Neft va gaz uyushmasi </Link>
-        </li>
-        <li>
-          <Link to="#"> Neft va gaz kutubxonasi </Link>
-        </li>
-        <li>
-          <Link to="#"> Ilmiy tex jurnal </Link>
-        </li>
-        <li>
-          <Link to="/contact"> Kontaktlar </Link>
-        </li>
-      </ul>
-    </StyledMenu>
-  );
-};
-
-const StyledBurger = styled.button`
-  position: absolute;
-  top: 5%;
-  right: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
-
-  &:focus {
-    outline: none;
-  }
-
-  div {
-    width: 2rem;
-    height: 0.25rem;
-    background: ${({ open }) => (open ? "#0D0C1D" : "#0D0C1Link")};
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-
-    :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-    }
-
-    :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
-    }
-
-    :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-    }
-  }
-`;
-
-const Burger = ({ open, setOpen }) => {
-  return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
-      <div />
-      <div />
-      <div />
-    </StyledBurger>
-  );
-};
-
-const App = () => {
-  const [open, setOpen] = React.useState(false);
-  const node = React.useRef();
-  return (
-    <div>
-      <div className="burger__menu" ref={node}>
-        <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen} />
+    <div style={styles.footer}>
+      <div style={styles.line}></div>
+      <div style={styles.text}>
+        {props.title} created by Smashcat &copy; 2017
       </div>
     </div>
   );
+}
+
+Footer.defaultProps = {
+  color: "black",
+  title: "hello world!",
 };
 
-const useOnClickOutside = (ref, handler) => {
-  React.useEffect(() => {
-    const listener = (event) => {
-      if (!ref.current || ref.current.contains(event.target)) {
-        return;
-      }
-      handler(event);
-    };
-    document.addEventListener("mousedown", listener);
-
-    return () => {
-      document.removeEventListener("mousedown", listener);
-    };
-  }, [ref, handler]);
+Footer.propTypes = {
+  color: React.PropTypes.string,
+  title: React.PropTypes.string,
 };
 
-export default App;
+/* Main.jsx */
+const Main = () => {
+  const styles = {
+    main: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      height: "100vh",
+    },
+  };
+
+  return (
+    <div style={styles.main}>
+      <App />
+    </div>
+  );
+};
+export default Main;

@@ -1,61 +1,35 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-ul,
-ol {
-  list-style: none;
-}
-
-// body {
-//   text-rendering: optimizeLegibility;
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-//     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-// }
-
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-div {
-  text-align: center;
-}
-
-small {
-  display: block;
-}
-.list {
-  display: flex;
-  flex-direction: column;
-}
-.list:nth-child(*) {
-  padding: 10px;
-}
-link {
-  color: #343078;
-  text-decoration: none;
-}
-@media (min-width: 901px) {
-  .burger__menu {
-    display: none;
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
-@media (max-width: 900px) {
-  .burger__menu {
-    display: block;
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
-@media (max-width: 769px) {
-  .burger__menu {
+
+@keyframes shrink {
+  0% {
+    width: 95%;
+  }
+  100% {
     width: 90%;
   }
 }
+// .main{
+//   display: "flex",
+//   flex-Direction: "column",
+//   alignItems: "center",
+//   height: "100vh",
+// }
