@@ -37,7 +37,7 @@ const nav = () => {
             <Link to="#"> Ilmiy tex jurnal </Link>
           </li>
           <li className="list_items">
-            <Link to="#"> Kontaktlar </Link>
+            <Link to="/contact"> Kontaktlar </Link>
           </li>
         </ul>
       </div>
