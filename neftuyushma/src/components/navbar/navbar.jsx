@@ -3,7 +3,7 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import App from "../burger/burger";
-import linkl from "../login/login";
+
 const nav = () => {
   return (
     <section className="navbar">

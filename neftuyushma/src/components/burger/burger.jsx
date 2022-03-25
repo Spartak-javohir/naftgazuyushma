@@ -2,6 +2,7 @@ import "./burger.css";
 
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledMenu = styled.nav`
   display: flex;
@@ -21,7 +22,7 @@ const StyledMenu = styled.nav`
     width: 100%;
   }
 
-  a {
+  Link {
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem 0;
@@ -47,25 +48,25 @@ const Menu = ({ open }) => {
     <StyledMenu open={open}>
       <ul className="list">
         <li>
-          <a href="#"> Markaz haqida </a>
+          <Link to="/info"> Markaz haqida </Link>
         </li>
         <li>
-          <a href="#"> Tadqiqot laboratoriyasi </a>
+          <Link to="#"> Tadqiqot laboratoriyasi </Link>
         </li>
         <li>
-          <a href="#"> Online kurslar</a>
+          <Link to="/Login"> Online kurslar</Link>
         </li>
         <li>
-          <a href="#"> Neft va gaz uyushmasi </a>
+          <Link to="#"> Neft va gaz uyushmasi </Link>
         </li>
         <li>
-          <a href="#"> Neft va gaz kutubxonasi </a>
+          <Link to="#"> Neft va gaz kutubxonasi </Link>
         </li>
         <li>
-          <a href="#"> Ilmiy tex jurnal </a>
+          <Link to="#"> Ilmiy tex jurnal </Link>
         </li>
         <li>
-          <a href="#"> Kontaktlar </a>
+          <Link to="/contact"> Kontaktlar </Link>
         </li>
       </ul>
     </StyledMenu>
@@ -94,7 +95,7 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => (open ? "#0D0C1D" : "#0D0C1D")};
+    background: ${({ open }) => (open ? "#0D0C1D" : "#0D0C1Link")};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
