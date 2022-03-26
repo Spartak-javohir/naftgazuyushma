@@ -38,8 +38,14 @@ img {
 
 .logo_item {
   display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  width: 7%;
+}
+.list_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* burger menu */
@@ -52,7 +58,7 @@ img {
     width: 30%;
   }
   .list_items {
-    width: 80%;
+    width: 70%;
   }
 }
 @media (max-width: 1141px) {
