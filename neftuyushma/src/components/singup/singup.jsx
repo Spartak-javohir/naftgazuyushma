@@ -6,7 +6,7 @@ const singup = () => {
     <section className="login__section">
       <div className="container">
         <div className="cart">
-          <nav className="navbar">
+          <nav>
             <h2 className="navbar__titel">Sing Up</h2>
           </nav>
           <form action="" className="cart__form">
@@ -56,8 +56,8 @@ const singup = () => {
         </div>
         <div class="bottom__cart">
           <p>
-            Agar ro'yxatdan o'tgan bo'lsangiz <Link to="/login">sing in</Link>
-            orqali kiring
+            Agar ro'yxatdan o'tgan bo'lsangiz - <Link to="/login">sing in</Link>
+            - orqali kiring
           </p>
         </div>
       </div>

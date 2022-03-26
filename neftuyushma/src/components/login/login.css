@@ -32,7 +32,7 @@ a {
   padding: 10px;
 }
 
-.navbar__titel {
+nav .navbar__titel {
   text-align: center;
   color: blue;
 }

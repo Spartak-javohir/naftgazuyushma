@@ -6,7 +6,7 @@ const login = () => {
     <section className="login__section">
       <div className="container">
         <div className="cart">
-          <nav className="navbar">
+          <nav>
             <h2 className="navbar__titel">Login</h2>
           </nav>
           <form action="" className="cart__form">
@@ -33,9 +33,8 @@ const login = () => {
         </div>
         <div className="bottom__cart">
           <p>
-            Agar ro'yxatdan o'tmagan bo'lsangiz
-            <Link to="/register">sing up</Link>
-            orqali ro'yxardan o'ting
+            Agar ro'yxatdan o'tmagan bo'lsangiz-
+            <Link to="/register">sing up</Link>- orqali ro'yxardan o'ting
           </p>
         </div>
       </div>
