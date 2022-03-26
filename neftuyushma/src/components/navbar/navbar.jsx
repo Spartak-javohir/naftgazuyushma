@@ -2,7 +2,7 @@ import logo from "./img/logo1.png";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Burger from "../burger/burger";
+import Burger from "../burger/test";
 
 const nav = () => {
   return (
@@ -16,7 +16,9 @@ const nav = () => {
           </li>
 
           {/* <!-- burger menu --> */}
-          <Burger />
+          <li>
+            <Burger />
+          </li>
           {/* <!-- burger menu tugadi --> */}
           <li className="list_items">
             <Link to="/info"> Markaz haqida </Link>
