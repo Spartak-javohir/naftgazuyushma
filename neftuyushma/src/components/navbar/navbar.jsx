@@ -24,19 +24,31 @@ const nav = () => {
             <Link to="/info"> Markaz haqida </Link>
           </li>
           <li className="list_items">
-            <Link to="#"> Tadqiqot laboratoriyasi </Link>
+            <Link to="#">
+              {" "}
+              Tadqiqot <br /> laboratoriyasi{" "}
+            </Link>
           </li>
           <li className="list_items">
             <Link to="/login"> Online kurslar</Link>
           </li>
           <li className="list_items">
-            <Link to="#"> Neft va gaz uyushmasi </Link>
+            <Link to="#">
+              {" "}
+              Neft va gaz <br /> uyushmasi{" "}
+            </Link>
           </li>
           <li className="list_items">
-            <Link to="#"> Neft va gaz kutubxonasi </Link>
+            <Link to="#">
+              {" "}
+              Neft va gaz <br /> kutubxonasi{" "}
+            </Link>
           </li>
           <li className="list_items">
-            <Link to="#"> Ilmiy tex jurnal </Link>
+            <Link to="#">
+              {" "}
+              Ilmiy tex <br /> jurnal{" "}
+            </Link>
           </li>
           <li className="list_items">
             <Link to="/contact"> Kontaktlar </Link>
