@@ -1,7 +1,7 @@
 // import { useAuth } from "../contexts/AuthContext";
 import { Route, Routes } from "react-router-dom";
 import Login from "../components/login/login";
-import Home from "../pages/home";
+import Home from "../pages/home/home";
 import Singup from "../components/singup/singup";
 import Contact from "../pages/contacts/contact";
 
