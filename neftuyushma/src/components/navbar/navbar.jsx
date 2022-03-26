@@ -9,46 +9,25 @@ const nav = () => {
     <section className="navbar">
       <div className="container">
         <ul>
-          <li className="logo_item">
-            <Link className="logo_link" to="/info">
-              <img src={logo} alt="logo" className="logo" />
-            </Link>
-          </li>
-
-          {/* <!-- burger menu --> */}
-          <li className="burger">
-            <Burger />
-          </li>
-          {/* <!-- burger menu tugadi --> */}
-          <li className="list_items">
-            <Link to="/info"> Markaz haqida </Link>
-          </li>
-          <li className="list_items">
-            <Link to="#">
-              Tadqiqot <br /> laboratoriyasi
-            </Link>
-          </li>
-          <li className="list_items">
-            <Link to="/login"> Online kurslar</Link>
-          </li>
-          <li className="list_items">
-            <Link to="#">
-              Neft va gaz <br /> uyushmasi
-            </Link>
-          </li>
-          <li className="list_items">
-            <Link to="#">
-              Neft va gaz <br /> kutubxonasi
-            </Link>
-          </li>
-          <li className="list_items">
-            <Link to="#">
-              Ilmiy tex <br /> jurnal
-            </Link>
-          </li>
-          <li className="list_items">
-            <Link to="/contact"> Kontaktlar </Link>
-          </li>
+          <Link to={"/info"}>
+            <img src={logo} alt="logo" />
+          </Link>
+          <Link to={"./info"}>Markaz haqida</Link>
+          <Link to="#">
+            Tadqiqot <br /> laboratoriyasi
+          </Link>
+          <Link to="/login"> Online kurslar</Link>
+          <Link to="#">
+            Neft va gaz <br /> uyushmasi
+          </Link>
+          <Link to="#">
+            Neft va gaz <br /> kutubxonasi
+          </Link>
+          <Link to="#">
+            Ilmiy tex <br /> jurnal
+          </Link>
+          <Link to="/contact"> Kontaktlar </Link>
+          <Burger />
         </ul>
       </div>
     </section>

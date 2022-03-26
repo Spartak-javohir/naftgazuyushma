@@ -30,6 +30,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  box-sizing: border-box;
+  flex: 1;
 }
 .logo_link {
   display: flex;
@@ -41,8 +43,9 @@ ul {
   width: 80px;
 }
 
-li {
-  display: flex;
+a {
+  display: grid;
+  grid: 90px / auto;
   align-items: center;
   justify-content: center;
   width: 80px;
