@@ -37,15 +37,14 @@ img {
 .logo_link {
   display: flex;
   border-radius: 50%;
-  width: 100%;
+  width: 30%;
   box-sizing: border-box;
 }
 
-.logo_item {
-  display: inline-block;
-  // align-items: center;
-  // justify-content: center;
-  box-sizing: border-box;
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .list_items {
   display: inline-block;
@@ -57,17 +56,15 @@ img {
 
 @media (max-width: 1240px) {
   .container {
-    width: 1190px;
+    width: 1200px;
   }
-  ul {
-    width: 98%;
-  }
-  .logo_item {
-    width: 30%;
-  }
-  .list_items {
-    width: 70%;
-  }
+
+  // .logo_item {
+  //   width: 30%;
+  // }
+  // .list_items {
+  //   width: 70%;
+  // }
 }
 
 // @media (max-width: ) {
@@ -75,10 +72,10 @@ img {
 // }
 @media (max-width: 1200px) {
   .container {
-    width: 1000px;
+    width: 1150px;
   }
 }
-@media (max-width: 1001px) {
+@media (max-width: 1px) {
   .container {
     width: 900px;
   }
