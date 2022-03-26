@@ -1,7 +1,7 @@
 import logo from "./img/logo1.png";
 import "./style.css";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, Routes } from "react-router-dom";
+import React from "react";
 import Burger from "../burger/test";
 
 const nav = () => {
@@ -16,7 +16,7 @@ const nav = () => {
           </li>
 
           {/* <!-- burger menu --> */}
-          <li>
+          <li className="burger">
             <Burger />
           </li>
           {/* <!-- burger menu tugadi --> */}
@@ -24,7 +24,7 @@ const nav = () => {
             <Link to="/info"> Markaz haqida </Link>
           </li>
           <li className="list_items">
-            <Link to=""> Tadqiqot laboratoriyasi </Link>
+            <Link to="#"> Tadqiqot laboratoriyasi </Link>
           </li>
           <li className="list_items">
             <Link to="/login"> Online kurslar</Link>

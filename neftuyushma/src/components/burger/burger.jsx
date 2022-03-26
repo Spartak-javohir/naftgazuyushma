@@ -22,7 +22,7 @@ const StyledMenu = styled.nav`
     width: 100%;
   }
 
-   {
+  .Link {
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem 0;
@@ -46,29 +46,34 @@ const StyledMenu = styled.nav`
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <ul className="list">
-        <li>
-          <Link to="/info"> Markaz haqida </Link>
-        </li>
-        <li>
-          <Link to="#"> Tadqiqot laboratoriyasi </Link>
-        </li>
-        <li>
-          <Link to="/Login"> Online kurslar</Link>
-        </li>
-        <li>
-          <Link to="#"> Neft va gaz uyushmasi </Link>
-        </li>
-        <li>
-          <Link to="#"> Neft va gaz kutubxonasi </Link>
-        </li>
-        <li>
-          <Link to="#"> Ilmiy tex jurnal </Link>
-        </li>
-        <li>
-          <Link to="/contact"> Kontaktlar </Link>
-        </li>
-      </ul>
+      <div className="container">
+        <ul className="list">
+          <li>
+            <Link className to="/info">
+              {" "}
+              Markaz haqida{" "}
+            </Link>
+          </li>
+          <li>
+            <Link to="#"> Tadqiqot laboratoriyasi </Link>
+          </li>
+          <li>
+            <Link to="/Login"> Online kurslar</Link>
+          </li>
+          <li>
+            <Link to="#"> Neft va gaz uyushmasi </Link>
+          </li>
+          <li>
+            <Link to="#"> Neft va gaz kutubxonasi </Link>
+          </li>
+          <li>
+            <Link to="#"> Ilmiy tex jurnal </Link>
+          </li>
+          <li>
+            <Link to="/contact"> Kontaktlar </Link>
+          </li>
+        </ul>
+      </div>
     </StyledMenu>
   );
 };

@@ -1,8 +1,13 @@
+.container {
+  margin: 0 auto;
+  width: 1240px;
+}
+
 .bm-burger-button {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
+  right: 36px;
   top: 36px;
 }
 
@@ -39,5 +44,17 @@
 .bm-item {
   display: block;
   color: #bdc3c7;
+}
+
+@media (max-width: 900px) {
+  .bm-burger-button {
+    display: block;
+  }
+}
+
+@media (min-width: 901px) {
+  .bm-burger-button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=test.css.map */
