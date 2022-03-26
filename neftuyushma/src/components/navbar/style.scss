@@ -10,16 +10,8 @@ a {
 ul,
 ol {
   list-style: none;
-  display: flex;
-  padding: 10px;
-  align-items: center;
-  justify-content: space-between;
 }
-ul {
-  li {
-    display: inline;
-  }
-}
+
 .navbar {
   background-color: rgb(151, 252, 255);
 }
@@ -30,14 +22,19 @@ ul {
 
 img {
   width: 100%;
-  display: inline-block;
+  display: block;
   border-radius: 50%;
 }
-
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 .logo_link {
   display: flex;
   border-radius: 50%;
-  width: 30%;
+  width: 35%;
   box-sizing: border-box;
 }
 
@@ -45,11 +42,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.list_items {
-  display: inline-block;
-  // justify-content: center;
-  // align-items: center;
 }
 
 /* burger menu */
@@ -91,7 +83,7 @@ li {
     display: none;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1300px) {
   .logo_link {
     width: 20%;
   }

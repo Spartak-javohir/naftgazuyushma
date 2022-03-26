@@ -25,8 +25,7 @@ const nav = () => {
           </li>
           <li className="list_items">
             <Link to="#">
-              {" "}
-              Tadqiqot <br /> laboratoriyasi{" "}
+              Tadqiqot <br /> laboratoriyasi
             </Link>
           </li>
           <li className="list_items">
@@ -34,20 +33,17 @@ const nav = () => {
           </li>
           <li className="list_items">
             <Link to="#">
-              {" "}
-              Neft va gaz <br /> uyushmasi{" "}
+              Neft va gaz <br /> uyushmasi
             </Link>
           </li>
           <li className="list_items">
             <Link to="#">
-              {" "}
-              Neft va gaz <br /> kutubxonasi{" "}
+              Neft va gaz <br /> kutubxonasi
             </Link>
           </li>
           <li className="list_items">
             <Link to="#">
-              {" "}
-              Ilmiy tex <br /> jurnal{" "}
+              Ilmiy tex <br /> jurnal
             </Link>
           </li>
           <li className="list_items">
