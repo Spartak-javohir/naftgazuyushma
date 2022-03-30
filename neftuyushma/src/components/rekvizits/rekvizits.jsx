@@ -1,5 +1,5 @@
 import "./rekvizits.css";
-const img = 1;
+import img from "./img/rek.svg";
 const rekvizits = () => {
   return (
     <div className="rekvizit_card">

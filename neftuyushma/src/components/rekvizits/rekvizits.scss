@@ -11,14 +11,23 @@
     width: 400px;
     padding: 5px 10px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     box-shadow: 10px 10px 20px 1px gray;
     border-radius: 5px;
     margin-bottom: 20px;
+    transition: 0.5s;
+    img {
+      width: 10%;
+      padding: 2px;
+      margin: 2px;
+    }
   }
   .head_hover:hover {
     background-color: rgb(44, 44, 240);
     color: white;
+    img {
+      background: #fff;
+    }
   }
 }
