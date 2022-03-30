@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Sail&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .rekvizit_card {
@@ -42,5 +47,15 @@
 
 .rekvizit_card .head_hover:hover img {
   background: #fff;
+}
+
+.rekvizit_card .texts_div {
+  padding: 10px 20px;
+  width: 400px;
+}
+
+.rekvizit_card .texts_div p {
+  padding: 3px 0;
+  font-size: 20px;
 }
 /*# sourceMappingURL=rekvizits.css.map */
