@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Sail&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 ol,
 ul {
   text-decoration: none;
@@ -41,5 +47,11 @@ ul {
   .card_head:hover {
     background-color: rgb(44, 44, 240);
     color: white;
+  }
+  .number,
+  .email,
+  .telegram {
+    color: blue;
+    font-weight: bold;
   }
 }
