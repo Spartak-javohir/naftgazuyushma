@@ -46,7 +46,7 @@ body {
 }
 
 .rekvizit_card .head_hover:hover img {
-  background: #fff;
+  fill: #fff;
 }
 
 .rekvizit_card .texts_div {

@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.infoarr {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}

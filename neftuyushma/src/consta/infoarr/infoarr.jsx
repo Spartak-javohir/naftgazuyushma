@@ -4,8 +4,13 @@ import Ijtimoiy from "../../components/ijtimoiy/ijtimoiy";
 const infoarr = () => {
   return (
     <>
-      <Rekvizits />
-      <Ijtimoiy />
+      <section className="infoarr">
+        <div className="container">
+          <Ijtimoiy />
+
+          <Rekvizits />
+        </div>
+      </section>
     </>
   );
 };
