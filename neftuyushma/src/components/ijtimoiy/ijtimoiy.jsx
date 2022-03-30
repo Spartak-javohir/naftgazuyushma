@@ -19,7 +19,7 @@ const ijtimoiy = () => {
         <li className="email_item">
           <div className="ijtimoiy_haed_email card_head">
             <img className="email_img" src={emailimg} alt="icon" />
-            <h3 className="ijtimoiy_titel_email">E-mail</h3>
+            <h3 className="ijtimoiy_titel_email">E-mail:</h3>
           </div>
           <div className="texts_ij">
             <p className="email">nglab_info@mail.ru</p>
@@ -28,7 +28,7 @@ const ijtimoiy = () => {
         <li className="tlg_item">
           <div className="ijtimoiy_haed_tlg card_head">
             <img className="tlg_img" src={tlg} alt="icon" />
-            <h3 className="ijtimoiy_titel_tlg">Telegram</h3>
+            <h3 className="ijtimoiy_titel_tlg">Telegram:</h3>
           </div>
           <div className="texts_ij">
             <p className="telegram">Savol berish</p>
