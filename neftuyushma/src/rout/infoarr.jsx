@@ -8,3 +8,5 @@ const infoarr = () => {
     </>
   );
 };
+
+export default infoarr;

@@ -6,4 +6,19 @@
 
 .rekvizit_card {
   padding: 20px 0;
+
+  .head_hover {
+    width: 400px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px 1px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .head_hover:hover {
+    background-color: rgb(44, 44, 240);
+    color: white;
+  }
 }
