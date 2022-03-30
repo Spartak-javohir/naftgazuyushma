@@ -6,7 +6,7 @@ const map = () => {
       <section className="section_map">
         <iframe
           className="iframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1462.7025489545817!2d69.2453955869419!3d41.32203393043937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b745c326a07%3A0x1bc5d68d16dfa46!2sTKTI%2036!5e0!3m2!1sru!2s!4v1648242943466!5m2!1sru!2s"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23124.677079948582!2d69.23413819892406!3d41.321108070625016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b737f1f4161%3A0xab6842dfd7a53fdf!2z0KLQsNGI0LrQtdC90YLRgdC60LjQuSDQpdC40LzQuNC60L4t0KLQtdGF0L3QvtC70L7Qs9C40YfQtdGB0LrQuNC5INCY0L3RgdGC0LjRgtGD0YI!5e0!3m2!1sru!2ssg!4v1648655112231!5m2!1sru!2ssgs"
         ></iframe>
       </section>
     </>

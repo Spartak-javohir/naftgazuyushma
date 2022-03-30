@@ -1,4 +1,4 @@
-import logo from "./img/logo1.png";
+import logo from "./img/logo1.svg";
 import "./style.css";
 import { Link, Routes } from "react-router-dom";
 import React from "react";
@@ -10,7 +10,7 @@ const nav = () => {
       <div className="container">
         <ul>
           <Link to={"/info"}>
-            <img src={logo} alt="logo" />
+            <img className="logotip" src={logo} alt="logo" />
           </Link>
           <Link to={"./info"}>Markaz haqida</Link>
           <Link to="#">
