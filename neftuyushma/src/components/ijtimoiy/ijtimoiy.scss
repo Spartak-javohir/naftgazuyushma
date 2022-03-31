@@ -15,7 +15,6 @@ ul {
 }
 
 .ijtimoiy_card {
-  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,5 +53,8 @@ ul {
     color: blue;
     // font-weight: bold;
     font-size: 32px;
+  }
+  .texts_ij {
+    padding-left: 20px;
   }
 }

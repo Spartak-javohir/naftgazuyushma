@@ -16,7 +16,6 @@ ul {
 }
 
 .ijtimoiy_card {
-  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,5 +77,9 @@ ul {
 .ijtimoiy_card .telegram {
   color: blue;
   font-size: 32px;
+}
+
+.ijtimoiy_card .texts_ij {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=ijtimoiy.css.map */
