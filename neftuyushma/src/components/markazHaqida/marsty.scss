@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mH_section {
+  padding-bottom: 40px;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: auto;
+  .container {
+    margin: 0 auto;
+    width: 1200px;
+    .titel_mH {
+      font-size: 45px;
+      text-align: center;
+      color: white;
+    }
+    .text {
+      font-size: 18px;
+      font-style: italic;
+      margin-top: 10px;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}

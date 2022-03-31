@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mH_section {
+  padding-bottom: 40px;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.mH_section .container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.mH_section .container .titel_mH {
+  font-size: 45px;
+  text-align: center;
+  color: white;
+}
+
+.mH_section .container .text {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+}
+/*# sourceMappingURL=marsty.css.map */
