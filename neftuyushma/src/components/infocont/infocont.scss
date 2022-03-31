@@ -11,13 +11,14 @@
 
 .section_info {
   padding: 10px 0;
+  padding-bottom: 50px;
+  h2 {
+    text-align: center;
+    padding: 10px 0;
+    padding-top: 20px;
+  }
 }
 
-h2 {
-  text-align: center;
-  padding: 10px 0;
-  padding-top: 20px;
-}
 .p_info {
   text-align: center;
 }

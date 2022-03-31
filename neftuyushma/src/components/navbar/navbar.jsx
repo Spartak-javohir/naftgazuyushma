@@ -8,7 +8,7 @@ const nav = () => {
   return (
     <section className="navbar">
       <div className="container">
-        <ul>
+        <ul className="list">
           <Link to={"/info"}>
             <img className="logotip" src={logo} alt="logo" />
           </Link>

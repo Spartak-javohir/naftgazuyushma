@@ -30,7 +30,7 @@ ol {
   border-radius: 50%;
 }
 
-ul {
+.list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
