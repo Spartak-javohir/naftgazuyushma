@@ -13,7 +13,7 @@ const nav = () => {
             <img className="logotip" src={logo} alt="logo" />
           </Link>
           <div className="drListOne">
-            <p>Umumiy ma’lumotlar</p>
+            Umumiy ma'lumotlar
             <div className="drItemOne">
               <Link to={"#"}>Markaz haqida</Link>
 
@@ -27,10 +27,10 @@ const nav = () => {
             </div>
           </div>
 
-          <Link to="/info">Umumiy ma’lumotlar</Link>
+          <Link to="/info">Umumiy ma'lumotlar</Link>
           <Link to="#">Ilmiy-tadqiqot laboratoriyasi</Link>
           <Link to="/login"> Ilmiy-texnikaviy jurnal</Link>
-          <Link to="#">Onlayn o’quv kurslari</Link>
+          <Link to="#">Onlayn o'quv kurslari</Link>
           <Link to="#">Neft-gaz elektron kutubxonasi</Link>
 
           <Burger />
