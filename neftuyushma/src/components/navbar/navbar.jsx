@@ -19,7 +19,7 @@ const nav = () => {
 
               <Link to={"#"}>Markaz nizomi</Link>
 
-              <Link to={"#"}>Rahbariyat</Link>
+              <Link to={"/rah"}>Rahbariyat</Link>
 
               <Link to={"#"}>Maslahatchilar</Link>
               <Link to={"#"}>Xodimlar</Link>

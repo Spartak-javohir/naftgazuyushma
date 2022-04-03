@@ -6,7 +6,7 @@ import Singup from "../components/singup/singup";
 import Contact from "../pages/contacts/contact";
 import Info from "../pages/info/omarkaz";
 import Corses from "../pages/corses/corses";
-
+import Rah from "../pages/rahbariyat/rahbariyat";
 export default function PublicRoute(props) {
   // const [token] = useAuth();
 
@@ -22,6 +22,7 @@ export default function PublicRoute(props) {
       <Route path="/contact" element={<Contact />} />
       <Route path="/info" element={<Info />} />
       <Route path="/corses" element={<Corses />} />
+      <Route path="/rah" element={<Rah />} />
     </Routes>
   );
 }
