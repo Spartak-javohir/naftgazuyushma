@@ -79,6 +79,7 @@ ol {
 .drListTwo,
 .drListThree {
   position: relative;
+  color: blue;
 }
 
 .drItemOne,

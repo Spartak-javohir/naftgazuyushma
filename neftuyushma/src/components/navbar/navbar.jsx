@@ -15,7 +15,7 @@ const nav = () => {
           <div className="drListOne">
             Umumiy ma'lumotlar
             <div className="drItemOne">
-              <Link to={"#"}>Markaz haqida</Link>
+              <Link to={"/info"}>Markaz haqida</Link>
 
               <Link to={"#"}>Markaz nizomi</Link>
 
@@ -23,7 +23,7 @@ const nav = () => {
 
               <Link to={"#"}>Maslahatchilar</Link>
               <Link to={"#"}>Xodimlar</Link>
-              <Link to={"#"}>Aloqa</Link>
+              <Link to={"/contact"}>Aloqa</Link>
             </div>
           </div>
 
@@ -55,22 +55,12 @@ const nav = () => {
               <Link to={"#"}>Bog'lanish</Link>
             </div>
           </div>
-          <Link className="1">Onlayn o'quv kurslari</Link>
-          <div className="drListFive">
-            Ilmiy-texnikaviy jurnal
-            <div className="drItemFive">
-              <Link to={"#"}>Jurnal haqida</Link>
+          <Link className="s" to={"#"}>
+            Onlayn o'quv kurslari
+          </Link>
 
-              <Link to={"#"}>Jurnal nizomi</Link>
+          <Link to={"#"}>Neft-gaz elektron kutubxonasi</Link>
 
-              <Link to={"#"}>Bosh muharrir</Link>
-
-              <Link to={"#"}>Tahrir hay'ati</Link>
-              <Link to={"#"}>Arxiv</Link>
-              <Link to={"#"}>Maqola yuborish</Link>
-              <Link to={"#"}>Bog'lanish</Link>
-            </div>
-          </div>
           <Burger />
         </ul>
       </div>
