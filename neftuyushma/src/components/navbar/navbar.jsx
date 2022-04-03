@@ -27,12 +27,50 @@ const nav = () => {
             </div>
           </div>
 
-          <Link to="/info">Umumiy ma'lumotlar</Link>
-          <Link to="#">Ilmiy-tadqiqot laboratoriyasi</Link>
-          <Link to="/login"> Ilmiy-texnikaviy jurnal</Link>
-          <Link to="#">Onlayn o'quv kurslari</Link>
-          <Link to="#">Neft-gaz elektron kutubxonasi</Link>
+          <div className="drListTwo">
+            Ilmiy-tadqiqot laboratoriyasi
+            <div className="drItemTwo">
+              <Link to={"#"}>Laboratoriya haqida</Link>
 
+              <Link to={"#"}>Tahlil xizmatlari</Link>
+
+              <Link to={"#"}>Jihozlar</Link>
+
+              <Link to={"#"}>Buyurtma qoldirish</Link>
+              <Link to={"#"}>Bog'lanish</Link>
+            </div>
+          </div>
+          <div className="drListThree">
+            Ilmiy-texnikaviy jurnal
+            <div className="drItemThree">
+              <Link to={"#"}>Jurnal haqida</Link>
+
+              <Link to={"#"}>Jurnal nizomi</Link>
+
+              <Link to={"#"}>Bosh muharrir</Link>
+
+              <Link to={"#"}>Tahrir hay'ati</Link>
+              <Link to={"#"}>Arxiv</Link>
+              <Link to={"#"}>Maqola yuborish</Link>
+              <Link to={"#"}>Bog'lanish</Link>
+            </div>
+          </div>
+          <Link className="1">Onlayn o'quv kurslari</Link>
+          <div className="drListFive">
+            Ilmiy-texnikaviy jurnal
+            <div className="drItemFive">
+              <Link to={"#"}>Jurnal haqida</Link>
+
+              <Link to={"#"}>Jurnal nizomi</Link>
+
+              <Link to={"#"}>Bosh muharrir</Link>
+
+              <Link to={"#"}>Tahrir hay'ati</Link>
+              <Link to={"#"}>Arxiv</Link>
+              <Link to={"#"}>Maqola yuborish</Link>
+              <Link to={"#"}>Bog'lanish</Link>
+            </div>
+          </div>
           <Burger />
         </ul>
       </div>

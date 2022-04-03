@@ -75,11 +75,16 @@ ol {
   width: 80px;
 }
 
-.drListOne {
+.drListOne,
+.drListTwo,
+.drListThree {
   position: relative;
 }
 
-.drItemOne {
+.drItemOne,
+.drItemTwo,
+.drItemThree,
+.drListFour {
   padding: 20px 10px;
   width: 140px;
   background-color: white;
@@ -96,6 +101,26 @@ ol {
 }
 
 .drListOne:hover .drItemOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.drListTwo:hover .drItemTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.drListThree:hover .drItemThree {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
