@@ -1,7 +1,13 @@
+import Navbar from "../../components/navbar/navbar";
 import "./corses.css";
 
 const corses = () => {
-  return <p>Tez kunda...</p>;
+  return (
+    <>
+      <Navbar />
+      <p>Tez kunda...</p>
+    </>
+  );
 };
 
 export default corses;
