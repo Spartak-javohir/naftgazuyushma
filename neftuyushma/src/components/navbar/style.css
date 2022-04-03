@@ -62,7 +62,7 @@ ol {
   width: 80px;
 }
 
-.logo_link {
+.logo_link_img {
   display: -ms-grid;
   display: grid;
   grid: 90px / auto;
@@ -80,8 +80,8 @@ ol {
 }
 
 .drItemOne {
-  padding: 20px 0;
-  width: 200px;
+  padding: 20px 10px;
+  width: 140px;
   background-color: white;
   display: none;
   position: absolute;
