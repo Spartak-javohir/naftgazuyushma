@@ -55,11 +55,11 @@ const nav = () => {
               <Link to={"#"}>Bog'lanish</Link>
             </div>
           </div>
-          <Link className="s" to={"#"}>
+          <Link className="s" to={"/corses"}>
             Onlayn o'quv kurslari
           </Link>
 
-          <Link to={"#"}>Neft-gaz elektron kutubxonasi</Link>
+          <Link to={"/librarey"}>Neft-gaz elektron kutubxonasi</Link>
 
           <Burger />
         </ul>
