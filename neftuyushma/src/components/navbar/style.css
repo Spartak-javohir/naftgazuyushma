@@ -62,7 +62,7 @@ ol {
   width: 80px;
 }
 
-a {
+.logo_link {
   display: -ms-grid;
   display: grid;
   grid: 90px / auto;

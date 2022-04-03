@@ -9,7 +9,7 @@ const nav = () => {
     <section className="navbar">
       <div className="container">
         <ul className="list">
-          <Link to="/info">
+          <Link className="logo_link" to="/info">
             <img className="logotip" src={logo} alt="logo" />
           </Link>
           <div className="drListOne">

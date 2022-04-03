@@ -43,7 +43,7 @@ ol {
   width: 80px;
 }
 
-a {
+.logo_link {
   display: grid;
   grid: 90px / auto;
   align-items: center;
@@ -79,9 +79,6 @@ a {
   .container {
     width: 1150px;
   }
-  // .logo_item {
-  //   width: 70px;
-  // }
 }
 
 @media (max-width: 901px) {
