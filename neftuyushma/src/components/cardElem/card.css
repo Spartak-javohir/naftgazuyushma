@@ -21,4 +21,14 @@
 .card_div .card_text_div {
   padding-left: 50px;
 }
+
+.left {
+  left: 0;
+}
+
+.right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  right: 0;
+}
 /*# sourceMappingURL=card.css.map */
