@@ -6,7 +6,7 @@ const cardElem = (props) => {
       <section>
         <div className="container">
           <div className={`card_div ${props.className}`}>
-            <img src={props.img} alt="img" />
+            <img className="card_img_rah" src={props.img} alt="img" />
             <div className="card_text_div">
               <p className="card_text_div_texts">{props.text}</p>
               <p className="name">{props.name}</p>
