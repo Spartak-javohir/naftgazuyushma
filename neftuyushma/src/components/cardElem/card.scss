@@ -5,7 +5,12 @@
 }
 
 .card_div {
+  display: flex;
+  align-items: flex-start;
   width: 45%;
   border-radius: 5px;
   box-shadow: 10px 10px 60px 1px black;
+  .card_text_div {
+    padding-left: 50px;
+  }
 }

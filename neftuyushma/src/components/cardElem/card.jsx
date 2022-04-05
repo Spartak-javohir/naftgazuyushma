@@ -8,7 +8,7 @@ const cardElem = (props) => {
           <div className="card_div">
             <img src={props.img} alt="img" />
             <div className="card_text_div">
-              <p className={props.className}>{props.text}</p>
+              <p className="card_text_div_texts">{props.text}</p>
             </div>
           </div>
         </div>

@@ -6,9 +6,19 @@
 }
 
 .card_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 45%;
   border-radius: 5px;
   -webkit-box-shadow: 10px 10px 60px 1px black;
           box-shadow: 10px 10px 60px 1px black;
+}
+
+.card_div .card_text_div {
+  padding-left: 50px;
 }
 /*# sourceMappingURL=card.css.map */
