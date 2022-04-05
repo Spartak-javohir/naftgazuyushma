@@ -16,10 +16,17 @@
   border-radius: 5px;
   -webkit-box-shadow: 10px 10px 60px 1px black;
           box-shadow: 10px 10px 60px 1px black;
+  margin-bottom: 20px;
 }
 
 .card_div .card_text_div {
   padding-left: 50px;
+}
+
+.card_img_rah {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
 }
 
 .left {

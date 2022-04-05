@@ -10,9 +10,14 @@
   width: 45%;
   border-radius: 5px;
   box-shadow: 10px 10px 60px 1px black;
+  margin-bottom: 20px;
   .card_text_div {
     padding-left: 50px;
   }
+}
+.card_img_rah {
+  box-sizing: border-box;
+  width: 50%;
 }
 .left {
   left: 0;
