@@ -1,13 +1,12 @@
 import "./rahbariyat.css";
 import Card from "../../components/cardElem/card";
-
+import Navbar from "../../components/navbar/navbar";
 const rahbar = () => {
   return (
     <>
       <section>
-        <div className="container">
-          <Card />
-        </div>
+        <Navbar />
+        <Card />
       </section>
     </>
   );
