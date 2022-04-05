@@ -9,8 +9,9 @@ import eld from "./img/eld.jpg";
 const rahbar = () => {
   return (
     <>
-      <section>
-        <Navbar />
+      <Navbar />
+
+      <section className="card_section_rah">
         <Card img={img} text="salom" />
         <Card img={pul} text="salom" className="right" />
         <Card img={oyb} />
