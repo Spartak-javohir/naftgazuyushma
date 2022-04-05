@@ -22,6 +22,9 @@
 
 .card_div .card_text_div {
   padding-left: 50px;
+  -webkit-box-shadow: 5px 5px 20px blue;
+          box-shadow: 5px 5px 20px blue;
+  width: 45%;
 }
 
 .card_img_rah {

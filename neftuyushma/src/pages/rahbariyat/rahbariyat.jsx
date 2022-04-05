@@ -12,8 +12,25 @@ const rahbar = () => {
       <Navbar />
 
       <section className="card_section_rah">
-        <Card img={img} text="salom" />
-        <Card img={pul} text="salom" className="right" />
+        <Card
+          img={img}
+          text="Institut rektori"
+          name="Usmonov Botir Shukurillayevich"
+          num="Tel: +998712447920"
+          mail="Faks: +998712447917"
+          web="E-mail: txti_rektor@edu.uz Virtual qabulxona"
+          qk="Qabul vaqti: Har kuni: 08:00-10:00"
+        />
+        <Card
+          img={pul}
+          text="Ilmiy ishlar va innovasiyalar bo`yicha prorektor"
+          name="Pulatov Xayrulla Lutpullayevich"
+          num="Tel: +998712447924"
+          mail="E-mail: pulatov.x.l@dba.uz"
+          qk="Qabul qilish kuni: seshanba, juma"
+          qv="Qabul qilish vaqti: Soat 15:00-17:00"
+          className="right"
+        />
         <Card img={oyb} />
         <Card img={eld} className="right" />
       </section>
