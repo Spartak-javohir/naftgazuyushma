@@ -6,7 +6,9 @@ const rahbar = () => {
     <>
       <section>
         <Navbar />
-        <Card />
+        <Card img text="salom" />
+        <Card text="salom" />
+        <Card text="salom" />
       </section>
     </>
   );
