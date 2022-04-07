@@ -7,7 +7,7 @@ import Contact from "../pages/contacts/contact";
 import Info from "../pages/info/omarkaz";
 import Corses from "../pages/corses/corses";
 import Rah from "../pages/rahbariyat/rahbariyat";
-import consultants from "../pages/consultants/consultants";
+import Consultants from "../pages/consultants/consultants";
 export default function PublicRoute(props) {
   // const [token] = useAuth();
 
@@ -24,6 +24,7 @@ export default function PublicRoute(props) {
       <Route path="/info" element={<Info />} />
       <Route path="/corses" element={<Corses />} />
       <Route path="/rah" element={<Rah />} />
+      <Route path="/consultants" element={<Consultants />} />
     </Routes>
   );
 }

@@ -4,7 +4,7 @@ const consultants = () => {
   return (
     <>
       <Nav />
-      <section>
+      <section className="consultants_section">
         <div className="container"></div>
       </section>
     </>
