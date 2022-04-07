@@ -7,5 +7,7 @@
 
 .card_section_rah {
   padding: 50px 0;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#ecec8b), color-stop(#d1d1f0), to(#e28686));
+  background-image: linear-gradient(to left bottom, #ecec8b, #d1d1f0, #e28686);
 }
 /*# sourceMappingURL=rahbariyat.css.map */

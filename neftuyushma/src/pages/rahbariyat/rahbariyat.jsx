@@ -27,8 +27,8 @@ const rahbar = () => {
           name="Pulatov Xayrulla Lutpullayevich"
           num="Tel: +998712447924"
           mail="E-mail: pulatov.x.l@dba.uz"
-          qk="Qabul qilish kuni: seshanba, juma"
-          qv="Qabul qilish vaqti: Soat 15:00-17:00"
+          web="Qabul qilish kuni: seshanba, juma"
+          qk="Qabul qilish vaqti: Soat 15:00-17:00"
           className="right"
         />
         <Card
@@ -37,13 +37,13 @@ const rahbar = () => {
           name="Aripdjanov Oybek Yusupdjanovich"
           num="Tel: +998977744122"
           mail="E-mail: Oybek_396@mail.ru"
-          qk="Qabul kunlari:   Seshanba,Payshanba"
-          qv="Qabul qilish vaqti: 14:00-16:00"
+          web="Qabul kunlari:   Seshanba,Payshanba"
+          qk="Qabul qilish vaqti: 14:00-16:00"
         />
         <Card
           img={eld}
           text="Markaz direktori"
-          name="Mashayev Eldor Ergashvoy o’g’li"
+          name="Mashayev Eldor Ergashvoy o'g'li"
           num="Tel: +998933922272"
           mail="E-mail: eldor.mashayev@mail.ru"
           web="Web site: www.dreldor.uz"
