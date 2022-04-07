@@ -7,6 +7,7 @@ import Contact from "../pages/contacts/contact";
 import Info from "../pages/info/omarkaz";
 import Corses from "../pages/corses/corses";
 import Rah from "../pages/rahbariyat/rahbariyat";
+import consultants from "../pages/consultants/consultants";
 export default function PublicRoute(props) {
   // const [token] = useAuth();
 

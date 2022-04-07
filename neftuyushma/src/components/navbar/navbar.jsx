@@ -21,7 +21,7 @@ const nav = () => {
 
               <Link to={"/rah"}>Rahbariyat</Link>
 
-              <Link to={"#"}>Maslahatchilar</Link>
+              <Link to={"/consultants"}>Maslahatchilar</Link>
               <Link to={"#"}>Xodimlar</Link>
               <Link to={"/contact"}>Aloqa</Link>
             </div>
