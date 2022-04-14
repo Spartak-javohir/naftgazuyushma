@@ -14,5 +14,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 60%;
+  position: absolute;
 }
 /*# sourceMappingURL=liElem.css.map */

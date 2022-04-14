@@ -10,7 +10,7 @@ import Mirzohid from "./img/6.png";
 import Axmadali from "./img/7.png";
 import Amirbek from "./img/8.png";
 import Jasurbek from "./img/9.png";
-import Akbarbek from "./img/10.png";
+import Akbarbek from "./img/not.svg";
 import Asror from "./img/11.png";
 import Otkirbek from "./img/12.png";
 const consultants = () => {
