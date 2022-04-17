@@ -120,7 +120,7 @@ const consultants = () => {
              
             </ul>
           </div> */}
-          <ul className="consultants_section_list"></ul>
+          {/* <ul className="consultants_section_list"></ul> */}
         </div>
       </section>
     </>

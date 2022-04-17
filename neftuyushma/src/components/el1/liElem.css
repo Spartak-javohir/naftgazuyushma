@@ -16,4 +16,11 @@
   width: 30%;
   padding: 5px;
 }
+
+.ElemLi_img {
+  width: 300px;
+  height: 350px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=liElem.css.map */
