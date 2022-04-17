@@ -12,7 +12,7 @@ const nav = () => {
           <Link className="logo_link_img" to="/info">
             <img className="logotip" src={logo} alt="logo" />
           </Link>
-          <div className="drListOne">
+          <div className="drListOne list_items">
             Umumiy ma'lumotlar
             <div className="drItemOne">
               <Link to={"/info"}>Markaz haqida</Link>
@@ -27,7 +27,7 @@ const nav = () => {
             </div>
           </div>
 
-          <div className="drListTwo">
+          <div className="drListTwo list_items">
             Ilmiy-tadqiqot laboratoriyasi
             <div className="drItemTwo">
               <Link to={"#"}>Laboratoriya haqida</Link>
@@ -40,7 +40,7 @@ const nav = () => {
               <Link to={"#"}>Bog'lanish</Link>
             </div>
           </div>
-          <div className="drListThree">
+          <div className="drListThree list_items">
             Ilmiy-texnikaviy jurnal
             <div className="drItemThree">
               <Link to={"#"}>Jurnal haqida</Link>
@@ -55,11 +55,13 @@ const nav = () => {
               <Link to={"#"}>Bog'lanish</Link>
             </div>
           </div>
-          <Link className="s" to={"/corses"}>
+          <Link className="list_items" to={"/corses"}>
             Onlayn o'quv kurslari
           </Link>
 
-          <Link to={"/librarey"}>Neft-gaz elektron kutubxonasi</Link>
+          <Link className="list_items" to={"/librarey"}>
+            Neft-gaz elektron kutubxonasi
+          </Link>
 
           <Burger />
         </ul>
