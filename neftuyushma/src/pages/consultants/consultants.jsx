@@ -49,10 +49,6 @@ const consultants = () => {
                 position='Texnik jihatdan tartibga solish agentligi qoshidagi "UzTest" DM mutaxassisi'
                 One="Tel: +998935406959"
               />
-            </ul>
-          </div>
-          <div className="consultants_section_div_two">
-            <ul className="consultants_section_list">
               <LiElem
                 img={Bositjon}
                 name="Tolibov Bositjon Orifjon o'g'li"
@@ -83,10 +79,6 @@ const consultants = () => {
                 two="Тел: +998 93 808 25 63"
                 three="email: amirbek.urakov@mail.ru"
               />
-            </ul>
-          </div>
-          <div className="consultants_section_div_three">
-            <ul className="consultants_section_list">
               <LiElem
                 img={Jasurbek}
                 name="Qayumov Jasurbek Saydullayevich"
@@ -118,6 +110,16 @@ const consultants = () => {
               />
             </ul>
           </div>
+          {/* <div className="consultants_section_div_two">
+            <ul className="consultants_section_list">
+              
+            </ul>
+          </div> */}
+          {/* <div className="consultants_section_div_three">
+            <ul className="consultants_section_list">
+             
+            </ul>
+          </div> */}
           <ul className="consultants_section_list"></ul>
         </div>
       </section>
