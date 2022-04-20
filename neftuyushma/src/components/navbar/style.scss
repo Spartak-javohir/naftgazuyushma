@@ -112,7 +112,13 @@ ol {
     width: 900px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 910px) {
+  .container {
+    width: 770px;
+  }
+  .list_items {
+    display: none;
+  }
 }
 @media (min-width: 1300px) {
   .logo_link {

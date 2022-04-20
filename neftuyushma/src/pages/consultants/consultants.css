@@ -37,15 +37,11 @@
   .container {
     width: 900px;
   }
-  .consultants_section_list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+}
+
+@media (max-width: 910px) {
+  .consultants_section_list:nth-child(2) {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=consultants.css.map */

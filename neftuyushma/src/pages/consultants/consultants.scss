@@ -29,9 +29,10 @@
   .container {
     width: 900px;
   }
-  .consultants_section_list {
-    display: flex;
-    flex: 2;
-    flex-wrap: wrap;
+}
+
+@media (max-width: 910px) {
+  .consultants_section_list:nth-child(2) {
+    width: 45%;
   }
 }
