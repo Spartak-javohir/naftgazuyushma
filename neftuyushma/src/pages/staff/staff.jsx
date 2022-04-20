@@ -1,7 +1,11 @@
+import CardElem from "../../components/cardElem/card";
 import "./staff.css";
-
 const staff = () => {
-  return <h1>salom</h1>;
+  return (
+    <>
+      <CardElem />
+    </>
+  );
 };
 
 export default staff;

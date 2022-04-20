@@ -22,7 +22,7 @@ const nav = () => {
               <Link to={"/rah"}>Rahbariyat</Link>
 
               <Link to={"/consultants"}>Maslahatchilar</Link>
-              <Link to={"#"}>Xodimlar</Link>
+              <Link to={"/staff"}>Xodimlar</Link>
               <Link to={"/contact"}>Aloqa</Link>
             </div>
           </div>
