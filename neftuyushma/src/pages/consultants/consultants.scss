@@ -14,3 +14,14 @@
   flex-wrap: wrap;
   align-items: flex-start;
 }
+@media (max-width: 1241px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .container {
+    width: 1040px;
+  }
+}

@@ -141,6 +141,12 @@ ol {
   }
 }
 
+@media (max-width: 1140px) {
+  .container {
+    width: 1040px;
+  }
+}
+
 @media (min-width: 1300px) {
   .logo_link {
     width: 20%;
