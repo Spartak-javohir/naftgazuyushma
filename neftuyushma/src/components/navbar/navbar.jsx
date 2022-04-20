@@ -63,7 +63,7 @@ const nav = () => {
             Neft-gaz elektron kutubxonasi
           </Link>
 
-          <Burger />
+          {/* <Burger /> */}
         </ul>
       </div>
     </section>

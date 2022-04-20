@@ -134,19 +134,10 @@ ol {
 /* burger menu */
 @media (max-width: 1241px) {
   .container {
-    width: 1150px;
+    width: 1140px;
   }
-}
-
-@media (max-width: 901px) {
-  .container {
-    width: 768px;
-  }
-  .logo_item {
-    width: 5%;
-  }
-  .list_items {
-    display: none;
+  .container .list {
+    width: 95%;
   }
 }
 
