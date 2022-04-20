@@ -17,6 +17,10 @@
   padding: 5px;
 }
 
+.ElemLi_div {
+  width: 90%;
+}
+
 .ElemLi_img {
   width: 90%;
   -webkit-box-sizing: border-box;
