@@ -3,3 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+.staff_section {
+  .container {
+    width: 1240px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    display: none;
+  }
+}

@@ -4,4 +4,22 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.staff_section .container {
+  width: 1240px;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.staff_section img {
+  display: none;
+}
 /*# sourceMappingURL=staff.css.map */

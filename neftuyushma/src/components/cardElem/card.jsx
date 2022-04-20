@@ -15,6 +15,7 @@ const cardElem = (props) => {
               <p className="web">{props.web}</p>
               <p className="qk">{props.qk}</p>
               <p className="qv">{props.qv}</p>
+              <p> {props.one}</p>
             </div>
           </div>
         </div>
