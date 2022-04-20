@@ -26,4 +26,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+@media (max-width: 770px) {
+  .ElemLi {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=liElem.css.map */
