@@ -25,3 +25,13 @@
     width: 1040px;
   }
 }
+@media (max-width: 1041px) {
+  .container {
+    width: 900px;
+  }
+  .consultants_section_list {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+  }
+}
