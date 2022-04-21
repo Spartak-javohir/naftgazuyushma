@@ -17,7 +17,7 @@ const nav = () => {
             <div className="drItemOne">
               <Link to={"/info"}>Markaz haqida</Link>
 
-              <Link to={"#"}>Markaz nizomi</Link>
+              {/* <Link to={"#"}>Markaz nizomi</Link> */}
 
               <Link to={"/rah"}>Rahbariyat</Link>
 
