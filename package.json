@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Spartak-javohir/naftgazuyushma#readme",
   "dependencies": {
-    "create-react-app": "^5.0.0"
+    "bootstrap": "^5.1.3",
+    "create-react-app": "^5.0.0",
+    "reactstrap": "^9.0.2"
   }
 }
