@@ -2,7 +2,7 @@ import logo from "./img/logo1.svg";
 import "./style.css";
 import { Link, Routes } from "react-router-dom";
 import React from "react";
-import Burger from "../burger/test";
+import Burger from "../burger/burger";
 
 const nav = () => {
   return (
