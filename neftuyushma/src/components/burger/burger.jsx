@@ -2,6 +2,7 @@ import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import "./test.css";
+import Drobdawn from "../drobdawn/drobdawn";
 
 const toggleMenu = ({ isOpen }) => {
   const menuWrap = document.querySelector(".bm-menu-wrap");
@@ -13,6 +14,7 @@ const toggleMenu = ({ isOpen }) => {
 const BurgerMenu = () => {
   return (
     <>
+      <Drobdawn />
       <select>
         <option value="active"> Umumiy ma'lumotlar</option>
         <option value="mh">
