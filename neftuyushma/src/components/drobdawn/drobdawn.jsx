@@ -14,19 +14,21 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? "dropdown-menu clicked" : "dropdown-menu"}
       >
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link
-                className={item.cName}
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
+        <li key={1}>
+          <Link className="birinchi" to="/list" onClick={() => setClick(false)}>
+            drobdawn
+          </Link>
+        </li>
+        <li key={2}>
+          <Link className="birinchi" to="/list" onClick={() => setClick(false)}>
+            qqsk
+          </Link>
+        </li>
+        <li key={3}>
+          <Link className="birinchi" to="/list" onClick={() => setClick(false)}>
+            qqsk
+          </Link>
+        </li>
       </ul>
     </>
   );
