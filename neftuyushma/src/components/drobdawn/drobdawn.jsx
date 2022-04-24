@@ -15,17 +15,29 @@ function Dropdown() {
         className={click ? "dropdown-menu clicked" : "dropdown-menu"}
       >
         <li key={1}>
-          <Link className="birinchi" to="/list" onClick={() => setClick(false)}>
+          <Link
+            className="dropdown-link"
+            to="/list"
+            onClick={() => setClick(false)}
+          >
             drobdawn
           </Link>
         </li>
         <li key={2}>
-          <Link className="birinchi" to="/list" onClick={() => setClick(false)}>
+          <Link
+            className="dropdown-link"
+            to="/list"
+            onClick={() => setClick(false)}
+          >
             qqsk
           </Link>
         </li>
         <li key={3}>
-          <Link className="birinchi" to="/list" onClick={() => setClick(false)}>
+          <Link
+            className="dropdown-link"
+            to="/list"
+            onClick={() => setClick(false)}
+          >
             qqsk
           </Link>
         </li>
