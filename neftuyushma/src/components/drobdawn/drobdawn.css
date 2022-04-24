@@ -23,7 +23,7 @@
   background: #5cabff;
 }
 
-.dropdown-menu.clicked {
+.dropdown-menu .clicked {
   display: none;
 }
 
