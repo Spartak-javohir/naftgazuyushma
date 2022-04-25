@@ -4,7 +4,7 @@ import Arn from "./img/arn.png";
 import Arnlab from "./img/arnlab.png";
 import Astm from "./img/astm.png";
 import Chaqnash from "./img/chaqnash.png";
-import Aina from "./img/dina.png";
+import Dina from "./img/dina.png";
 import Englar from "./img/englar.png";
 import Formula from "./img/formula.png";
 import Haake from "./img/haake.png";
@@ -13,7 +13,7 @@ import Spek from "./img/spek.png";
 import Vpj from "./img/vpj.png";
 import Yopiqtigel from "./img/yopiqtigel.png";
 
-export default dbTahlil = [
+const dbTahlil = [
   {
     id: 1,
     name: "200oC da DMA 1001 ixcham zichlik o'lchagich bilan yengil neft va neft mahsulotlarining zichligini aniqlash GOST R 57037-2016",
@@ -48,11 +48,11 @@ export default dbTahlil = [
     time: "2+2+2",
     summ: 6,
     price: [
-      "200С 147865.4",
-      "400С 172880.6",
-      "600С 198452.3",
-      "800С 244335.7",
-      "1000С 296711.8",
+      "200С 147865.4 ",
+      "400С 172880.6 ",
+      "600С 198452.3 ",
+      "800С 244335.7 ",
+      "1000С 296711.8 ",
     ],
     pictures: { Haake },
   },
@@ -62,7 +62,7 @@ export default dbTahlil = [
     number: 3,
     time: "3+5+2",
     summ: 10,
-    price: ["200С 149557.3", "500С 199357.4", "800С 247963.5"],
+    price: ["200С 149557.3 ", "500С 199357.4 ", "800С 247963.5 "],
     pictures: { Vpj },
   },
   {
@@ -165,3 +165,4 @@ export default dbTahlil = [
     pictures: "",
   },
 ];
+export default dbTahlil;
