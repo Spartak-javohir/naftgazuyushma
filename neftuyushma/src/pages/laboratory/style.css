@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +13,11 @@
 
 img {
   display: none;
+}
+
+.laboratory_section {
+  background-image: url(./img/Фавиконка.png);
+  position: fixed;
 }
 
 .laboratory_section .container {
@@ -33,11 +39,20 @@ img {
 .laboratory_section .container .titel_laboratory {
   text-align: center;
   padding: 20px 0;
+  padding-bottom: 40px;
+  font-size: 40px;
 }
 
 .laboratory_section .container .text_laboratory {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+}
+
+.laboratory_section .container .text_laboratory p {
+  line-height: 40px;
+  font-weight: 500;
+  font-size: larger;
 }
 /*# sourceMappingURL=style.css.map */
