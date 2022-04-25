@@ -10,6 +10,7 @@ import Rah from "../pages/rahbariyat/rahbariyat";
 import Consultants from "../pages/consultants/consultants";
 import Staff from "../pages/staff/staff";
 import Burger from "../components/burger/burger";
+import LaborInfo from "../pages/laboratory/laboratory";
 export default function PublicRoute(props) {
   // const [token] = useAuth();
 
@@ -29,6 +30,7 @@ export default function PublicRoute(props) {
       <Route path="/consultants" element={<Consultants />} />
       <Route path="/staff" element={<Staff />} />
       <Route path="/burger" element={<Burger />} />
+      <Route path="/laboratoryInfo" element={<LaborInfo />} />
     </Routes>
   );
 }

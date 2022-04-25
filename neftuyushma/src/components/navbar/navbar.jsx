@@ -30,7 +30,7 @@ const nav = () => {
           <div className="drListTwo list_items">
             Ilmiy-tadqiqot laboratoriyasi
             <div className="drItemTwo">
-              <Link to={"#"}>Laboratoriya haqida</Link>
+              <Link to={"/laboratoryInfo"}>Laboratoriya haqida</Link>
 
               <Link to={"#"}>Tahlil xizmatlari</Link>
 

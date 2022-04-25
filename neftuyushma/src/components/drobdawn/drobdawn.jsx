@@ -22,6 +22,7 @@ function Dropdown() {
           >
             drobdawn
           </Link>
+          <Link to={"/info"}>Markaz haqida</Link>
         </li>
         <li key={2}>
           <Link

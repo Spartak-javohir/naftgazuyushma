@@ -20,7 +20,6 @@ const BurgerMenu = () => {
           {/* <select>
         <option value="active"> Umumiy ma'lumotlar</option>
         <option value="mh">
-          <Link to={"/info"}>Markaz haqida</Link>
         </option>
         <option value="rahbariyat">Rahbariyat</option>
         {/* Markaz haqida */}
