@@ -11,6 +11,7 @@ import Consultants from "../pages/consultants/consultants";
 import Staff from "../pages/staff/staff";
 import Burger from "../components/burger/burger";
 import LaborInfo from "../pages/laboratory/laboratory";
+import Tahlil from "../pages/tahlil/tahlil";
 export default function PublicRoute(props) {
   // const [token] = useAuth();
 
@@ -31,6 +32,7 @@ export default function PublicRoute(props) {
       <Route path="/staff" element={<Staff />} />
       <Route path="/burger" element={<Burger />} />
       <Route path="/laboratoryInfo" element={<LaborInfo />} />
+      <Route path="/tahlil" element={<Tahlil />} />
     </Routes>
   );
 }

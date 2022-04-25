@@ -32,7 +32,7 @@ const nav = () => {
             <div className="drItemTwo">
               <Link to={"/laboratoryInfo"}>Laboratoriya haqida</Link>
 
-              <Link to={"#"}>Tahlil xizmatlari</Link>
+              <Link to={"/talil"}>Tahlil xizmatlari</Link>
 
               <Link to={"#"}>Jihozlar</Link>
 
