@@ -3,3 +3,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+img {
+  display: none;
+}
+.laboratory_section {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .titel_laboratory {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .text_laboratory {
+      display: flex;
+    }
+  }
+}
