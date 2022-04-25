@@ -1,9 +1,11 @@
 import CardElem from "../../components/cardElem/card";
+import Nav from "../../components/navbar/navbar";
 import "./style.css";
 
 const laboratory = () => {
   return (
     <>
+      <Nav />
       <section className="laboratory_section">
         <div className="container">
           <h2 className="titel_laboratory">Laboratoriya haqida</h2>
