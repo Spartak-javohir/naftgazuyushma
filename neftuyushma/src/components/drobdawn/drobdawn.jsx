@@ -1,59 +1,7 @@
-// import React, { useState } from "react";
-// import { MenuItems } from "../menuItem/MenuItems";
 import "./drobdawn.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-// function Dropdown() {
-//   const [click, setClick] = useState(false);
-
-//   const handleClick = () => setClick(!click);
-
-//   return (
-//     <>
-//       <ul
-//         onClick={handleClick}
-//         className={click ? "dropdown-menu clicked" : "dropdown-menu"}
-//       >
-//         <li key={1}>
-//           <Link
-//             className="dropdown-link"
-//             to="/list"
-//             onClick={() => setClick(false)}
-//           >
-//             drobdawn
-//           </Link>
-//           <Link to={"/info"}>Markaz haqida</Link>
-//         </li>
-//         <li key={2}>
-//           <Link
-//             className="dropdown-link"
-//             to="/list"
-//             onClick={() => setClick(false)}
-//           >
-//             qqsk
-//           </Link>
-//         </li>
-//         <li key={3}>
-//           <Link
-//             className="dropdown-link"
-//             to="/list"
-//             onClick={() => setClick(false)}
-//           >
-//             qqsk
-//           </Link>
-//         </li>
-//       </ul>
-//     </>
-//   );
-// }
-
-// export default Dropdown;
-
-// import "./index.css";
-import { ReactComponent as BellIcon } from "./icons/bell.svg";
-import { ReactComponent as MessengerIcon } from "./icons/messenger.svg";
 import { ReactComponent as CaretIcon } from "./icons/caret.svg";
-import { ReactComponent as PlusIcon } from "./icons/plus.svg";
 import { ReactComponent as CogIcon } from "./icons/cog.svg";
 import { ReactComponent as ChevronIcon } from "./icons/chevron.svg";
 import { ReactComponent as ArrowIcon } from "./icons/arrow.svg";
@@ -136,7 +84,7 @@ function DropdownMenu() {
             rightIcon={<ChevronIcon />}
             goToMenu="settings"
           >
-            Settings
+            <Link to={"/info"}>Markaz haqida</Link>
           </DropdownItem>
           <DropdownItem
             leftIcon="🦧"

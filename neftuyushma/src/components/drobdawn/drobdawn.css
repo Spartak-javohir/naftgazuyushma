@@ -117,11 +117,10 @@ a {
 }
 
 .menu {
-  width: 100%;
+  width: 100px;
 }
 
 .menu-item {
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
