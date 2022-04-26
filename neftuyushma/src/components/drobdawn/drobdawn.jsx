@@ -64,25 +64,19 @@ import { CSSTransition } from "react-transition-group";
 
 function Dropdown() {
   return (
-    <Navbar>
-      {/* <NavItem icon={<PlusIcon />} />
-      <NavItem icon={<BellIcon />} />
-      <NavItem icon={<MessengerIcon />} /> */}
-
-      <NavItem icon={<CaretIcon />}>
-        <DropdownMenu></DropdownMenu>
-      </NavItem>
-    </Navbar>
+    <NavItem icon={<CaretIcon />}>
+      <DropdownMenu></DropdownMenu>
+    </NavItem>
   );
 }
 
-function Navbar(props) {
-  return (
-    <nav className="navbar_list">
-      <ul className="navbar-nav">{props.children}</ul>
-    </nav>
-  );
-}
+// function Navbar(props) {
+//   return (
+//     <nav className="navbar_list">
+//       <ul className="navbar-nav">{props.children}</ul>
+//     </nav>
+//   );
+// }
 
 function NavItem(props) {
   const [open, setOpen] = useState(false);
