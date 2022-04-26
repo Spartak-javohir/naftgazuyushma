@@ -81,21 +81,13 @@ function DropdownMenu() {
         onEnter={calcHeight}
       >
         <div className="menu">
-          <DropdownItem>My Profile</DropdownItem>
-          <DropdownItem
-            leftIcon={<CogIcon />}
-            rightIcon={<ChevronIcon />}
-            goToMenu="settings"
-          >
-            <Link to={"/info"}>Markaz haqida</Link>
-          </DropdownItem>
-          <DropdownItem
-            leftIcon="🦧"
-            rightIcon={<ChevronIcon />}
-            goToMenu="animals"
-          >
-            Animals
-          </DropdownItem>
+          <Link to={"/info"}>Markaz haqida</Link>
+
+          <Link to={"/rah"}>Rahbariyat</Link>
+
+          <Link to={"/consultants"}>Maslahatchilar</Link>
+          <Link to={"/staff"}>Xodimlar</Link>
+          <Link to={"/contact"}>Aloqa</Link>
         </div>
       </CSSTransition>
 

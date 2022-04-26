@@ -61,7 +61,7 @@ a {
 .icon-button {
   --button-size: calc(var(--nav-size) * 0.5);
   --width-button: calc(var((--nav-size) * 2.5));
-  width: 100px;
+  width: var(--button-size);
   height: var(--button-size);
   background-color: #484a4d;
   color: var(--text-color);
@@ -112,10 +112,6 @@ a {
 
 .menu {
   width: 100%;
-}
-
-.main {
-  width: 100px;
 }
 
 .menu-item {
