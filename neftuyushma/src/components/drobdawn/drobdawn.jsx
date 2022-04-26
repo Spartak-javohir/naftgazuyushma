@@ -12,28 +12,31 @@ import { CSSTransition } from "react-transition-group";
 
 function Dropdown() {
   return (
-    <NavItem icon={<CaretIcon />}>
-      <DropdownMenu></DropdownMenu>
-    </NavItem>
+    <Navbar>
+      <NavItem name="Markaz haqida" icon={<CaretIcon />}>
+        <DropdownMenu></DropdownMenu>
+      </NavItem>
+    </Navbar>
   );
 }
 
-// function Navbar(props) {
-//   return (
-//     <nav className="navbar_list">
-//       <ul className="navbar-nav">{props.children}</ul>
-//     </nav>
-//   );
-// }
+function Navbar(props) {
+  return (
+    <nav className="navbar_list">
+      <ul className="navbar-nav">{props.children}</ul>
+    </nav>
+  );
+}
 
 function NavItem(props) {
   const [open, setOpen] = useState(false);
 
   return (
     <li className="nav-item">
-      <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+      <button className="icon-button" onClick={() => setOpen(!open)}>
+        {props.name}
         {props.icon}
-      </a>
+      </button>
 
       {open && props.children}
     </li>
