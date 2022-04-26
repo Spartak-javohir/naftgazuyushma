@@ -59,15 +59,14 @@ function DropdownMenu() {
 
   function DropdownItem(props) {
     return (
-      <a
-        href="#"
+      <div
         className="menu-item"
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
       >
         <span className="icon-button">{props.leftIcon}</span>
         {props.children}
         <span className="icon-right">{props.rightIcon}</span>
-      </a>
+      </div>
     );
   }
 
@@ -92,9 +91,11 @@ function DropdownMenu() {
           <DropdownItem>
             <Link to={"/consultants"}>Maslahatchilar</Link>{" "}
           </DropdownItem>
+
           <DropdownItem>
             <Link to={"/staff"}>Xodimlar</Link>
           </DropdownItem>
+
           <DropdownItem>
             <Link to={"/contact"}>Aloqa</Link>
           </DropdownItem>

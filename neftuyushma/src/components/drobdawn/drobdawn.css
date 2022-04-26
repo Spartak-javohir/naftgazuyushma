@@ -98,8 +98,8 @@ a {
   position: absolute;
   top: 50px;
   width: 300px;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
