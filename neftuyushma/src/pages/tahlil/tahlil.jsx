@@ -38,7 +38,7 @@ const tahlil = () => {
                     <td>{elem.summ}</td>
                     <td>{elem.price}</td>
                     <td>
-                      <img src={"." + elem.pictures} alt="photo" />
+                      <img src={elem.pictures} alt="photo" />
                     </td>
                   </tr>
                 );

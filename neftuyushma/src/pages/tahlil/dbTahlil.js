@@ -144,7 +144,7 @@ const dbTahlil = [
     time: "10+20+10",
     summ: 30,
     price: 249550.8,
-    pictures: { Astm },
+    pictures: "./img/yopiqtigel.png",
   },
   {
     id: 15,
