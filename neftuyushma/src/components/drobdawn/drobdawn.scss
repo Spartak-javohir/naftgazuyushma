@@ -87,12 +87,12 @@ a {
 .dropdown {
   position: absolute;
   top: 50px;
-  width: 350px;
+  width: 350px !important;
   transform: translateX(-110%);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: 50px;
+  padding: 5px;
   overflow: hidden;
   transition: height var(--speed) ease;
 }
