@@ -17,31 +17,6 @@ const BurgerMenu = () => {
       <ul>
         <li>
           <Drobdawn />
-          {/* <select>
-        <option value="active"> Umumiy ma'lumotlar</option>
-        <option value="mh">
-        </option>
-        <option value="rahbariyat">Rahbariyat</option>
-        {/* Markaz haqida */}
-          {/* </select> */}
-        </li>
-        <li>
-          <Link to="#"> Tadqiqot laboratoriyasi </Link>
-        </li>
-        <li>
-          <Link to="/login"> Online kurslar </Link>
-        </li>
-        <li>
-          <Link to="/"> Neft va gaz uyushmasi </Link>
-        </li>
-        <li>
-          <Link to="#"> Neft va gaz kutubxonasi </Link>
-        </li>
-        <li>
-          <Link to="#"> Ilmiy tex jurnal </Link>
-        </li>
-        <li>
-          <Link to="/contact"> Kontaktlar </Link>
         </li>
       </ul>
     </>

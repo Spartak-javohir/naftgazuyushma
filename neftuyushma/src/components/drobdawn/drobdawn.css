@@ -60,12 +60,12 @@ a {
 /* Icon Button */
 .icon-button {
   --button-size: calc(var(--nav-size) * 0.5);
-  width: var(--button-size);
+  width: 150px;
   height: var(--button-size);
   background-color: #484a4d;
   color: var(--text-color);
   border: none;
-  padding: 5px;
+  padding: 10px;
   margin: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,7 +96,7 @@ a {
 /* Dropdown Menu */
 .dropdown {
   position: absolute;
-  top: 58px;
+  top: 50px;
   width: 300px;
   -webkit-transform: translateX(0);
           transform: translateX(0);
