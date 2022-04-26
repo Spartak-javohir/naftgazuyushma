@@ -63,9 +63,9 @@ function DropdownMenu() {
         className="menu-item"
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
       >
-        <span className="icon-button">{props.leftIcon}</span>
+        {/* <span className="icon-button">{props.leftIcon}</span> */}
         {props.children}
-        <span className="icon-right">{props.rightIcon}</span>
+        {/* <span className="icon-right">{props.rightIcon}</span> */}
       </div>
     );
   }
@@ -85,11 +85,11 @@ function DropdownMenu() {
           </DropdownItem>
 
           <DropdownItem>
-            <Link to={"/rah"}>Rahbariyat</Link>{" "}
+            <Link to={"/rah"}>Rahbariyat</Link>
           </DropdownItem>
 
           <DropdownItem>
-            <Link to={"/consultants"}>Maslahatchilar</Link>{" "}
+            <Link to={"/consultants"}>Maslahatchilar</Link>
           </DropdownItem>
 
           <DropdownItem>
