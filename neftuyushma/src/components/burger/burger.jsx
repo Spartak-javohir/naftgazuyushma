@@ -14,11 +14,17 @@ const toggleMenu = ({ isOpen }) => {
 const BurgerMenu = () => {
   return (
     <>
-      <ul>
-        <li>
-          <Drobdawn />
-        </li>
-      </ul>
+      <Menu noOverlay onStateChange={toggleMenu}>
+        <a className="menu-item" href="/">
+          Home
+        </a>
+        <a className="menu-item" href="/about">
+          About
+        </a>
+        <a className="menu-item" href="/contact">
+          Contact
+        </a>
+      </Menu>
     </>
   );
 };

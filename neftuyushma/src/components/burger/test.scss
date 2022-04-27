@@ -1,26 +1,22 @@
-// .container {
-//   margin: 0 auto;
-//   width: 1240px;
-// }
 .bm-burger-button {
   position: fixed;
-  width: 20px;
-  height: 20px;
+  width: 36px;
+  height: 30px;
   right: 36px;
-  // top: 36px;
+  top: 36px;
 }
 
 .bm-burger-bars {
   background: #000;
 }
 
-.bm-menu-wrap {
-  visibility: hidden;
-}
+// .bm-menu-wrap {
+//   visibility: hidden;
+// }
 
-.bm-menu-wrap.open {
-  visibility: visible;
-}
+// .bm-menu-wrap.open {
+//   visibility: visible;
+// }
 
 .bm-cross-button {
   height: 24px;
