@@ -60,15 +60,15 @@ a {
 /* Icon Button */
 .icon-button {
   --button-size: calc(var(--nav-size) * 0.5);
-  width: 250px !important;
+  width: 250px;
   background-color: var(--bg);
   color: var(--text-color);
   border: none;
   padding: 0 10px;
-  margin: 2px;
+  // margin: 2px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   transition: filter 300ms;
 }
 
