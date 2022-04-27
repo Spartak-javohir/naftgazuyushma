@@ -60,8 +60,8 @@ a {
 /* Icon Button */
 .icon-button {
   --button-size: calc(var(--nav-size) * 0.5);
-  // width: 200px;
-  background-color: #484a4d;
+  width: 250px !important;
+  background-color: var(--bg);
   color: var(--text-color);
   border: none;
   padding: 0 10px;
@@ -86,25 +86,25 @@ a {
 
 .dropdown {
   position: absolute;
-  top: 50px;
-  width: 350px !important;
-  transform: translateX(-110%);
+  top: 100px;
+  width: 350px;
+  transform: translateX(-80%) translateY(17.5%);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: 5px;
-  overflow: hidden;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  // overflow: hidden;
   transition: height var(--speed) ease;
 }
 
 .menu {
   width: 100%;
 }
-.main {
-  width: 100px;
-}
+
 .menu-item {
-  // width: 100px;
+  // width: 200px;
   height: 100%;
   display: flex;
   align-items: center;

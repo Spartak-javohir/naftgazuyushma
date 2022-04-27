@@ -8,7 +8,7 @@ const nav = () => {
   return (
     <section className="navbar">
       <div className="container">
-        <ul className="list">
+        <div className="list">
           <Link className="logo_link_img" to="/info">
             <img className="logotip" src={logo} alt="logo" />
           </Link>
@@ -64,7 +64,7 @@ const nav = () => {
           </Link>
 
           <Burger />
-        </ul>
+        </div>
       </div>
     </section>
   );

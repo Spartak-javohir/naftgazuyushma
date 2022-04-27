@@ -71,7 +71,7 @@ function DropdownMenu() {
   }
 
   return (
-    <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
+    <div className="dropdown" ref={dropdownRef}>
       <CSSTransition
         in={activeMenu === "main"}
         timeout={500}

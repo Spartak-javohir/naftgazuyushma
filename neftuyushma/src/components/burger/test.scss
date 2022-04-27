@@ -45,13 +45,13 @@
   display: block;
   color: #bdc3c7;
 }
-// @media (max-width: 900px) {
-//   .bm-burger-button {
-//     display: block;
-//   }
-// }
-// @media (min-width: 901px) {
-//   .bm-burger-button {
-//     display: none;
-//   }
-// }
+@media (max-width: 900px) {
+  .bm-burger-button {
+    display: block;
+  }
+}
+@media (min-width: 901px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
