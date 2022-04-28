@@ -9,7 +9,7 @@ import Corses from "../pages/corses/corses";
 import Rah from "../pages/rahbariyat/rahbariyat";
 import Consultants from "../pages/consultants/consultants";
 import Staff from "../pages/staff/staff";
-import Burger from "../components/burger/burger";
+import Burger from "../components/drobdawn/drobdawn";
 import LaborInfo from "../pages/laboratory/laboratory";
 import Tahlil from "../pages/tahlil/tahlil";
 export default function PublicRoute(props) {
