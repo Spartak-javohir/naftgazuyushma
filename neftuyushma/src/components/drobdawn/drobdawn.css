@@ -109,10 +109,6 @@ a {
   transition: height var(--speed) ease;
 }
 
-.menu {
-  width: 100%;
-}
-
 .menu-item {
   height: 100%;
   display: -webkit-box;
@@ -125,10 +121,6 @@ a {
   -webkit-transition: background var(--speed);
   transition: background var(--speed);
   padding: 0.5rem;
-}
-
-.menu-item .icon-button {
-  margin-right: 0.5rem;
 }
 
 .menu-item .icon-button:hover {
@@ -145,46 +137,4 @@ a {
 }
 
 /* CSSTransition classes  */
-.menu-primary-enter {
-  position: absolute;
-  -webkit-transform: translateX(-110%);
-          transform: translateX(-110%);
-}
-
-.menu-primary-enter-active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.menu-primary-exit {
-  position: absolute;
-}
-
-.menu-primary-exit-active {
-  -webkit-transform: translateX(-110%);
-          transform: translateX(-110%);
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.menu-secondary-enter {
-  -webkit-transform: translateX(110%);
-          transform: translateX(110%);
-}
-
-.menu-secondary-enter-active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.menu-secondary-exit-active {
-  -webkit-transform: translateX(110%);
-          transform: translateX(110%);
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
 /*# sourceMappingURL=drobdawn.css.map */

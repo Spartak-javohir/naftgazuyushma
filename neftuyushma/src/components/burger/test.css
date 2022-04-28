@@ -10,6 +10,11 @@
   background: #000;
 }
 
+.bm-menu-wrap {
+  -webkit-transform: translate(-90%);
+          transform: translate(-90%);
+}
+
 .bm-cross-button {
   height: 24px;
   width: 24px;

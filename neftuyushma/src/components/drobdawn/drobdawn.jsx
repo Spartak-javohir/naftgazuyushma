@@ -72,35 +72,35 @@ function DropdownMenu() {
 
   return (
     <div className="dropdown" ref={dropdownRef}>
-      <CSSTransition
+      {/* <CSSTransition
         in={activeMenu === "main"}
         timeout={500}
         classNames="menu-primary"
         unmountOnExit
         onEnter={calcHeight}
-      >
-        <div className="menu">
-          <DropdownItem>
-            <Link to={"/info"}>Markaz haqida</Link>
-          </DropdownItem>
+      > */}
+      <div className="menu">
+        <DropdownItem>
+          <Link to={"/info"}>Markaz haqida</Link>
+        </DropdownItem>
 
-          <DropdownItem>
-            <Link to={"/rah"}>Rahbariyat</Link>
-          </DropdownItem>
+        <DropdownItem>
+          <Link to={"/rah"}>Rahbariyat</Link>
+        </DropdownItem>
 
-          <DropdownItem>
-            <Link to={"/consultants"}>Maslahatchilar</Link>
-          </DropdownItem>
+        <DropdownItem>
+          <Link to={"/consultants"}>Maslahatchilar</Link>
+        </DropdownItem>
 
-          <DropdownItem>
-            <Link to={"/staff"}>Xodimlar</Link>
-          </DropdownItem>
+        <DropdownItem>
+          <Link to={"/staff"}>Xodimlar</Link>
+        </DropdownItem>
 
-          <DropdownItem>
-            <Link to={"/contact"}>Aloqa</Link>
-          </DropdownItem>
-        </div>
-      </CSSTransition>
+        <DropdownItem>
+          <Link to={"/contact"}>Aloqa</Link>
+        </DropdownItem>
+      </div>
+      {/* </CSSTransition> */}
     </div>
   );
 }
