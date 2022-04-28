@@ -138,7 +138,7 @@ const DropDownMenu = () => {
       <button
         type="button"
         className="button"
-        onClick={() => console.log(open)}
+        onClick={() => console.log(!open)}
       >
         Umumiy ma'lumotlar
       </button>
