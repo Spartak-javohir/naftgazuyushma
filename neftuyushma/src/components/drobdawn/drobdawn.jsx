@@ -110,9 +110,9 @@ import React, { useState, useEffect, useRef } from "react";
 
 // **********
 
-// const { ReactDOM } = window;
+import ReactDOM from "react-dom";
 // const { useEffect, useState, useRef } = react;
-// const { render } = ReactDOM;
+const { render } = ReactDOM;
 
 const DropDownMenu = () => {
   const [open, setOpen] = useState(false);
@@ -134,9 +134,13 @@ const DropDownMenu = () => {
   });
 
   return (
-    <div className="container" ref={container}>
-      <button type="button" className="button" onClick={() => setOpen(!open)}>
-        ☰
+    <div className="container" ref={handleClickOutside}>
+      <button
+        type="button"
+        className="button"
+        onClick={() => console.log(open)}
+      >
+        Umumiy ma'lumotlar
       </button>
       {open && (
         <div className="dropdown-wrapper">
