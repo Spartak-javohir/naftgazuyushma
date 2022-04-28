@@ -6,20 +6,6 @@
           box-sizing: border-box;
 }
 
-body {
-  font-family: "Open Sans", Arial, sans-serif;
-  color: #042e72;
-  font-size: 1em;
-  line-height: 1.5;
-  padding: 1rem;
-}
-
-.container {
-  border: 1px dashed black;
-  position: relative;
-  display: inline-block;
-}
-
 .button {
   padding: 0;
   width: 50px;

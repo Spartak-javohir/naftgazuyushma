@@ -1,4 +1,4 @@
-// import "./drobdawn.css";
+import "./drobdawn.css";
 // import { Link } from "react-router-dom";
 // import PropTypes from "prop-types";
 
@@ -8,7 +8,7 @@
 // // import { ReactComponent as ArrowIcon } from "./icons/arrow.svg";
 // // import { ReactComponent as BoltIcon } from "./icons/bolt.svg";
 
-// import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 // import { CSSTransition } from "react-transition-group";
 
 // function Dropdown() {
@@ -110,9 +110,9 @@
 
 // **********
 
-const { React, ReactDOM } = window;
-const { useEffect, useState, useRef } = React;
-const { render } = ReactDOM;
+// const { ReactDOM } = window;
+// const { useEffect, useState, useRef } = react;
+// const { render } = ReactDOM;
 
 const DropDownMenu = () => {
   const [open, setOpen] = useState(false);
@@ -135,16 +135,16 @@ const DropDownMenu = () => {
 
   return (
     <div className="container" ref={container}>
-      <button type="button" class="button" onClick={() => setOpen(!open)}>
+      <button type="button" className="button" onClick={() => setOpen(!open)}>
         ☰
       </button>
       {open && (
-        <div class="dropdown-wrapper">
-          <ul class="dropdown-menu">
-            <li class="dropdown-menu__item">Item 1</li>
-            <li class="dropdown-menu__item">Item 2</li>
-            <li class="dropdown-menu__item">Item 3</li>
-            <li class="dropdown-menu__item">Item 4</li>
+        <div className="dropdown-wrapper">
+          <ul className="dropdown-menu">
+            <li className="dropdown-menu__item">Item 1</li>
+            <li className="dropdown-menu__item">Item 2</li>
+            <li className="dropdown-menu__item">Item 3</li>
+            <li className="dropdown-menu__item">Item 4</li>
           </ul>
         </div>
       )}
