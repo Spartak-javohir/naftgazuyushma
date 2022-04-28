@@ -19,7 +19,7 @@ const DropDownMenu = () => {
 
   const handleClickOutsideone = (event) => {
     if (containerone.current && !containerone.current.contains(event.target)) {
-      setOpen(false);
+      setOpenone(false);
     }
   };
 
@@ -64,26 +64,26 @@ const DropDownMenu = () => {
           </ul>
         )}
       </div>
-      <div className="dropdown_container" ref={handleClickOutsideone}>
+      <div className="dropdown_containerone" ref={handleClickOutsideone}>
         <button
           type="button"
-          className="button"
+          className="buttonone"
           onClick={() => setOpenone(!openone)}
         >
-          Umumiy ma'lumotlar
+          Ilmiy-tadqiqot laboratoriyasi
         </button>
-        {open && (
-          <ul className="dropdown-wrapper dropdown-menu">
-            <Link to={"#"} className="dropdown-menu__item">
+        {openone && (
+          <ul className="dropdown-wrapperone dropdown-menuone">
+            <Link to={"#"} className="dropdown-menu__itemone">
               Item 1
             </Link>
-            <Link to={"#"} className="dropdown-menu__item">
+            <Link to={"#"} className="dropdown-menu__itemone">
               Item 2
             </Link>
-            <Link to={"#"} className="dropdown-menu__item">
+            <Link to={"#"} className="dropdown-menu__itemone">
               Item 3
             </Link>
-            <Link to={"#"} className="dropdown-menu__item">
+            <Link to={"#"} className="dropdown-menu__itemone">
               Item 4
             </Link>
           </ul>
