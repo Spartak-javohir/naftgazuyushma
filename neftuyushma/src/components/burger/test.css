@@ -11,8 +11,8 @@
 }
 
 .bm-menu-wrap {
-  -webkit-transform: translateX(-90%) translateY(2%);
-          transform: translateX(-90%) translateY(2%);
+  -webkit-transform: translateX(-65%) translateY(2%);
+          transform: translateX(-65%) translateY(2%);
 }
 
 .react-burger-cross-btn {
