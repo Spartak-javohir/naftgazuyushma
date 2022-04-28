@@ -25,13 +25,13 @@ const DropDownMenu = () => {
   });
 
   return (
-    <div className="dropdown_container" ref={handleClickOutside}>
-      <button type="button" className="button" onClick={() => setOpen(!open)}>
-        Umumiy ma'lumotlar
-      </button>
-      {open && (
-        <div className="dropdown-wrapper">
-          <ul className="dropdown-menu">
+    <section className="dr-section">
+      <div className="dropdown_container" ref={handleClickOutside}>
+        <button type="button" className="button" onClick={() => setOpen(!open)}>
+          Umumiy ma'lumotlar
+        </button>
+        {open && (
+          <ul className="dropdown-wrapper dropdown-menu">
             <Link to={"#"} className="dropdown-menu__item">
               Item 1
             </Link>
@@ -45,9 +45,30 @@ const DropDownMenu = () => {
               Item 4
             </Link>
           </ul>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+      <div className="dropdown_container" ref={handleClickOutside}>
+        <button type="button" className="button" onClick={() => setOpen(!open)}>
+          Umumiy ma'lumotlar
+        </button>
+        {open && (
+          <ul className="dropdown-wrapper dropdown-menu">
+            <Link to={"#"} className="dropdown-menu__item">
+              Item 1
+            </Link>
+            <Link to={"#"} className="dropdown-menu__item">
+              Item 2
+            </Link>
+            <Link to={"#"} className="dropdown-menu__item">
+              Item 3
+            </Link>
+            <Link to={"#"} className="dropdown-menu__item">
+              Item 4
+            </Link>
+          </ul>
+        )}
+      </div>
+    </section>
   );
 };
 
