@@ -14,11 +14,9 @@
   transform: translate(-90%);
   // width: 100%;
 }
-
-// .bm-menu-wrap.open {
-//   visibility: visible;
-// }
-
+.react-burger-cross-btn {
+  right: 10px;
+}
 .bm-cross-button {
   height: 24px;
   width: 24px;
@@ -32,6 +30,7 @@
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  width: 300px;
 }
 
 .bm-item-list {

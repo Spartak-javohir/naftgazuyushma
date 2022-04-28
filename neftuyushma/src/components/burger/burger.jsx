@@ -15,8 +15,9 @@ const BurgerMenu = () => {
   return (
     <>
       <Menu noOverlay onStateChange={toggleMenu}>
-        <Drobdawn />
-
+        <div>
+          <Drobdawn />
+        </div>
         {/* <Drobdawn /> */}
       </Menu>
     </>

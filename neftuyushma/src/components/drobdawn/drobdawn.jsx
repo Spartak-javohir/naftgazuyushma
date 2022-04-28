@@ -135,11 +135,7 @@ const DropDownMenu = () => {
 
   return (
     <div className="container" ref={handleClickOutside}>
-      <button
-        type="button"
-        className="button"
-        onClick={() => console.log(!open)}
-      >
+      <button type="button" className="button" onClick={() => setOpen(!open)}>
         Umumiy ma'lumotlar
       </button>
       {open && (
