@@ -151,6 +151,12 @@ const DropDownMenu = () => {
           </ul>
         )}
       </div>
+      <Link className=" bm-linkone" to={"/corses"}>
+        Onlayn o'quv kurslari
+      </Link>
+      <Link className=" bm-link" to={"/librarey"}>
+        Neft-gaz elektron kutubxonasi
+      </Link>
     </section>
   );
 };
