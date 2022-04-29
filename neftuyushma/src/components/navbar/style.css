@@ -79,7 +79,13 @@ ol {
 .drListTwo,
 .drListThree {
   position: relative;
-  color: blue;
+  color: black;
+}
+
+.drListOne:hover,
+.drListTwo:hover,
+.drListThree:hover {
+  color: #5454d4;
 }
 
 .drItemOne,
@@ -99,6 +105,12 @@ ol {
   border-bottom-right-radius: 10px;
   -webkit-box-shadow: 0px 52px 54px rgba(65, 62, 101, 0.296766);
           box-shadow: 0px 52px 54px rgba(65, 62, 101, 0.296766);
+  color: black;
+}
+
+.link_navbar {
+  color: black;
+  text-decoration: none;
 }
 
 .drListOne:hover .drItemOne {

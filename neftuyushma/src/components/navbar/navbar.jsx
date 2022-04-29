@@ -15,51 +15,85 @@ const nav = () => {
           <div className="drListOne list_items">
             Umumiy ma'lumotlar
             <div className="drItemOne">
-              <Link to={"/info"}>Markaz haqida</Link>
+              <Link to={"/info"} className="link_navbar">
+                Markaz haqida
+              </Link>
 
               {/* <Link to={"#"}>Markaz nizomi</Link> */}
 
-              <Link to={"/rah"}>Rahbariyat</Link>
+              <Link to={"/rah"} className="link_navbar">
+                Rahbariyat
+              </Link>
 
-              <Link to={"/consultants"}>Maslahatchilar</Link>
-              <Link to={"/staff"}>Xodimlar</Link>
-              <Link to={"/contact"}>Aloqa</Link>
+              <Link to={"/consultants"} className="link_navbar">
+                Maslahatchilar
+              </Link>
+              <Link to={"/staff"} className="link_navbar">
+                Xodimlar
+              </Link>
+              <Link to={"/contact"} className="link_navbar">
+                Aloqa
+              </Link>
             </div>
           </div>
 
           <div className="drListTwo list_items">
             Ilmiy-tadqiqot laboratoriyasi
             <div className="drItemTwo">
-              <Link to={"/laboratoryInfo"}>Laboratoriya haqida</Link>
+              <Link to={"/laboratoryInfo"} className="link_navbar">
+                Laboratoriya haqida
+              </Link>
 
-              <Link to={"/tahlil"}>Tahlil xizmatlari</Link>
+              <Link to={"/tahlil"} className="link_navbar">
+                Tahlil xizmatlari
+              </Link>
 
-              <Link to={"#"}>Jihozlar</Link>
+              <Link to={"#"} className="link_navbar">
+                Jihozlar
+              </Link>
 
-              <Link to={"#"}>Buyurtma qoldirish</Link>
-              <Link to={"#"}>Bog'lanish</Link>
+              <Link to={"#"} className="link_navbar">
+                Buyurtma qoldirish
+              </Link>
+              <Link to={"#"} className="link_navbar">
+                Bog'lanish
+              </Link>
             </div>
           </div>
           <div className="drListThree list_items">
             Ilmiy-texnikaviy jurnal
             <div className="drItemThree">
-              <Link to={"#"}>Jurnal haqida</Link>
+              <Link to={"#"} className="link_navbar">
+                Jurnal haqida
+              </Link>
 
-              <Link to={"#"}>Jurnal nizomi</Link>
+              <Link to={"#"} className="link_navbar">
+                Jurnal nizomi
+              </Link>
 
-              <Link to={"#"}>Bosh muharrir</Link>
+              <Link to={"#"} className="link_navbar">
+                Bosh muharrir
+              </Link>
 
-              <Link to={"#"}>Tahrir hay'ati</Link>
-              <Link to={"#"}>Arxiv</Link>
-              <Link to={"#"}>Maqola yuborish</Link>
-              <Link to={"#"}>Bog'lanish</Link>
+              <Link to={"#"} className="link_navbar">
+                Tahrir hay'ati
+              </Link>
+              <Link to={"#"} className="link_navbar">
+                Arxiv
+              </Link>
+              <Link to={"#"} className="link_navbar">
+                Maqola yuborish
+              </Link>
+              <Link to={"#"} className="link_navbar">
+                Bog'lanish
+              </Link>
             </div>
           </div>
-          <Link className="list_items" to={"/corses"}>
+          <Link className="list_items link_navbar" to={"/corses"}>
             Onlayn o'quv kurslari
           </Link>
 
-          <Link className="list_items" to={"/librarey"}>
+          <Link className="list_items link_navbar" to={"/librarey"}>
             Neft-gaz elektron kutubxonasi
           </Link>
 

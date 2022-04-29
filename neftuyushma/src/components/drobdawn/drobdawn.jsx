@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 const { render } = ReactDOM;
 
-const DropDownMenu = () => {
+const DropDownMenu = (props) => {
   const [open, setOpen] = useState(false);
   const [openone, setOpenone] = useState(false);
   const container = useRef(null);
@@ -49,18 +49,10 @@ const DropDownMenu = () => {
         </button>
         {open && (
           <ul className="dropdown-wrapper dropdown-menu">
-            <Link to={"#"} className="dropdown-menu__item">
-              Item 1
-            </Link>
-            <Link to={"#"} className="dropdown-menu__item">
-              Item 2
-            </Link>
-            <Link to={"#"} className="dropdown-menu__item">
-              Item 3
-            </Link>
-            <Link to={"#"} className="dropdown-menu__item">
-              Item 4
-            </Link>
+            <Link to={"#"} className="dropdown-menu__item"></Link>
+            <Link to={"#"} className="dropdown-menu__item"></Link>
+            <Link to={"#"} className="dropdown-menu__item"></Link>
+            <Link to={"#"} className="dropdown-menu__item"></Link>
           </ul>
         )}
       </div>
