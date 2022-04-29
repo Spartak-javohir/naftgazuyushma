@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 const { render } = ReactDOM;
 
-const DropDownMenu = (props) => {
+const DropDownMenu = () => {
   const [open, setOpen] = useState(false);
   const [openone, setOpenone] = useState(false);
   const container = useRef(null);
@@ -49,10 +49,21 @@ const DropDownMenu = (props) => {
         </button>
         {open && (
           <ul className="dropdown-wrapper dropdown-menu">
-            <Link to={"#"} className="dropdown-menu__item"></Link>
-            <Link to={"#"} className="dropdown-menu__item"></Link>
-            <Link to={"#"} className="dropdown-menu__item"></Link>
-            <Link to={"#"} className="dropdown-menu__item"></Link>
+            <Link to={"/info"} className="dropdown-menu__item">
+              Markaz haqida
+            </Link>
+            <Link to={"/rah"} className="dropdown-menu__item">
+              Rahbariyat
+            </Link>
+            <Link to={"/consultants"} className="dropdown-menu__item">
+              Maslahatchilar
+            </Link>
+            <Link to={"/staff"} className="dropdown-menu__item">
+              Xodimlar
+            </Link>
+            <Link to={"/contact"} className="dropdown-menu__item">
+              Aloqa
+            </Link>
           </ul>
         )}
       </div>
@@ -66,17 +77,23 @@ const DropDownMenu = (props) => {
         </button>
         {openone && (
           <ul className="dropdown-wrapperone dropdown-menuone">
+            <Link to={"/laboratoryInfo"} className="dropdown-menu__itemone">
+              Laboratoriya haqida
+            </Link>
+
+            <Link to={"/tahlil"} className="dropdown-menu__itemone">
+              Tahlil xizmatlari
+            </Link>
+
             <Link to={"#"} className="dropdown-menu__itemone">
-              Item 1
+              Jihozlar
+            </Link>
+
+            <Link to={"#"} className="dropdown-menu__itemone">
+              Buyurtma qoldirish
             </Link>
             <Link to={"#"} className="dropdown-menu__itemone">
-              Item 2
-            </Link>
-            <Link to={"#"} className="dropdown-menu__itemone">
-              Item 3
-            </Link>
-            <Link to={"#"} className="dropdown-menu__itemone">
-              Item 4
+              Bog'lanish
             </Link>
           </ul>
         )}

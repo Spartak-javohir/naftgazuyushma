@@ -1,58 +1,82 @@
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 36px;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.bm-burger-bars {
-  background: #000;
+:root {
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
 }
 
-.bm-menu-wrap {
-  -webkit-transform: translateX(-90%) translateY(2%);
-          transform: translateX(-90%) translateY(2%);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.react-burger-cross-btn {
-  right: 10px;
+.bm-button {
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  background-color: var(--text-color);
+  color: #dadce1;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
 }
 
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
-.bm-cross {
-  background: #bdc3c7;
+.bm-wrapper {
+  position: absolute;
+  width: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  background-color: var(--bg) !important;
+  left: 13%;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-  width: 300px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: step-start;
+  transition: step-start;
 }
 
-.bm-item-list {
-  padding: 0.8em;
+.bm-menu__item {
+  padding: 8px 12px;
+  width: 90%;
+  text-align: center;
 }
 
-.bm-item {
-  display: block;
-  color: #bdc3c7;
-}
-
-@media (max-width: 900px) {
-  .bm-burger-button {
-    display: block;
-  }
-}
-
-@media (min-width: 901px) {
-  .bm-burger-button {
-    display: none;
-  }
+.bm-menu__item:hover {
+  background-color: #525357;
+  cursor: pointer;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=test.css.map */
