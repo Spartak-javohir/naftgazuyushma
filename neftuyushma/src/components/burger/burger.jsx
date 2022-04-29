@@ -1,6 +1,4 @@
 import Dropdawn from "../drobdawn/drobdawn";
-
-//***************** */
 import React, { useState, useEffect, useRef } from "react";
 import "./test.css";
 import ReactDOM from "react-dom";
