@@ -97,7 +97,9 @@ const nav = () => {
             Neft-gaz elektron kutubxonasi
           </Link>
 
-          <Burger />
+          <div className="burgerMenu">
+            <Burger />
+          </div>
         </div>
       </div>
     </section>
