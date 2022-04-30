@@ -123,7 +123,7 @@ a {
   -webkit-transform: translate(0);
           transform: translate(0);
   background-color: var(--bg) !important;
-  left: 20%;
+  left: 37%;
   padding: 10px;
   margin-top: 10px;
 }
@@ -231,5 +231,269 @@ a {
   background-color: #525357;
   cursor: pointer;
   border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 890px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 35.5%;
+  }
+}
+
+@media (max-width: 880px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 870px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 860px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 850px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 840px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 830px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 810px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 780px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 34%;
+  }
+}
+
+@media (max-width: 760px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 34%;
+  }
+}
+
+@media (max-width: 720px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 33%;
+  }
+}
+
+@media (max-width: 700px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 32%;
+  }
+}
+
+@media (max-width: 680px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 32%;
+  }
+}
+
+@media (max-width: 650px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 31%;
+  }
+}
+
+@media (max-width: 640px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 31%;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 30%;
+  }
+}
+
+@media (max-width: 580px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 29%;
+  }
+}
+
+@media (max-width: 560px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 28%;
+  }
+}
+
+@media (max-width: 540px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 27%;
+  }
+}
+
+@media (max-width: 520px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 26%;
+  }
+}
+
+@media (max-width: 500px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 25%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 24%;
+  }
+}
+
+@media (max-width: 460px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 23%;
+  }
+}
+
+@media (max-width: 440px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 22%;
+  }
+}
+
+@media (max-width: 420px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 21%;
+  }
+}
+
+@media (max-width: 400px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 20%;
+  }
+}
+
+@media (max-width: 380px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 19%;
+  }
+}
+
+@media (max-width: 360px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 17%;
+  }
+}
+
+@media (max-width: 340px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 15%;
+  }
+}
+
+@media (max-width: 320px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 12%;
+  }
+}
+
+@media (max-width: 300px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 10%;
+  }
+}
+
+@media (max-width: 280px) {
+  .dropdown-wrapper,
+  .dropdown-wrapperone,
+  .dropdown-wrappertwo {
+    left: 8%;
+  }
 }
 /*# sourceMappingURL=drobdawn.css.map */

@@ -108,13 +108,13 @@
   border-radius: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   .bm-button {
     display: block;
   }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 911px) {
   .bm-button {
     display: none;
   }
