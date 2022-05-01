@@ -7,7 +7,7 @@ const corses = () => {
       <Navbar />
       <section>
         <div className="container">
-          <p>Tez kunda...</p>
+          <p className="cor_p">Tez kunda...</p>
         </div>
       </section>
     </>

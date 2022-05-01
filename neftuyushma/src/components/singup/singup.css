@@ -80,6 +80,7 @@ nav .navbar__titel {
   outline: none;
   border: none;
   border-radius: 10px;
+  z-index: 1;
 }
 
 .cart__form__label__button {
@@ -96,7 +97,7 @@ nav .navbar__titel {
   position: absolute;
   top: -30%;
   left: 5%;
-  background: white;
+  background-color: white;
   color: rgba(70, 68, 68, 0.842);
 }
 

@@ -55,7 +55,7 @@ const singup = () => {
           </form>
         </div>
         <div className="bottom__cart">
-          <p className="bottom__cart_pElem">
+          <p className="bottom__cart__pElem">
             Agar ro'yxatdan o'tgan bo'lsangiz - <Link to="/">sing in</Link>-
             orqali kiring
           </p>

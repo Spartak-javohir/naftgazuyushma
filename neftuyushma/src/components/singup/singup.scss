@@ -66,6 +66,7 @@ nav {
         outline: none;
         border: none;
         border-radius: 10px;
+        z-index: 1;
       }
       &__button {
         width: 100%;
@@ -80,8 +81,7 @@ nav {
         position: absolute;
         top: -30%;
         left: 5%;
-        background: white;
-        // font-size: 5px;
+        background-color: white;
         color: rgba(70, 68, 68, 0.842);
       }
     }
