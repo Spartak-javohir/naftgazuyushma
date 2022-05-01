@@ -11,7 +11,7 @@ const singup = () => {
           </nav>
           <form action="" className="cart__form">
             <label for="" className="cart__form__label">
-              <p>User name</p>
+              <p className="cart__form__label__pElem">User name</p>
               <input
                 type="text"
                 placeholder="name"
@@ -20,7 +20,7 @@ const singup = () => {
               />
             </label>
             <label for="" className="cart__form__label">
-              <p>Phone number</p>
+              <p className="cart__form__label__pElem">Phone number</p>
 
               <input
                 type="text"
@@ -30,7 +30,7 @@ const singup = () => {
               />
             </label>
             <label for="" className="cart__form__label">
-              <p>Email</p>
+              <p className="cart__form__label__pElem">Email</p>
 
               <input
                 type="email"
@@ -40,7 +40,7 @@ const singup = () => {
               />
             </label>
             <label for="" className="cart__form__label">
-              <p>Password</p>
+              <p className="cart__form__label__pElem">Password</p>
 
               <input
                 type="password"
@@ -54,10 +54,10 @@ const singup = () => {
             </label>
           </form>
         </div>
-        <div class="bottom__cart">
-          <p>
-            Agar ro'yxatdan o'tgan bo'lsangiz - <Link to="/login">sing in</Link>
-            - orqali kiring
+        <div className="bottom__cart">
+          <p className="bottom__cart_pElem">
+            Agar ro'yxatdan o'tgan bo'lsangiz - <Link to="/">sing in</Link>-
+            orqali kiring
           </p>
         </div>
       </div>
