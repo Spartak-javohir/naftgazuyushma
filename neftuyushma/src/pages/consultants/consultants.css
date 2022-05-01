@@ -19,6 +19,8 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 1241px) {
