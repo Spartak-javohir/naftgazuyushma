@@ -36,7 +36,7 @@ const NoAuthWebsite = () => {
       </div>
 
       <div className="login_button" onClick={() => setOverlay(true)}>
-        Login
+        Sing in
       </div>
     </div>
   );

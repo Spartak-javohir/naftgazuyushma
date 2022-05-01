@@ -5,16 +5,16 @@
           box-sizing: border-box;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1240px;
+}
+
 .mH_section {
   padding-bottom: 40px;
   background-color: grey;
   background-repeat: no-repeat;
   background-size: auto;
-}
-
-.mH_section .container {
-  margin: 0 auto;
-  width: 1200px;
 }
 
 .mH_section .container .titel_mH {
@@ -29,5 +29,17 @@
   margin-top: 10px;
   color: white;
   font-weight: 600;
+}
+
+@media (max-width: 1241px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1141px) {
+  .container {
+    width: 1000px;
+  }
 }
 /*# sourceMappingURL=marsty.css.map */

@@ -133,13 +133,18 @@
   }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 911px) {
   .bm-button {
-    display: block;
+    display: none;
   }
 }
 @media (min-width: 911px) {
   .bm-button {
     display: none;
+  }
+}
+@media (max-width: 910px) {
+  .bm-button {
+    display: block;
   }
 }

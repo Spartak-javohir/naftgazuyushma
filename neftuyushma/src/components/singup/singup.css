@@ -69,14 +69,14 @@ nav .navbar__titel {
 .cart__form__label {
   width: 90%;
   border: 1px solid grey;
-  margin: 5px 0;
+  margin: 7px 0;
   border-radius: 10px;
   position: relative;
 }
 
 .cart__form__label__input {
   width: 100%;
-  padding: 10px;
+  padding: 13px 10px;
   outline: none;
   border: none;
   border-radius: 10px;
@@ -94,8 +94,10 @@ nav .navbar__titel {
 }
 
 .cart__form__label__pElem {
+  padding: 0;
   position: absolute;
-  top: -30%;
+  top: -28%;
+  margin-bottom: 0;
   left: 5%;
   background-color: white;
   color: rgba(70, 68, 68, 0.842);
@@ -117,5 +119,64 @@ nav .navbar__titel {
 
 .bottom__cart__pElem {
   text-align: center;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    width: 575px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 425px;
+  }
+  .login__section .container .cart,
+  .login__section .container .bottom__cart {
+    width: 400px;
+  }
+}
+
+@media (max-width: 426px) {
+  .container {
+    width: 375px;
+  }
+  .login__section .container .cart,
+  .login__section .container .bottom__cart {
+    width: 300px;
+  }
+}
+
+@media (max-width: 376px) {
+  .container {
+    width: 320px;
+  }
+  .login__section .container .cart,
+  .login__section .container .bottom__cart {
+    width: 250px;
+  }
+}
+
+@media (max-width: 321px) {
+  .container {
+    width: 280px;
+  }
+}
+
+@media (max-width: 281px) {
+  .container {
+    width: 100%;
+  }
+  .login__section .container .cart,
+  .login__section .container .bottom__cart {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=singup.css.map */
