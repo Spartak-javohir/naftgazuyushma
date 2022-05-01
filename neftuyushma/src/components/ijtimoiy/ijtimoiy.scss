@@ -53,8 +53,25 @@ ul {
     color: blue;
     // font-weight: bold;
     font-size: 32px;
+    text-decoration: none;
   }
   .texts_ij {
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ijtimoiy_card {
+    .card_head {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .ijtimoiy_card {
+    .card_head {
+      width: 200px;
+    }
   }
 }

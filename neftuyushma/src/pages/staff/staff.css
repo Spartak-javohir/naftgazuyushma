@@ -5,9 +5,12 @@
           box-sizing: border-box;
 }
 
-.staff_section .container {
+.container {
   width: 1240px;
-  height: 80vh;
+  margin: 0 auto;
+}
+
+.staff_section .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,54 +26,29 @@
   font-size: 20px;
 }
 
-.staff_section img {
+.staff_card {
+  margin-top: 20px;
+  width: 500px;
+}
+
+.staff_card img {
   display: none;
 }
 
-@media (max-width: 1241px) {
-  .container {
-    width: 1140px;
+@media (max-width: 521px) {
+  .staff_card {
+    width: 400px;
   }
 }
 
-@media (max-width: 1140px) {
-  .container {
-    width: 1040px;
+@media (max-width: 421px) {
+  .staff_card {
+    width: 300px;
   }
 }
 
-@media (max-width: 1041px) {
-  .container {
-    width: 900px;
-  }
-}
-
-@media (max-width: 910px) {
-  .container {
-    width: 770px;
-  }
-}
-
-@media (max-width: 771px) {
-  .container {
-    width: 450px;
-  }
-}
-
-@media (max-width: 451px) {
-  .container {
-    width: 375px;
-  }
-}
-
-@media (max-width: 376px) {
-  .container {
-    width: 320px;
-  }
-}
-
-@media (max-width: 321px) {
-  .container {
+@media (max-width: 311px) {
+  .staff_card {
     width: 100%;
   }
 }

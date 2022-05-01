@@ -57,4 +57,10 @@ body {
   padding: 3px 0;
   font-size: 20px;
 }
+
+@media (max-width: 1000px) {
+  .rekvizit_card .head_hover {
+    width: 300px;
+  }
+}
 /*# sourceMappingURL=rekvizits.css.map */

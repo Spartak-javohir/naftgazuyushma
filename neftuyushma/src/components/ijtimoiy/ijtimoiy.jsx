@@ -2,6 +2,7 @@ import "./ijtimoiy.css";
 import tel from "./img/tel.svg";
 import emailimg from "./img/emailimg.svg";
 import tlg from "./img/tlg.svg";
+import { Link } from "react-router-dom";
 
 const ijtimoiy = () => {
   return (
@@ -31,7 +32,9 @@ const ijtimoiy = () => {
             <h3 className="ijtimoiy_titel_tlg">Telegram:</h3>
           </div>
           <div className="texts_ij">
-            <p className="telegram">Savol berish</p>
+            <Link className="telegram" to={"#"}>
+              Savol berish
+            </Link>
           </div>
         </li>
       </ul>
