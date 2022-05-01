@@ -5,7 +5,11 @@ const corses = () => {
   return (
     <>
       <Navbar />
-      <p>Tez kunda...</p>
+      <section>
+        <div className="container">
+          <p>Tez kunda...</p>
+        </div>
+      </section>
     </>
   );
 };

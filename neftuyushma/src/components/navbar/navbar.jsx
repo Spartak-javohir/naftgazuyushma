@@ -3,6 +3,7 @@ import "./style.css";
 import { Link, Routes } from "react-router-dom";
 import React from "react";
 import Burger from "../burger/burger";
+import Modal from "../modal/modal";
 
 const nav = () => {
   return (
@@ -96,6 +97,9 @@ const nav = () => {
           <Link className="list_items link_navbar" to={"/librarey"}>
             Neft-gaz elektron kutubxonasi
           </Link>
+          <div>
+            <Modal />
+          </div>
 
           <div className="burgerMenu">
             <Burger />

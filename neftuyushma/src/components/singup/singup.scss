@@ -76,11 +76,12 @@ nav {
         padding: 10px;
         border: none;
       }
-      p {
+      &__pElem {
         position: absolute;
         top: -30%;
         left: 5%;
         background: white;
+        // font-size: 5px;
         color: rgba(70, 68, 68, 0.842);
       }
     }
@@ -98,7 +99,7 @@ nav {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 10px;
-  p {
+  &__pElem {
     text-align: center;
   }
 }

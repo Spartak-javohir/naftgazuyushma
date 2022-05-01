@@ -92,7 +92,7 @@ nav .navbar__titel {
   border: none;
 }
 
-.cart__form__label p {
+.cart__form__label__pElem {
   position: absolute;
   top: -30%;
   left: 5%;
@@ -114,7 +114,7 @@ nav .navbar__titel {
   padding: 10px;
 }
 
-.bottom__cart p {
+.bottom__cart__pElem {
   text-align: center;
 }
 /*# sourceMappingURL=singup.css.map */

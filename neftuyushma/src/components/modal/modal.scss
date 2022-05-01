@@ -1,0 +1,78 @@
+// #root {
+//   display: flex;
+//   align-items: center;
+//   align-content: center;
+//   flex-direction: column;
+//   height: 100vh;
+//   width: 100vw;
+//   background-color: rgba(0, 0, 0, 0.05);
+// }
+
+.flex_column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.overlay_background {
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 50;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay_shown {
+  opacity: 1;
+}
+
+.overlay_hidden {
+  display: none;
+  opacity: 0;
+}
+
+.overlay_card {
+  z-index: 51;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// input {
+//   text-align: center;
+//   width: 120px;
+//   border-radius: 5px;
+//   margin-bottom: 10px;
+// }
+
+.login_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  background-color: rgba(95, 215, 95, 0);
+}
+
+.login_button:hover,
+.login_button:active {
+  color: #5454d4;
+}
+
+// @media (max-width: 900px) {
+//   .login_button {
+//   }
+// }
