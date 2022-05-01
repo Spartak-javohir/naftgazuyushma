@@ -39,7 +39,6 @@ const BurgerMenu = () => {
           x="0px"
           y="0px"
           viewBox="0 0 92 92"
-          enable-background="new 0 0 92 92"
         >
           <path
             id="XMLID_101_"
@@ -63,9 +62,6 @@ const BurgerMenu = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
               >
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
