@@ -33,7 +33,7 @@ body {
   transition: 0.5s;
 }
 
-.rekvizit_card .head_hover img {
+.rekvizit_card .head_hover .rek-img {
   width: 10%;
   padding: 2px;
   margin: 2px;
@@ -42,10 +42,6 @@ body {
 .rekvizit_card .head_hover:hover {
   background-color: #2c2cf0;
   color: white;
-}
-
-.rekvizit_card .head_hover:hover img {
-  fill: #fff;
 }
 
 .rekvizit_card .texts_div {

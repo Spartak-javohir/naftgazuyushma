@@ -4,6 +4,7 @@ const rekvizits = () => {
     <div className="rekvizit_card">
       <div className="head_hover">
         <svg
+          className="rek-img"
           id="레이어_1"
           data-name="레이어 1"
           xmlns="http://www.w3.org/2000/svg"

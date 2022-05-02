@@ -22,7 +22,7 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
     transition: 0.5s;
-    img {
+    .rek-img {
       width: 10%;
       padding: 2px;
       margin: 2px;
@@ -31,9 +31,6 @@ body {
   .head_hover:hover {
     background-color: rgb(44, 44, 240);
     color: white;
-    img {
-      fill: #fff;
-    }
   }
   .texts_div {
     padding: 10px 20px;
