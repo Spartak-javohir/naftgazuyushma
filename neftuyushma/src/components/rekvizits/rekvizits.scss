@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   .head_hover {
     display: flex;
     align-items: center;
@@ -46,6 +46,10 @@ body {
 }
 @media (max-width: 401px) {
   .rekvizit_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 0;
     .head_hover {
       width: 300px;
@@ -57,6 +61,18 @@ body {
   }
 }
 @media (max-width: 318px) {
+  .rekvizit_card {
+    .head_hover {
+      width: 250px;
+    }
+    .texts_div {
+      .p_yuad {
+        font-size: 8px;
+      }
+    }
+  }
+}
+@media (max-width: 270px) {
   .rekvizit_card {
     .head_hover {
       width: 100%;

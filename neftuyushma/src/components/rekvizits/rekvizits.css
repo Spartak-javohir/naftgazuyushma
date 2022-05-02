@@ -21,9 +21,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rekvizit_card .head_hover {
@@ -68,6 +68,19 @@ body {
 
 @media (max-width: 401px) {
   .rekvizit_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 0;
   }
   .rekvizit_card .head_hover {
@@ -79,6 +92,15 @@ body {
 }
 
 @media (max-width: 318px) {
+  .rekvizit_card .head_hover {
+    width: 250px;
+  }
+  .rekvizit_card .texts_div .p_yuad {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 270px) {
   .rekvizit_card .head_hover {
     width: 100%;
   }
