@@ -11,22 +11,27 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .rekvizit_card {
-  padding: 20px 0;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   .head_hover {
-    padding: 5px 10px;
     display: flex;
-    justify-content: start;
     align-items: center;
+    justify-content: start;
+    padding: 5px 10px;
     box-shadow: 10px 10px 20px 1px gray;
     border-radius: 5px;
     margin-bottom: 20px;
     transition: 0.5s;
-    .rek-img {
-      width: 10%;
-      padding: 2px;
-      margin: 2px;
-    }
+    margin-top: 25px;
+
+    width: 400px;
+  }
+  .rek-img {
+    width: 10%;
+    padding: 2px;
+    margin: 2px;
   }
   .head_hover:hover {
     background-color: rgb(44, 44, 240);
@@ -34,24 +39,27 @@ body {
   }
   .texts_div {
     padding: 10px 20px;
-    width: 400px;
-    p {
-      padding: 3px 0;
+    .p_yuad {
       font-size: 20px;
     }
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 401px) {
   .rekvizit_card {
+    padding: 0;
     .head_hover {
       width: 300px;
     }
+
+    .rek-img {
+      width: 15%;
+    }
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 318px) {
   .rekvizit_card {
     .head_hover {
-      width: 270px;
+      width: 100%;
     }
   }
 }

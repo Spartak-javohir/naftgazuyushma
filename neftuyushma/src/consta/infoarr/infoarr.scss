@@ -9,13 +9,6 @@
   padding-bottom: 50px;
   .container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-}
-@media (max-width: 900px) {
-  .container {
-    display: flex;
     flex-direction: column-reverse;
   }
 }

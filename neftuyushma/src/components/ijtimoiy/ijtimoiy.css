@@ -26,9 +26,10 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
 }
 
 .ijtimoiy_card .card_head {
@@ -53,7 +54,7 @@ ul {
 }
 
 .ijtimoiy_card .tel_img {
-  width: 7%;
+  width: 7.5%;
   padding: 5px;
 }
 
@@ -81,18 +82,32 @@ ul {
 }
 
 .ijtimoiy_card .texts_ij {
-  padding-left: 20px;
+  padding: 10px 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 401px) {
   .ijtimoiy_card .card_head {
     width: 300px;
   }
+  .ijtimoiy_card .tel_img {
+    width: 10%;
+  }
+  .ijtimoiy_card .email_img {
+    width: 14%;
+  }
+  .ijtimoiy_card .tlg_img {
+    width: 14%;
+  }
+  .ijtimoiy_card .number,
+  .ijtimoiy_card .email,
+  .ijtimoiy_card .telegram {
+    font-size: 28px;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 318px) {
   .ijtimoiy_card .card_head {
-    width: 270px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=ijtimoiy.css.map */

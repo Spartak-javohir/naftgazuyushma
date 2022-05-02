@@ -11,29 +11,43 @@ body {
 }
 
 .rekvizit_card {
-  padding: 20px 0;
-}
-
-.rekvizit_card .head_hover {
-  padding: 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.rekvizit_card .head_hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 5px 10px;
   -webkit-box-shadow: 10px 10px 20px 1px gray;
           box-shadow: 10px 10px 20px 1px gray;
   border-radius: 5px;
   margin-bottom: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-top: 25px;
+  width: 400px;
 }
 
-.rekvizit_card .head_hover .rek-img {
+.rekvizit_card .rek-img {
   width: 10%;
   padding: 2px;
   margin: 2px;
@@ -46,23 +60,27 @@ body {
 
 .rekvizit_card .texts_div {
   padding: 10px 20px;
-  width: 400px;
 }
 
-.rekvizit_card .texts_div p {
-  padding: 3px 0;
+.rekvizit_card .texts_div .p_yuad {
   font-size: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 401px) {
+  .rekvizit_card {
+    padding: 0;
+  }
   .rekvizit_card .head_hover {
     width: 300px;
   }
+  .rekvizit_card .rek-img {
+    width: 15%;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 318px) {
   .rekvizit_card .head_hover {
-    width: 270px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=rekvizits.css.map */
