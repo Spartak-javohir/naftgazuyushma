@@ -3,3 +3,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+.section_tahlil {
+  padding: 20px 0;
+}
+.header_tahlil {
+  border: 1px black solid;
+}
+.section_tahlil_thead_th,
+.section_tahlil_tbody_th,
+.section_tahlil_tbody_td {
+  border: 1px black solid;
+  padding: 0 4px;
+}
+.section_tahlil_img {
+  width: 50px;
+  // display: block;
+}
+// .section_tahlil_tbody{}

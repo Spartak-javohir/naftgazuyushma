@@ -14,31 +14,39 @@ const tahlil = () => {
               xossalarini aniqlash uchun vaqt normasi va narxi
             </h2>
           </header>
-          <table>
-            <thead>
-              <tr>
-                <th>№</th>
-                <th>Tahlil nomi</th>
-                <th>Tahlillar soni</th>
-                <th>1 tahlil uchun vaqt normasi (daq)</th>
-                <th>Jami (daq)</th>
-                <th>Tahlillarning umumiy summasi (QQSsiz) (so’m)</th>
-                <th>Apparat rasmi</th>
+          <table className="section_tahlil_table">
+            <thead className="section_tahlil_thead">
+              <tr className="section_tahlil_thead_tr">
+                <th className="section_tahlil_thead_th">№</th>
+                <th className="section_tahlil_thead_th">Tahlil nomi</th>
+                <th className="section_tahlil_thead_th">Tahlillar soni</th>
+                <th className="section_tahlil_thead_th">
+                  1 tahlil uchun vaqt normasi (daq)
+                </th>
+                <th className="section_tahlil_thead_th">Jami (daq)</th>
+                <th className="section_tahlil_thead_th">
+                  Tahlillarning umumiy summasi (QQSsiz) (so’m)
+                </th>
+                <th className="section_tahlil_thead_th">Apparat rasmi</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="section_tahlil_tbody">
               {DbTahlil.map((elem) => {
                 console.log(elem.pictures);
                 return (
-                  <tr>
-                    <th>{elem.id}</th>
-                    <td>{elem.name}</td>
-                    <td> {elem.number} </td>
-                    <td>{elem.time}</td>
-                    <td>{elem.summ}</td>
-                    <td>{elem.price}</td>
-                    <td>
-                      <img src={elem.pictures} alt="photo" />
+                  <tr className="section_tahlil_tbody_tr" key={elem.id}>
+                    <th className="section_tahlil_tbody_th">{elem.id}</th>
+                    <td className="section_tahlil_tbody_td">{elem.name}</td>
+                    <td className="section_tahlil_tbody_td">{elem.number}</td>
+                    <td className="section_tahlil_tbody_td">{elem.time}</td>
+                    <td className="section_tahlil_tbody_td">{elem.summ}</td>
+                    <td className="section_tahlil_tbody_td">{elem.price}</td>
+                    <td className="section_tahlil_tbody_td">
+                      <img
+                        className="section_tahlil_img"
+                        src={elem.pictures}
+                        alt="photo"
+                      />
                     </td>
                   </tr>
                 );

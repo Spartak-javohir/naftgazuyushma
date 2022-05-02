@@ -11,10 +11,6 @@
   margin: 0 auto;
 }
 
-img {
-  display: none;
-}
-
 .laboratory_section {
   background-image: url(./img/Фавиконка.png);
   background-position: center;
@@ -53,6 +49,10 @@ img {
   display: flex;
   width: 100%;
   margin-bottom: 50px;
+}
+
+.laboratory_section .container .text_laboratory img {
+  display: none;
 }
 
 .laboratory_section .container .text_laboratory p {

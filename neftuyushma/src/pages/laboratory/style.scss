@@ -7,9 +7,7 @@
   width: 1240px;
   margin: 0 auto;
 }
-img {
-  display: none;
-}
+
 .laboratory_section {
   background-image: url(./img/Фавиконка.png);
   //   position: fixed;
@@ -34,7 +32,9 @@ img {
       display: flex;
       width: 100%;
       margin-bottom: 50px;
-
+      img {
+        display: none;
+      }
       p {
         line-height: 40px;
         font-weight: 500;

@@ -1,9 +1,6 @@
 import Dropdawn from "../drobdawn/drobdawn";
 import React, { useState, useEffect, useRef } from "react";
 import "./test.css";
-import ReactDOM from "react-dom";
-import { Link } from "react-router-dom";
-const { render } = ReactDOM;
 
 const BurgerMenu = () => {
   const [openbm, setOpenbm] = useState(false);

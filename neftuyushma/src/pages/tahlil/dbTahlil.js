@@ -21,7 +21,7 @@ const dbTahlil = [
     time: "5+4+5",
     summ: 14,
     price: 499530.6,
-    pictures: { DMA },
+    pictures: DMA,
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const dbTahlil = [
     time: "2+3+5",
     summ: 10,
     price: 145744.5,
-    pictures: { Areometr },
+    pictures: Areometr,
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const dbTahlil = [
     time: "1+7+2",
     summ: 10,
     price: 102348.6,
-    pictures: { Formula },
+    pictures: Formula,
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const dbTahlil = [
       "800С 244335.7 ",
       "1000С 296711.8 ",
     ],
-    pictures: { Haake },
+    pictures: Haake,
   },
   {
     id: 5,
@@ -63,7 +63,7 @@ const dbTahlil = [
     time: "3+5+2",
     summ: 10,
     price: ["200С 149557.3 ", "500С 199357.4 ", "800С 247963.5 "],
-    pictures: { Vpj },
+    pictures: Vpj,
   },
   {
     id: 6,
@@ -72,7 +72,7 @@ const dbTahlil = [
     time: "15+25+15",
     summ: 55,
     price: ["gacha 2000С 247977.6", "dan 2000С -gacha 3500С 298798.4"],
-    pictures: { Englar },
+    pictures: Englar,
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ const dbTahlil = [
     time: "25+25+10",
     summ: 60,
     price: ["gacha 2000С 297895.5", "dan 2000С - gacha 3500С 345749.6"],
-    pictures: { Arn },
+    pictures: Arn,
   },
   {
     id: 8,
@@ -90,7 +90,7 @@ const dbTahlil = [
     time: "20+20+20",
     summ: 60,
     price: 799369.5,
-    pictures: { Arnlab },
+    pictures: Arnlab,
   },
   {
     id: 9,
@@ -99,7 +99,7 @@ const dbTahlil = [
     time: "10+5+5",
     summ: 20,
     price: 394668.6,
-    pictures: { Koehlar },
+    pictures: Koehlar,
   },
   {
     id: 10,
@@ -108,7 +108,7 @@ const dbTahlil = [
     time: "10+60+5",
     summ: 75,
     price: 499232.3,
-    pictures: { Spek },
+    pictures: Spek,
   },
   {
     id: 11,
@@ -117,7 +117,7 @@ const dbTahlil = [
     time: "15+25+15",
     summ: 55,
     price: 296888.7,
-    pictures: { Dina },
+    pictures: Dina,
   },
   {
     id: 12,
@@ -126,7 +126,7 @@ const dbTahlil = [
     time: "5+30+10",
     summ: 45,
     price: 249550.8,
-    pictures: { Chaqnash },
+    pictures: Chaqnash,
   },
   {
     id: 13,
@@ -135,7 +135,7 @@ const dbTahlil = [
     time: "5+15+10",
     summ: 30,
     price: 249550.8,
-    pictures: { Yopiqtigel },
+    pictures: Yopiqtigel,
   },
   {
     id: 14,
@@ -144,7 +144,7 @@ const dbTahlil = [
     time: "10+20+10",
     summ: 30,
     price: 249550.8,
-    pictures: "./img/yopiqtigel.png",
+    pictures: Astm,
   },
   {
     id: 15,
