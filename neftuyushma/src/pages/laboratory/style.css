@@ -35,6 +35,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 38px;
 }
 
 .laboratory_section .container .titel_laboratory {
@@ -51,11 +52,36 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .laboratory_section .container .text_laboratory p {
   line-height: 40px;
   font-weight: 500;
   font-size: larger;
+}
+
+@media (max-width: 395px) {
+  .laboratory_section .container .text_laboratory p {
+    line-height: 20px;
+    font-weight: 400;
+    font-size: small;
+  }
+}
+
+@media (max-width: 395px) {
+  .laboratory_section .container .text_laboratory p {
+    line-height: 15px;
+    font-weight: 400;
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 395px) {
+  .laboratory_section .container .text_laboratory p {
+    line-height: 13px;
+    font-weight: 400;
+    font-size: xx-small;
+  }
 }
 /*# sourceMappingURL=style.css.map */
