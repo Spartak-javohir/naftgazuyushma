@@ -24,4 +24,13 @@
   width: 50px;
   // display: block;
 }
-// .section_tahlil_tbody{}
+:nth-child(15) {
+  .section_tahlil_img{
+    display: none;
+  }
+}
+:nth-child(16) {
+  .section_tahlil_img{
+    display: none;
+  }
+}

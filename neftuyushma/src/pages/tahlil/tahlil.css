@@ -28,4 +28,12 @@
 .section_tahlil_img {
   width: 50px;
 }
+
+:nth-child(15) .section_tahlil_img {
+  display: none;
+}
+
+:nth-child(16) .section_tahlil_img {
+  display: none;
+}
 /*# sourceMappingURL=tahlil.css.map */

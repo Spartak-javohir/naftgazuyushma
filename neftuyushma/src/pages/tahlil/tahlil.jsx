@@ -32,7 +32,6 @@ const tahlil = () => {
             </thead>
             <tbody className="section_tahlil_tbody">
               {DbTahlil.map((elem) => {
-                console.log(elem.pictures);
                 return (
                   <tr className="section_tahlil_tbody_tr" key={elem.id}>
                     <th className="section_tahlil_tbody_th">{elem.id}</th>
