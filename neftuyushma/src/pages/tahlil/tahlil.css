@@ -36,4 +36,37 @@
 :nth-child(16) .section_tahlil_img {
   display: none;
 }
+
+.section_tahlil_tbody_name {
+  width: 30%;
+}
+
+@media (max-width: 769px) {
+  .section_tahlil_tbody_price {
+    width: 10%;
+  }
+  .section_tahlil_thead_th {
+    font-size: 12px;
+  }
+  .section_tahlil_tbody_name {
+    width: 25%;
+  }
+}
+
+@media (max-width: 540px) {
+  .section_tahlil_thead_th,
+  .section_tahlil_tbody_td {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 362px) {
+  .section_tahlil_thead_th,
+  .section_tahlil_tbody_td {
+    font-size: 8px;
+  }
+  .header_tahlil h2 {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=tahlil.css.map */

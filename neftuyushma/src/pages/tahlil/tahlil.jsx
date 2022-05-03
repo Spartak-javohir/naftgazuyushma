@@ -35,12 +35,22 @@ const tahlil = () => {
                 return (
                   <tr className="section_tahlil_tbody_tr" key={elem.id}>
                     <th className="section_tahlil_tbody_th">{elem.id}</th>
-                    <td className="section_tahlil_tbody_td">{elem.name}</td>
-                    <td className="section_tahlil_tbody_td">{elem.number}</td>
-                    <td className="section_tahlil_tbody_td">{elem.time}</td>
-                    <td className="section_tahlil_tbody_td">{elem.summ}</td>
-                    <td className="section_tahlil_tbody_td">{elem.price}</td>
-                    <td className="section_tahlil_tbody_td">
+                    <td className="section_tahlil_tbody_td section_tahlil_tbody_name ">
+                      {elem.name}
+                    </td>
+                    <td className="section_tahlil_tbody_td section_tahlil_tbody_number">
+                      {elem.number}
+                    </td>
+                    <td className="section_tahlil_tbody_td section_tahlil_tbody_time">
+                      {elem.time}
+                    </td>
+                    <td className="section_tahlil_tbody_td section_tahlil_tbody_summ">
+                      {elem.summ}
+                    </td>
+                    <td className="section_tahlil_tbody_td section_tahlil_tbody_price">
+                      {elem.price}
+                    </td>
+                    <td className="section_tahlil_tbody_td section_tahlil_tbody_pictures">
                       <img
                         className="section_tahlil_img"
                         src={elem.pictures}

@@ -17,7 +17,7 @@ const LoginOverlay = ({ removeOverlay }) => {
             removeOverlay();
           }}
         >
-          <div className="form_submit" type="sbmit">
+          <div className="form_submit" type="submit">
             <Login />
           </div>
         </form>

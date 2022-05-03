@@ -16,7 +16,7 @@ import Yopiqtigel from "./img/yopiqtigel.png";
 const dbTahlil = [
   {
     id: 1,
-    name: "200oC da DMA 1001 ixcham zichlik o'lchagich bilan yengil neft va neft mahsulotlarining zichligini aniqlash GOST R 57037-2016",
+    name: "200 C da DMA 1001 ixcham zichlik o'lchagich bilan yengil neft va neft mahsulotlarining zichligini aniqlash GOST R 57037-2016",
     number: 2,
     time: "5+4+5",
     summ: 14,
@@ -48,11 +48,11 @@ const dbTahlil = [
     time: "2+2+2",
     summ: 6,
     price: [
-      "200С 147865.4 ",
-      "400С 172880.6 ",
-      "600С 198452.3 ",
-      "800С 244335.7 ",
-      "1000С 296711.8 ",
+      "20 С 147865.4 ",
+      "40 С 172880.6 ",
+      "60 С 198452.3 ",
+      "80 С 244335.7 ",
+      "100 С 296711.8 ",
     ],
     pictures: Haake,
   },
@@ -62,7 +62,7 @@ const dbTahlil = [
     number: 3,
     time: "3+5+2",
     summ: 10,
-    price: ["200С 149557.3 ", "500С 199357.4 ", "800С 247963.5 "],
+    price: ["200 С 149557.3 ", "500 С 199357.4 ", "800 С 247963.5 "],
     pictures: Vpj,
   },
   {
@@ -71,7 +71,7 @@ const dbTahlil = [
     number: 2,
     time: "15+25+15",
     summ: 55,
-    price: ["gacha 2000С 247977.6", "dan 2000С -gacha 3500С 298798.4"],
+    price: ["gacha 200 С 247977.6", "dan 200 С -gacha 350 С 298798.4"],
     pictures: Englar,
   },
   {
@@ -80,12 +80,12 @@ const dbTahlil = [
     number: 2,
     time: "25+25+10",
     summ: 60,
-    price: ["gacha 2000С 297895.5", "dan 2000С - gacha 3500С 345749.6"],
+    price: ["gacha 200 С 297895.5", "dan 200 С - gacha 350 С 345749.6"],
     pictures: Arn,
   },
   {
     id: 8,
-    name: "ARN-LAB-11 apparatida neft va neft mahsulotlarini fraksiyalarga ajratish 0 dan 400oC gacha GOST 2177-99",
+    name: "ARN-LAB-11 apparatida neft va neft mahsulotlarini fraksiyalarga ajratish 0 dan 400 C gacha GOST 2177-99",
     number: 2,
     time: "20+20+20",
     summ: 60,
@@ -121,7 +121,7 @@ const dbTahlil = [
   },
   {
     id: 12,
-    name: "Ochiq tigelda neft van neft mahsulotlarini chaqnash haroratini aniqlash GOST 4333-2014 400oC gacha",
+    name: "Ochiq tigelda neft van neft mahsulotlarini chaqnash haroratini aniqlash GOST 4333-2014 400 C gacha",
     number: 2,
     time: "5+30+10",
     summ: 45,
@@ -130,7 +130,7 @@ const dbTahlil = [
   },
   {
     id: 13,
-    name: "Yopiq tigelda neft va neft mahsulotlarining chaqnash haroratini aniqlash GOST 6356-75 400oC gacha",
+    name: "Yopiq tigelda neft va neft mahsulotlarining chaqnash haroratini aniqlash GOST 6356-75 400 C gacha",
     number: 2,
     time: "5+15+10",
     summ: 30,
@@ -139,7 +139,7 @@ const dbTahlil = [
   },
   {
     id: 14,
-    name: "Neft va neft mahsulotlarining qotish haroratini aniqlash ASTM D6749-02 (2018) -85 oC gacha",
+    name: "Neft va neft mahsulotlarining qotish haroratini aniqlash ASTM D6749-02 (2018) -85 C gacha",
     number: 2,
     time: "10+20+10",
     summ: 30,
