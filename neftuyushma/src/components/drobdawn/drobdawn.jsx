@@ -105,7 +105,7 @@ const DropDownMenu = () => {
               Jihozlar
             </Link>
 
-            <Link to={"#"} className="dropdown-menuone__itemone">
+            <Link to={"/order"} className="dropdown-menuone__itemone">
               Buyurtma qoldirish
             </Link>
             <Link to={"#"} className="dropdown-menuone__itemone">
