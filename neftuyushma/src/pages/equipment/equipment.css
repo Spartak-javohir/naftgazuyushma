@@ -1,0 +1,16 @@
+.equipment_section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.equipment_section .left_item,
+.equipment_section .rigth_item {
+  width: 40%;
+}
+/*# sourceMappingURL=equipment.css.map */
