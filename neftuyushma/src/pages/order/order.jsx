@@ -1,9 +1,11 @@
 import Nav from "../../components/navbar/navbar";
 
 const order = () => {
-  <>
-    <Nav />
-  </>;
+  return (
+    <>
+      <Nav />
+    </>
+  );
 };
 
 export default order;

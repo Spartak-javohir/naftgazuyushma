@@ -53,7 +53,7 @@ const nav = () => {
                 Jihozlar
               </Link>
 
-              <Link to={"order"} className="link_navbar">
+              <Link to={"/order"} className="link_navbar">
                 Buyurtma qoldirish
               </Link>
               <Link to={"#"} className="link_navbar">
