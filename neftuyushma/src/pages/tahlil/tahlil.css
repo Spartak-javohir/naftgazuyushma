@@ -74,5 +74,21 @@
   .section_tahlil_tbody_name {
     width: 15%;
   }
+  .section_tahlil_img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 340px) {
+  .section_tahlil_thead_th,
+  .section_tahlil_tbody_td {
+    font-size: 6px;
+  }
+  .header_tahlil h2 {
+    font-size: 12px;
+  }
+  .section_tahlil_tbody_name {
+    width: 10%;
+  }
 }
 /*# sourceMappingURL=tahlil.css.map */
