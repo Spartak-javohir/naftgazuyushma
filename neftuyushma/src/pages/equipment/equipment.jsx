@@ -17,8 +17,8 @@ const equipment = () => {
             <li className="left_item">
               <img className="img_equipment" src={img1} alt="photo" />
               <p className="text_equipment">
-                K47900 НАСТОЛЬНЫЙ ЭЛЕМЕНТНЫЙ АНАЛИЗАТОР РЕНТГЕНО-ФЛУОРЕСЦЕНТНОЙ
-                СПЕКТРОМЕТРИИ С РАССЕИВАНИЕМ ЭНЕРГИИ ГОСТ ASTMD4294, ASTMD5059
+                K47900 Настольный элементный анализатор рентгено-флуоресцентной
+                спектрометрии с рассеиванием энергии ГОСТ ASTMD4294, ASTMD5059
               </p>
             </li>
             <li className="left_item">

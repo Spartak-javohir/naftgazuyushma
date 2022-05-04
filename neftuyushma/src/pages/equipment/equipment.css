@@ -11,7 +11,7 @@
 
 .equipment_section .left_item,
 .equipment_section .rigth_item {
-  width: 40%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
