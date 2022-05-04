@@ -1,14 +1,139 @@
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+
 .equipment_section {
   .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+}
+.left_item,
+.rigth_item {
+  width: 80%;
+  height: 335px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left_list,
+.rigth_list {
+  width: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.img_equipment {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+@media (max-width: 1240px) {
+  .img_equipment {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 995px) {
+  .img_equipment {
+    width: 160px;
+    height: 160px;
+  }
+  .text_equipment {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .equipment_section {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .left_list,
+  .rigth_list {
+    width: 80%;
+    margin-bottom: 30px;
   }
   .left_item,
   .rigth_item {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 500px;
+  }
+  .left_list,
+  .rigth_list {
+    width: 90%;
+  }
+  .left_item,
+  .rigth_item {
+    height: auto;
+  }
+}
+@media (max-width: 501px) {
+  .container {
+    width: 400px;
+  }
+}
+@media (max-width: 401px) {
+  .container {
+    width: 300px;
+  }
+  .left_list,
+  .rigth_list {
+    width: 100%;
+  }
+  .left_item,
+  .rigth_item {
+    margin: 10px;
+  }
+  .img_equipment {
+    width: 100px;
+    height: auto;
+  }
+}
+@media (max-width: 301px) {
+  .container {
+    width: 250px;
+  }
+  .left_item,
+  .rigth_item {
+    width: 100%;
+    height: 340px;
+  }
+  .left_list {
+    :nth-child(3) {
+      height: 130px;
+    }
+    :nth-child(1) {
+      height: 220px;
+    }
+  }
+  .rigth_list {
+    :nth-child(3) {
+      height: 130px;
+    }
+    :nth-child(1) {
+      height: 220px;
+    }
+  }
+  .img_equipment {
+    width: 80px;
+    height: auto;
   }
 }
