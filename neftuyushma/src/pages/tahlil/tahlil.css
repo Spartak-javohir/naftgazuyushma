@@ -68,5 +68,11 @@
   .header_tahlil h2 {
     font-size: 16px;
   }
+  .section_tahlil_tbody_th {
+    font-size: 12px;
+  }
+  .section_tahlil_tbody_name {
+    width: 15%;
+  }
 }
 /*# sourceMappingURL=tahlil.css.map */
