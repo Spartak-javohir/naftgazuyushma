@@ -101,7 +101,7 @@ const DropDownMenu = () => {
               Tahlil xizmatlari
             </Link>
 
-            <Link to={"#"} className="dropdown-menuone__itemone">
+            <Link to={"/equipment"} className="dropdown-menuone__itemone">
               Jihozlar
             </Link>
 

@@ -49,7 +49,7 @@ const nav = () => {
                 Tahlil xizmatlari
               </Link>
 
-              <Link to={"#"} className="link_navbar">
+              <Link to={"/equipment"} className="link_navbar">
                 Jihozlar
               </Link>
 
