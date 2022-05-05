@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  flex-direction: column;
 }
 .order_form {
   display: flex;
@@ -27,14 +28,23 @@
 .order_label {
   width: 100%;
   margin: 10px 0;
+  border: none;
 }
 .order_input {
   width: 100%;
   padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+  color: rgb(41, 41, 41);
 }
 .order_textarea {
   width: 100%;
   resize: vertical;
+  outline: none;
+  border-radius: 5px;
+  color: rgb(41, 41, 41);
+  padding: 10px 20px;
 }
 .order_button {
   width: 100%;
@@ -43,4 +53,9 @@
   border: none;
   background-color: rgba(11, 14, 170, 0.684);
   color: white;
+}
+
+.order_text {
+  font-size: 18px;
+  line-break: 12px;
 }

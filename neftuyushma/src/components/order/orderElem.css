@@ -27,6 +27,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .order_form {
@@ -48,16 +52,25 @@
 .order_label {
   width: 100%;
   margin: 10px 0;
+  border: none;
 }
 
 .order_input {
   width: 100%;
   padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+  color: #292929;
 }
 
 .order_textarea {
   width: 100%;
   resize: vertical;
+  outline: none;
+  border-radius: 5px;
+  color: #292929;
+  padding: 10px 20px;
 }
 
 .order_button {
@@ -67,5 +80,10 @@
   border: none;
   background-color: rgba(11, 14, 170, 0.684);
   color: white;
+}
+
+.order_text {
+  font-size: 18px;
+  line-break: 12px;
 }
 /*# sourceMappingURL=orderElem.css.map */

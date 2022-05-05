@@ -23,7 +23,7 @@ const singup = () => {
               <p className="cart__form__label__pElem">Phone number</p>
 
               <input
-                type="text"
+                type="tel"
                 placeholder="+123456789"
                 required
                 className="cart__form__label__input phone__number"

@@ -6,6 +6,7 @@ const orderElem = () => {
       <section className="order_section">
         <div className="container">
           <div className="order_card">
+            <p className="order_text">Buyurtma berish</p>
             <form action="" className="order_form">
               <label htmlFor="" className="order_label">
                 <input
@@ -34,7 +35,7 @@ const orderElem = () => {
               <label htmlFor="" className="order_label">
                 <textarea
                   className=" order_textarea"
-                  rows={3}
+                  rows={4}
                   placeholder="additional information"
                   type="select"
                 />
