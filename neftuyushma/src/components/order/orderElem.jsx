@@ -1,3 +1,5 @@
+import "./orderElem.css";
+
 const orderElem = () => {
   return (
     <>
@@ -6,19 +8,39 @@ const orderElem = () => {
           <div className="order_card">
             <form action="" className="order_form">
               <label htmlFor="" className="order_label">
-                <input placeholder="name and surname" required type="text" />
+                <input
+                  className="order_input"
+                  placeholder="name and surname"
+                  required
+                  type="text"
+                />
               </label>
               <label htmlFor="" className="order_label">
-                <input placeholder="phone number" required type="tel" />
+                <input
+                  className="order_input"
+                  placeholder="phone number"
+                  required
+                  type="tel"
+                />
               </label>
               <label htmlFor="" className="order_label">
-                <input placeholder="email" required type="email" />
+                <input
+                  className="order_input"
+                  placeholder="email"
+                  required
+                  type="email"
+                />
               </label>
               <label htmlFor="" className="order_label">
-                <input required type="select" />
+                <textarea
+                  className=" order_textarea"
+                  rows={3}
+                  placeholder="additional information"
+                  type="select"
+                />
               </label>
               <label htmlFor="" className="order_label">
-                <button>yuborish</button>
+                <button className="order_button">yuborish</button>
               </label>
             </form>
           </div>
