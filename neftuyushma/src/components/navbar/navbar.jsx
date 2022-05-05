@@ -56,9 +56,6 @@ const nav = () => {
               <Link to={"/order"} className="link_navbar">
                 Buyurtma qoldirish
               </Link>
-              <Link to={"#"} className="link_navbar">
-                Bog'lanish
-              </Link>
             </div>
           </div>
           <div className="drListThree list_items">
@@ -84,9 +81,6 @@ const nav = () => {
               </Link>
               <Link to={"#"} className="link_navbar">
                 Maqola yuborish
-              </Link>
-              <Link to={"#"} className="link_navbar">
-                Bog'lanish
               </Link>
             </div>
           </div>

@@ -85,7 +85,7 @@ const ijtimoiy = () => {
         </li>
         <li className="tlg_item">
           <div className="ijtimoiy_haed_tlg card_head">
-            <img src={tlg} alt="icon" />
+            {/* <img src={tlg} alt="icon" /> */}
             <svg
               version="1.0"
               id="Layer_1"

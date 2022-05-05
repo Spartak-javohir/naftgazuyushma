@@ -108,9 +108,6 @@ const DropDownMenu = () => {
             <Link to={"/order"} className="dropdown-menuone__itemone">
               Buyurtma qoldirish
             </Link>
-            <Link to={"#"} className="dropdown-menuone__itemone">
-              Bog'lanish
-            </Link>
           </ul>
         )}
       </div>
@@ -144,9 +141,6 @@ const DropDownMenu = () => {
             </Link>
             <Link to={"#"} className="dropdown-menutwo__itemtwo">
               Maqola yuborish
-            </Link>
-            <Link to={"#"} className="dropdown-menutwo__itemtwo">
-              Bog'lanish
             </Link>
           </ul>
         )}
