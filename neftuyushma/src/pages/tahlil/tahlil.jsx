@@ -1,5 +1,5 @@
 import Nav from "../../components/navbar/navbar";
-import DbTahlil from "./dbTahlil";
+import DbTahlil from "../../db/dbTahlil";
 import "./tahlil.css";
 
 const tahlil = () => {

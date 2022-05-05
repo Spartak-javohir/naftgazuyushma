@@ -1,5 +1,5 @@
 import "./orderElem.css";
-
+import DB from "../../db/dbTahlil";
 const orderElem = () => {
   return (
     <>
@@ -31,6 +31,26 @@ const orderElem = () => {
                   required
                   type="email"
                 />
+              </label>
+              <label htmlFor="" className="order_label">
+                <select
+                  className="order_select"
+                  name="xizmat"
+                  size={5}
+                  multiple
+                  id=""
+                >
+                  <option className="order_option " value="active">
+                    xizmatlar
+                  </option>
+                  {DB.map((e) => {
+                    return (
+                      <option className="order_option" value={e.id}>
+                        {e.name}
+                      </option>
+                    );
+                  })}
+                </select>
               </label>
               <label htmlFor="" className="order_label">
                 <textarea

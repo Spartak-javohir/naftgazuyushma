@@ -48,7 +48,7 @@
 }
 .order_button {
   width: 100%;
-  padding: 5px 0;
+  padding: 5px;
   outline: none;
   border: none;
   background-color: rgba(11, 14, 170, 0.684);
@@ -57,5 +57,13 @@
 
 .order_text {
   font-size: 18px;
-  line-break: 12px;
+}
+.order_select {
+  width: 100%;
+}
+.order_option {
+  box-sizing: border-box;
+  border: 1px solid blue;
+  padding: 2px 0;
+  width: 95%;
 }
