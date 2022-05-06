@@ -1,0 +1,16 @@
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+// .library_section {
+// }
+.library_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.library_item {
+  width: 20%;
+  padding: 5px;
+}
