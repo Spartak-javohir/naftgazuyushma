@@ -88,7 +88,7 @@ const nav = () => {
             Onlayn o'quv kurslari
           </Link> */}
 
-          <Link className="list_items link_navbar" to={"/librarey"}>
+          <Link className="list_items link_navbar" to={"/library"}>
             Neft-gaz elektron kutubxonasi
           </Link>
           <div>

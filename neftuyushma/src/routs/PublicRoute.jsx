@@ -14,6 +14,7 @@ import LaborInfo from "../pages/laboratory/laboratory";
 import Tahlil from "../pages/tahlil/tahlil";
 import Equipment from "../pages/equipment/equipment";
 import Order from "../pages/order/order";
+import Library from "../pages/librarey/librariy";
 
 export default function PublicRoute(props) {
   // const [token] = useAuth();
@@ -38,6 +39,7 @@ export default function PublicRoute(props) {
       <Route path="/tahlil" element={<Tahlil />} />
       <Route path="/equipment" element={<Equipment />} />
       <Route path="/order" element={<Order />} />
+      <Route path="/library" element={<Library />} />
     </Routes>
   );
 }

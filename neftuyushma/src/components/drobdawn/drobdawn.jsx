@@ -148,7 +148,7 @@ const DropDownMenu = () => {
       <Link className=" bm-linkone" to={"/corses"}>
         Onlayn o'quv kurslari
       </Link> */}
-      <Link className=" bm-link" to={"/librarey"}>
+      <Link className=" bm-link" to={"/library"}>
         Neft-gaz elektron kutubxonasi
       </Link>
     </section>
