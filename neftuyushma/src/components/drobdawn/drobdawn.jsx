@@ -111,7 +111,7 @@ const DropDownMenu = () => {
           </ul>
         )}
       </div>
-      <div className="dropdown_containertwo" ref={handleClickOutsidetwo}>
+      {/* <div className="dropdown_containertwo" ref={handleClickOutsidetwo}>
         <button
           type="button"
           className="buttontwo"
@@ -147,7 +147,7 @@ const DropDownMenu = () => {
       </div>
       <Link className=" bm-linkone" to={"/corses"}>
         Onlayn o'quv kurslari
-      </Link>
+      </Link> */}
       <Link className=" bm-link" to={"/librarey"}>
         Neft-gaz elektron kutubxonasi
       </Link>

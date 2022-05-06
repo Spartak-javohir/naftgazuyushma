@@ -58,7 +58,7 @@ const nav = () => {
               </Link>
             </div>
           </div>
-          <div className="drListThree list_items">
+          {/* <div className="drListThree list_items">
             Ilmiy-texnikaviy jurnal
             <div className="drItemThree">
               <Link to={"#"} className="link_navbar">
@@ -86,7 +86,7 @@ const nav = () => {
           </div>
           <Link className="list_items link_navbar" to={"/corses"}>
             Onlayn o'quv kurslari
-          </Link>
+          </Link> */}
 
           <Link className="list_items link_navbar" to={"/librarey"}>
             Neft-gaz elektron kutubxonasi
