@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
+import SingUpService from "../../servise/SingUpService";
 import "./singup.css";
 
 const singup = () => {
+  const GetSingUp = async () => {
+    let result = await SingUpService.GetSinUp();
+    // console.log(result);
+  };
+  const GetCountries = async () => {
+    let result = await SingUpService.GetAllRegions();
+    console.log(result);
+  };
   return (
     <section className="login__section">
       <div className="container">
