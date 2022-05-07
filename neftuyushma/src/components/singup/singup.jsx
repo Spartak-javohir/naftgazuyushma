@@ -1,16 +1,32 @@
 import { Link } from "react-router-dom";
 import SingUpService from "../../servise/SingUpService";
 import "./singup.css";
+import React from "react";
 
 const singup = () => {
   const GetSingUp = async () => {
     let result = await SingUpService.GetSinUp();
     // console.log(result);
   };
-  const GetCountries = async () => {
+  const getCountries = async () => {
     let result = await SingUpService.GetAllRegions();
-    console.log(result);
+    // console.log(result);
   };
+
+  getCountries();
+
+  // React.useEffect(() => {
+  //   getCountries;
+  // });
+  const submit = (event) => {
+    event.preventDefault();
+    const name = event?.target[0]?.value;
+    const phone = event?.target[1]?.value;
+    const email = event?.target[2]?.value;
+    const password = event?.target[3]?.value;
+    console.log(email);
+  };
+
   return (
     <section className="login__section">
       <div className="container">
@@ -18,7 +34,7 @@ const singup = () => {
           <nav>
             <h2 className="navbar__titel">Sing Up</h2>
           </nav>
-          <form action="" className="cart__form">
+          <form action="" className="cart__form" onSubmit={submit}>
             <label for="" className="cart__form__label">
               <p className="cart__form__label__pElem">User name</p>
               <input
