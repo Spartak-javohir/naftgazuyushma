@@ -18,13 +18,14 @@ const singup = () => {
   // React.useEffect(() => {
   //   getCountries;
   // });
-  const submit = (event) => {
+  const submit = async (event) => {
     event.preventDefault();
     const name = event?.target[0]?.value;
     const phone = event?.target[1]?.value;
     const email = event?.target[2]?.value;
     const password = event?.target[3]?.value;
-    console.log(email);
+    let result = await SingUpService.GetSinUp(name, phone, email, password);
+    console.log(result);
   };
 
   return (
