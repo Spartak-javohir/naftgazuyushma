@@ -1,8 +1,7 @@
-// import { useAuth } from "../contexts/AuthContext";
-import { Route, Routes } from "react-router-dom";
+import { useAuth } from "../servise/context/AuthContext";
+import { Route, Routes, Redirect } from "react-router-dom";
 import { AuthProvider } from "../servise/context/AuthContext";
 import Login from "../components/login/login";
-import Home from "../pages/home/home";
 import Singup from "../components/singup/singup";
 import Contact from "../pages/contacts/contact";
 import Info from "../pages/info/omarkaz";
@@ -18,11 +17,11 @@ import Order from "../pages/order/order";
 import Library from "../pages/librarey/librariy";
 
 export default function PublicRoute(props) {
-  // const [token] = useAuth();
+  const [token] = useAuth();
 
-  // if (token) {
-  // 	return <Redirect to="/" />;
-  // }
+  if (token) {
+    return <Redirect to="/" />;
+  }
 
   return (
     <AuthProvider>
