@@ -1,5 +1,5 @@
 import { useAuth } from "../servise/context/AuthContext";
-import { Route, Routes, Redirect } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { AuthProvider } from "../servise/context/AuthContext";
 import Login from "../components/login/login";
 import Singup from "../components/singup/singup";
@@ -20,13 +20,17 @@ export default function PublicRoute(props) {
   const [token] = useAuth();
 
   if (token) {
-    return <Redirect to="/" />;
+    return (
+      <Routes>
+        <Route path="/" element={<Navigate to="/" />} />;
+      </Routes>
+    );
   }
 
   return (
     <AuthProvider>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
         <Route path="/register" element={<Singup />} />
         <Route path="/" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
