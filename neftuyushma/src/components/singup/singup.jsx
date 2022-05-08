@@ -2,30 +2,20 @@ import { Link } from "react-router-dom";
 import SingUpService from "../../servise/SingUpService";
 import "./singup.css";
 import React from "react";
+import { useAuth } from "../../servise/context/AuthContext";
 
 const singup = () => {
-  const GetSingUp = async () => {
-    let result = await SingUpService.GetSinUp();
-    // console.log(result);
-  };
-  const getCountries = async () => {
-    let result = await SingUpService.GetAllRegions();
-    // console.log(result);
-  };
+  const [token, setToken] = useAuth();
 
-  getCountries();
-
-  // React.useEffect(() => {
-  //   getCountries;
-  // });
   const submit = async (event) => {
     event.preventDefault();
     const name = event?.target[0]?.value;
     const phone = event?.target[1]?.value;
     const email = event?.target[2]?.value;
     const password = event?.target[3]?.value;
-    let result = await SingUpService.GetSinUp(name, phone, email, password);
+    let result = await SingUpService.PostSinUp(name, phone, email, password);
     console.log(result);
+    if (result.data.token) setToken(result.data.token);
   };
 
   return (
@@ -41,6 +31,7 @@ const singup = () => {
               <input
                 type="text"
                 placeholder="name"
+                name="name"
                 required
                 className="cart__form__label__input"
               />
@@ -52,6 +43,7 @@ const singup = () => {
                 type="tel"
                 placeholder="+123456789"
                 required
+                name="phone"
                 className="cart__form__label__input phone__number"
               />
             </label>

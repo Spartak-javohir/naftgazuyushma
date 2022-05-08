@@ -1,5 +1,6 @@
 // import { useAuth } from "../contexts/AuthContext";
 import { Route, Routes } from "react-router-dom";
+import { AuthProvider } from "../servise/context/AuthContext";
 import Login from "../components/login/login";
 import Home from "../pages/home/home";
 import Singup from "../components/singup/singup";
@@ -24,22 +25,24 @@ export default function PublicRoute(props) {
   // }
 
   return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Singup />} />
-      <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/info" element={<Info />} />
-      <Route path="/corses" element={<Corses />} />
-      <Route path="/rah" element={<Rah />} />
-      <Route path="/consultants" element={<Consultants />} />
-      <Route path="/staff" element={<Staff />} />
-      <Route path="/burger" element={<Burger />} />
-      <Route path="/laboratoryInfo" element={<LaborInfo />} />
-      <Route path="/tahlil" element={<Tahlil />} />
-      <Route path="/equipment" element={<Equipment />} />
-      <Route path="/order" element={<Order />} />
-      <Route path="/library" element={<Library />} />
-    </Routes>
+    <AuthProvider>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Singup />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/info" element={<Info />} />
+        <Route path="/corses" element={<Corses />} />
+        <Route path="/rah" element={<Rah />} />
+        <Route path="/consultants" element={<Consultants />} />
+        <Route path="/staff" element={<Staff />} />
+        <Route path="/burger" element={<Burger />} />
+        <Route path="/laboratoryInfo" element={<LaborInfo />} />
+        <Route path="/tahlil" element={<Tahlil />} />
+        <Route path="/equipment" element={<Equipment />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/library" element={<Library />} />
+      </Routes>
+    </AuthProvider>
   );
 }
