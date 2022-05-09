@@ -16,37 +16,39 @@ import Order from "../pages/order/order";
 import Library from "../pages/librarey/librariy";
 
 export default function PublicRoute() {
-  // const [token, setToken] = UseAuth();
+  const [token, setToken] = UseAuth();
 
-  // if (token) {
-  //   return (
-  //     <Routes>
-  //       <Route path="" element={<Navigate to="/" />} />;
-  //     </Routes>
-  //   );
-  // }
+  if (token) {
+    return (
+      <Routes>
+        <Route path="" element={<Navigate to="/" />} />;
+      </Routes>
+    );
+  }
 
   return (
-    // <AuthProvider>
-    // <BrowserRouter>
-    <Routes>
-      {/* <Route path="/login" element={<Login />} /> */}
-      <Route path="/register" element={<Singup />} />
-      <Route path="/" element={<Login />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/info" element={<Info />} />
-      <Route path="/corses" element={<Corses />} />
-      <Route path="/rah" element={<Rah />} />
-      <Route path="/consultants" element={<Consultants />} />
-      <Route path="/staff" element={<Staff />} />
-      <Route path="/burger" element={<Burger />} />
-      <Route path="/laboratoryInfo" element={<LaborInfo />} />
-      <Route path="/tahlil" element={<Tahlil />} />
-      <Route path="/equipment" element={<Equipment />} />
-      <Route path="/order" element={<Order />} />
-      <Route path="/library" element={<Library />} />
-    </Routes>
-    // </BrowserRouter>
-    // </AuthProvider>
+    <AuthProvider>
+      //{" "}
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/register" element={<Singup />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/corses" element={<Corses />} />
+          <Route path="/rah" element={<Rah />} />
+          <Route path="/consultants" element={<Consultants />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/burger" element={<Burger />} />
+          <Route path="/laboratoryInfo" element={<LaborInfo />} />
+          <Route path="/tahlil" element={<Tahlil />} />
+          <Route path="/equipment" element={<Equipment />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/library" element={<Library />} />
+        </Routes>
+        //{" "}
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
