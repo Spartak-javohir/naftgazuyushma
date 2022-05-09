@@ -1,6 +1,6 @@
-import React from "react";
+import React, { createContext } from "react";
 
-const AuthContext = React.createContext();
+const AuthContext = createContext("");
 
 export default AuthContext;
 
@@ -24,8 +24,7 @@ export function AuthProvider({ children }) {
   );
 }
 
-export function Auth(e) {
+export function UseAuth(e) {
   const { token, setToken } = React.useContext(AuthContext);
-
   return [token, setToken];
 }

@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import SingUpService from "../../servise/SingUpService";
 import "./singup.css";
 import React from "react";
-import { Auth } from "../../servise/context/AuthContext";
+import { UseAuth } from "../../servise/context/AuthContext";
 
 const singup = () => {
-  const [token, setToken] = Auth();
-  // console.log(token);
+  // const AuthContext = React.createContext();
+  // console.log(AuthContext);
+  const [token, setToken] = UseAuth();
+  console.log(token);
   const submit = async (event) => {
     event.preventDefault();
     const name = event?.target[0]?.value;
@@ -14,7 +16,7 @@ const singup = () => {
     const email = event?.target[2]?.value;
     const password = event?.target[3]?.value;
     let result = await SingUpService.PostSinUp(name, phone, email, password);
-    if (result.data.token) setToken(result.data.token);
+    // if (result.data.token) setToken(result.data.token);
   };
 
   return (
@@ -35,7 +37,7 @@ const singup = () => {
                 className="cart__form__label__input"
               />
             </label>
-            <label for="" className="cart__form__label">
+            <label className="cart__form__label">
               <p className="cart__form__label__pElem">Phone number</p>
 
               <input
