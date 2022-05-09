@@ -24,7 +24,7 @@ export function AuthProvider({ children }) {
   );
 }
 
-export function useAuth(e) {
+export function Auth(e) {
   const { token, setToken } = React.useContext(AuthContext);
 
   return [token, setToken];

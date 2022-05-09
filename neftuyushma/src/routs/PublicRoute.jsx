@@ -1,6 +1,5 @@
-import { useAuth } from "../servise/context/AuthContext";
-import { Route, Routes, Navigate } from "react-router-dom";
-import { AuthProvider } from "../servise/context/AuthContext";
+import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
+import { AuthProvider, Auth } from "../servise/context/AuthContext";
 import Login from "../components/login/login";
 import Singup from "../components/singup/singup";
 import Contact from "../pages/contacts/contact";
@@ -16,36 +15,38 @@ import Equipment from "../pages/equipment/equipment";
 import Order from "../pages/order/order";
 import Library from "../pages/librarey/librariy";
 
-export default function PublicRoute(props) {
-  const [token] = useAuth();
+export default function PublicRoute() {
+  const [token] = Auth();
 
   if (token) {
     return (
       <Routes>
-        <Route path="/" element={<Navigate to="/" />} />;
+        <Route path="" element={<Navigate to="/" />} />;
       </Routes>
     );
   }
 
   return (
     <AuthProvider>
-      <Routes>
-        {/* <Route path="/login" element={<Login />} /> */}
-        <Route path="/register" element={<Singup />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/info" element={<Info />} />
-        <Route path="/corses" element={<Corses />} />
-        <Route path="/rah" element={<Rah />} />
-        <Route path="/consultants" element={<Consultants />} />
-        <Route path="/staff" element={<Staff />} />
-        <Route path="/burger" element={<Burger />} />
-        <Route path="/laboratoryInfo" element={<LaborInfo />} />
-        <Route path="/tahlil" element={<Tahlil />} />
-        <Route path="/equipment" element={<Equipment />} />
-        <Route path="/order" element={<Order />} />
-        <Route path="/library" element={<Library />} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/register" element={<Singup />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/corses" element={<Corses />} />
+          <Route path="/rah" element={<Rah />} />
+          <Route path="/consultants" element={<Consultants />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/burger" element={<Burger />} />
+          <Route path="/laboratoryInfo" element={<LaborInfo />} />
+          <Route path="/tahlil" element={<Tahlil />} />
+          <Route path="/equipment" element={<Equipment />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/library" element={<Library />} />
+        </Routes>
+      </BrowserRouter>
     </AuthProvider>
   );
 }

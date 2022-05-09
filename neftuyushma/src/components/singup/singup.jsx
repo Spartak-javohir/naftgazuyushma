@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import SingUpService from "../../servise/SingUpService";
 import "./singup.css";
 import React from "react";
-import { useAuth } from "../../servise/context/AuthContext";
+import { Auth } from "../../servise/context/AuthContext";
 
 const singup = () => {
-  const [token, setToken] = useAuth();
-
+  const [token, setToken] = Auth();
+  // console.log(token);
   const submit = async (event) => {
     event.preventDefault();
     const name = event?.target[0]?.value;
@@ -14,7 +14,6 @@ const singup = () => {
     const email = event?.target[2]?.value;
     const password = event?.target[3]?.value;
     let result = await SingUpService.PostSinUp(name, phone, email, password);
-    console.log(result);
     if (result.data.token) setToken(result.data.token);
   };
 
