@@ -2,7 +2,7 @@ import { Auth } from "../context/AuthContext";
 import { Route, Redirect } from "react-router-dom";
 
 export default function ProtectedRoute(props) {
-  const [token] = Auth();
+  const [token, setToken] = Auth();
 
   if (!token) {
     return (

@@ -16,7 +16,7 @@ import Order from "../pages/order/order";
 import Library from "../pages/librarey/librariy";
 
 export default function PublicRoute() {
-  const [token] = Auth();
+  const [token, setToken] = Auth();
 
   if (token) {
     return (
