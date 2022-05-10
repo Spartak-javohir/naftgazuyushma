@@ -2,9 +2,10 @@ import constantes from "./constants/constantes";
 
 export default class SingUpService {
   static async PostSinUp(name, phone, email, password) {
-    let resp = await fetch("http://localhost:8888/v1/users/account", {
+    let resp = await fetch(constantes.API_URL + "v1/users/account", {
       method: "POST",
       headers: {
+        "Accept": "application/json",
         "Content-Type": "applecation/json",
       },
       body: JSON.stringify({
@@ -14,9 +15,8 @@ export default class SingUpService {
         user_password: password,
       }),
     });
-    console.log(resp);
     resp = await resp.json();
-    console.log(resp);
+    // console.log(resp);
     return resp;
   }
 }
