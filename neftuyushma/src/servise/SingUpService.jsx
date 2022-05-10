@@ -6,7 +6,7 @@ export default class SingUpService {
       method: "POST",
       headers: {
         "Accept": "application/json",
-        "Content-Type": "applecation/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         user_name: name,
