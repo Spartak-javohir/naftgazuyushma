@@ -5,18 +5,16 @@ import React from "react";
 import { UseAuth } from "../../servise/context/AuthContext";
 
 const singup = () => {
-  // const AuthContext = React.createContext();
-  // console.log(AuthContext);
   const [token, setToken] = UseAuth();
-  console.log(token);
   const submit = async (event) => {
     event.preventDefault();
     const name = event?.target[0]?.value;
     const phone = event?.target[1]?.value;
     const email = event?.target[2]?.value;
     const password = event?.target[3]?.value;
+    // console.log(name, phone, email, password);
     let result = await SingUpService.PostSinUp(name, phone, email, password);
-    // if (result.data.token) setToken(result.data.token);
+    if (result.data.token) setToken(result.data.token);
   };
 
   return (
