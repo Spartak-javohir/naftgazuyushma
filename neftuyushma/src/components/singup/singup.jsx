@@ -6,7 +6,7 @@ import { UseAuth } from "../../servise/context/AuthContext";
 
 const singup = () => {
   const [token, setToken] = UseAuth();
-console.log(token)
+// console.log(token)
 
   const submit = async (event) => {
     event.preventDefault();

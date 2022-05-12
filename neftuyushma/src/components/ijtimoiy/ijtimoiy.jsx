@@ -1,7 +1,4 @@
 import "./ijtimoiy.css";
-import tel from "./img/tel.svg";
-import emailimg from "./img/emailimg.svg";
-import tlg from "./img/tlg.svg";
 import { Link } from "react-router-dom";
 
 const ijtimoiy = () => {
