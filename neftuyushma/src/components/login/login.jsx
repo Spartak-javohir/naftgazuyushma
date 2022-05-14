@@ -1,7 +1,21 @@
 import { Link } from "react-router-dom";
+import {UseAuthe} from "../../servise/context/AuthContext"
+import LoginingService from "../../servise/SingUpService";
 
 import "./login.css";
 const login = () => {
+const [token, setToken] = UseAuthe()
+
+let submit =async (e)=>{
+  e.preventDefault();
+    const email = e?.target[0]?.value;
+    const password = e?.target[1]?.value;
+    console.log( email, password);
+    let result = await LoginingService.PostSinIn(email, password);
+    if (result.data.token) setToken(result.data.token);
+
+}
+
   return (
     <>
       <section className="login__section">
@@ -10,7 +24,7 @@ const login = () => {
             <nav>
               <h2 className="navbar__titel">Login</h2>
             </nav>
-            <form action="" className="cart__form">
+            <form action="" onSubmit={submit()} className="cart__form">
               <label for="" className="cart__form__label">
                 <input
                   type="email"
