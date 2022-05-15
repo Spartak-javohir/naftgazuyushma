@@ -28,7 +28,6 @@ export default function PublicRoute() {
 
   return (
     <AuthProvider>
-      //{" "}
       <BrowserRouter>
         <Routes>
           {/* <Route path="/login" element={<Login />} /> */}
@@ -47,7 +46,6 @@ export default function PublicRoute() {
           <Route path="/order" element={<Order />} />
           <Route path="/library" element={<Library />} />
         </Routes>
-        //{" "}
       </BrowserRouter>
     </AuthProvider>
   );

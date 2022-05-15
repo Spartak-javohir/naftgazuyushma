@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import {UseAuthe} from "../../servise/context/AuthContext"
+import {UseAuth} from "../../servise/context/AuthContext"
 import LoginingService from "../../servise/SingUpService";
 
 import "./login.css";
 const login = () => {
-const [token, setToken] = UseAuthe()
+const [token, setToken] = UseAuth()
 
 let submit =async (e)=>{
-  e.preventDefault();
+  e.preventDefault()
     const email = e?.target[0]?.value;
     const password = e?.target[1]?.value;
     console.log( email, password);
@@ -24,7 +24,7 @@ let submit =async (e)=>{
             <nav>
               <h2 className="navbar__titel">Login</h2>
             </nav>
-            <form action="" onSubmit={submit()} className="cart__form">
+            <form action="" onSubmit={submit} className="cart__form">
               <label for="" className="cart__form__label">
                 <input
                   type="email"
