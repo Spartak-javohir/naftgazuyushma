@@ -31,43 +31,36 @@ import Library from "../pages/librarey/librariy";
 
 export default function PublicRoute() {
   const [token, setToken] = UseAuth();
-  const options = {
-    // you can also just use 'bottom center'
-    position: positions.BOTTOM_CENTER,
-    timeout: 5000,
-    offset: "30px",
-    // you can also just use 'scale'
-    transition: transitions.SCALE,
-  };
-  const App = () => {
-    const alert = useAlert();
+  // const options = {
+  //   // you can also just use 'bottom center'
+  //   position: positions.BOTTOM_CENTER,
+  //   timeout: 1000,
+  //   offset: "30px",
+  //   // you can also just use 'scale'
+  //   transition: transitions.SCALE,
+  // };
+  // const App = () => {
+  //   const alert = useAlert();
 
-    return (
-      <button
-        onClick={() => {
-          alert.show("Oh look, an alert!");
-        }}
-      >
-        Show Alert
-      </button>
-    );
-  };
+  //   return alert.show("Oh look, an alert!");
+  // };
   if (token) {
-    return <Navigate replace={true} to="/home" />;
+    return <Navigate replace={true} to="/login" />;
   }
-  if (token) {
-    return (
-      <Routes>
-        <Route path="/corses" element={<Corses />} />
-      </Routes>
-    );
-  } else {
-    const Root = () => (
-      <AlertProvider template={AlertTemplate} {...options}>
-        <App />
-      </AlertProvider>
-    );
-  }
+  // if (token) {
+  //   return (
+  //     <Routes>
+  //       <Route path="/corses" element={<Corses />} />
+  //     </Routes>
+  //   );
+  // } else {
+  //   render(() => (
+  //     <AlertProvider template={AlertTemplate} {...options}>
+  //       <App />
+  //     </AlertProvider>
+  //   ));
+  //   // render(<Root />, document.getElementById("root"));
+  // }
 
   return (
     <AuthProvider>
@@ -77,11 +70,11 @@ export default function PublicRoute() {
           <Route path="/register" element={<Singup />} />
           {/* <Route path="/" element={<Login />} /> */}
           <Route path="/contact" element={<Contact />} />
-          <Route path="/info" element={<Info />} />
+          <Route path="/" element={<Info />} />
           <Route path="/rah" element={<Rah />} />
           <Route path="/consultants" element={<Consultants />} />
           <Route path="/staff" element={<Staff />} />
-          <Route path="/burger" element={<Burger />} />
+          {/* <Route path="/burger" element={<Burger />} /> */}
           <Route path="/laboratoryInfo" element={<LaborInfo />} />
           <Route path="/tahlil" element={<Tahlil />} />
           <Route path="/equipment" element={<Equipment />} />

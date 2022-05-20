@@ -65,7 +65,7 @@ const DropDownMenu = () => {
         </button>
         {open && (
           <ul className="dropdown-wrapper dropdown-menu">
-            <Link to={"/info"} className="dropdown-menu__item">
+            <Link to={"/"} className="dropdown-menu__item">
               Markaz haqida
             </Link>
             <Link to={"/rah"} className="dropdown-menu__item">

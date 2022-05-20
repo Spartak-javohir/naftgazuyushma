@@ -10,13 +10,13 @@ const nav = () => {
     <section className="navbar">
       <div className="container">
         <div className="list">
-          <Link className="logo_link_img" to="/info">
+          <Link className="logo_link_img" to="/">
             <img className="logotip" src={logo} alt="logo" />
           </Link>
           <div className="drListOne list_items">
             Umumiy ma'lumotlar
             <div className="drItemOne">
-              <Link to={"/info"} className="link_navbar">
+              <Link to={"/"} className="link_navbar">
                 Markaz haqida
               </Link>
 

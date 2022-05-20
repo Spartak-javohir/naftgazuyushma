@@ -10,17 +10,17 @@ const LoginOverlay = ({ removeOverlay }) => {
   return (
     <div className="overlay_background" onClick={(e) => removeOverlay()}>
       <div className="overlay_card" onClick={(e) => stopProp(e)}>
-        <form
+        <div
           className="modal__form"
           onSubmit={(e) => {
             e.preventDefault();
             removeOverlay();
           }}
         >
-          <div className="form_submit" type="submit">
+          <div className="form_submit">
             <Login />
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );
