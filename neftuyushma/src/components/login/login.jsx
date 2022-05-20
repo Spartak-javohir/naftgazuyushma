@@ -19,7 +19,7 @@ let submit =async (e)=>{
 
   return (
     <>
-    <Nav/>
+    <Nav />
       <section className="login__section">
         <div className="container">
           <div className="cart">

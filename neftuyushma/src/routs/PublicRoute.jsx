@@ -20,12 +20,9 @@ export default function PublicRoute() {
 
   if (token) {
     return (
-      <Router>
-      <Routes>
-        {/* <Route path="/home" element={<Home />} /> */}
-        <Route path="/register" element={<Navigate replace to="/home" />} />
-      </Routes>
-    </Router>
+      
+        <Navigate replace={true} to="/home" />
+      
     );
   }
 
