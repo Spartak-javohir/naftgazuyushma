@@ -1,4 +1,18 @@
-import { Route, Routes,Router, BrowserRouter, Navigate } from "react-router-dom";
+import {
+  Route,
+  Routes,
+  Router,
+  BrowserRouter,
+  Navigate,
+} from "react-router-dom";
+import { render } from "react-dom";
+import {
+  transitions,
+  useAlert,
+  positions,
+  Provider as AlertProvider,
+} from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 import { AuthProvider, UseAuth } from "../servise/context/AuthContext";
 import Login from "../components/login/login";
 import Singup from "../components/singup/singup";
@@ -17,12 +31,41 @@ import Library from "../pages/librarey/librariy";
 
 export default function PublicRoute() {
   const [token, setToken] = UseAuth();
+  const options = {
+    // you can also just use 'bottom center'
+    position: positions.BOTTOM_CENTER,
+    timeout: 5000,
+    offset: "30px",
+    // you can also just use 'scale'
+    transition: transitions.SCALE,
+  };
+  const App = () => {
+    const alert = useAlert();
 
+    return (
+      <button
+        onClick={() => {
+          alert.show("Oh look, an alert!");
+        }}
+      >
+        Show Alert
+      </button>
+    );
+  };
+  if (token) {
+    return <Navigate replace={true} to="/home" />;
+  }
   if (token) {
     return (
-      
-        <Navigate replace={true} to="/home" />
-      
+      <Routes>
+        <Route path="/corses" element={<Corses />} />
+      </Routes>
+    );
+  } else {
+    const Root = () => (
+      <AlertProvider template={AlertTemplate} {...options}>
+        <App />
+      </AlertProvider>
     );
   }
 
@@ -30,12 +73,11 @@ export default function PublicRoute() {
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Singup />} />
-          <Route path="/" element={<Login />} />
+          {/* <Route path="/" element={<Login />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/info" element={<Info />} />
-          <Route path="/corses" element={<Corses />} />
           <Route path="/rah" element={<Rah />} />
           <Route path="/consultants" element={<Consultants />} />
           <Route path="/staff" element={<Staff />} />
