@@ -5,7 +5,7 @@ import LoginingService from "../../servise/SingUpService";
 import "./login.css";
 const login = () => {
 const [token, setToken] = UseAuth()
-
+console.log(token);
 let submit =async (e)=>{
   e.preventDefault()
     const email = e?.target[0]?.value;

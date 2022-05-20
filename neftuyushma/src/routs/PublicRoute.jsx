@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
+import { Route, Routes,Router, BrowserRouter, Navigate } from "react-router-dom";
 import { AuthProvider, UseAuth } from "../servise/context/AuthContext";
 import Login from "../components/login/login";
 import Singup from "../components/singup/singup";
@@ -20,9 +20,12 @@ export default function PublicRoute() {
 
   if (token) {
     return (
+      <Router>
       <Routes>
-        <Route path="" element={<Navigate to="/" />} />;
+        {/* <Route path="/home" element={<Home />} /> */}
+        <Route path="/register" element={<Navigate replace to="/home" />} />
       </Routes>
+    </Router>
     );
   }
 
