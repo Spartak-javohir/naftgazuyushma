@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import {UseAuth} from "../../servise/context/AuthContext"
 import LoginingService from "../../servise/SingUpService";
 import Nav from "../navbar/navbar";
-
 import "./login.css";
+
 const login = () => {
 const [token, setToken] = UseAuth()
 // console.log(token);
@@ -19,7 +19,7 @@ let submit =async (e)=>{
 
   return (
     <>
-    <Nav />
+    {/* <Nav /> */}
       <section className="login__section">
         <div className="container">
           <div className="cart">
