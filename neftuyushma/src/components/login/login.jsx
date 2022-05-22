@@ -8,13 +8,18 @@ const login = () => {
   const [token, setToken] = UseAuth();
   // console.log(token);
   let submit = async (e) => {
-    e.preventDefault();
-    const email = e?.target[0]?.value;
-    const password = e?.target[1]?.value;
-    // console.log(email, password);
-    let result = await LoginingService.PostSinIn(email, password);
-    if (result.data.token) setToken(result.data.token);
-    console.log(result);
+    try {
+      e.preventDefault();
+      const email = e?.target[0]?.value;
+      const password = e?.target[1]?.value;
+      // console.log(email, password);
+      if (!(email && password)) return;
+      let result = await LoginingService.PostSinIn(email, password);
+      if (result.data.token) setToken(result.data.token);
+      // console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
