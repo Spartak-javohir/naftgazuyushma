@@ -11,9 +11,10 @@ const login = () => {
     e.preventDefault();
     const email = e?.target[0]?.value;
     const password = e?.target[1]?.value;
-    console.log(email, password);
+    // console.log(email, password);
     let result = await LoginingService.PostSinIn(email, password);
     if (result.data.token) setToken(result.data.token);
+    console.log(result);
   };
 
   return (
