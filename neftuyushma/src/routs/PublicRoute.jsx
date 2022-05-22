@@ -23,7 +23,7 @@ import Order from "../pages/order/order";
 import Library from "../pages/librarey/librariy";
 
 export default function PublicRoute() {
-  const [token, setToken] = UseAuth();
+  const [token] = UseAuth();
   let location = useLocation();
   console.log(token);
   if (token) {
