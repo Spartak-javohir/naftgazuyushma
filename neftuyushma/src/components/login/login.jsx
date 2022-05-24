@@ -24,7 +24,11 @@ const login = () => {
 
   return (
     <>
-      {/* <Nav /> */}
+      <div className="container">
+        <Link to={"/"} className="navbar__titel">
+          Ortga
+        </Link>
+      </div>
       <section className="login__section">
         <div className="container">
           <div className="cart">
