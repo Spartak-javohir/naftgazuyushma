@@ -1,11 +1,19 @@
-import logo from "./img/logo1.svg";
 import "./style.css";
+import logo from "./img/logo1.svg";
 import { Link, Routes } from "react-router-dom";
 import React from "react";
 import Burger from "../burger/burger";
 import Modal from "../modal/modal";
-
+import { UseAuth } from "../../servise/context/AuthContext";
 const nav = () => {
+  let [token, setToken] = UseAuth();
+  const rend = () => {
+    if (!token) {
+      return <Modal />;
+    } else {
+      return <h3>logit out</h3>;
+    }
+  };
   return (
     <section className="navbar">
       <div className="container">
@@ -91,9 +99,7 @@ const nav = () => {
           <Link className="list_items link_navbar" to={"/library"}>
             Neft-gaz elektron kutubxonasi
           </Link>
-          <div>
-            <Modal />
-          </div>
+          {rend()}
 
           <div className="burgerMenu">
             <Burger />
