@@ -14,11 +14,6 @@
   background-repeat: no-repeat;
   background-size: auto;
   .container {
-    .titel_mH {
-      font-size: 45px;
-      text-align: center;
-      color: white;
-    }
     .text {
       font-size: 18px;
       font-style: italic;
@@ -27,6 +22,11 @@
       font-weight: 600;
     }
   }
+}
+.titel_mH {
+  font-size: 45px;
+  text-align: center;
+  color: white;
 }
 
 @media (max-width: 1241px) {
@@ -38,5 +38,15 @@
 @media (max-width: 1141px) {
   .container {
     width: 1000px;
+  }
+}
+@media (max-width: 1001px) {
+  .container {
+    width: 950px;
+  }
+}
+@media (max-width: 951px) {
+  .container {
+    width: 900px;
   }
 }

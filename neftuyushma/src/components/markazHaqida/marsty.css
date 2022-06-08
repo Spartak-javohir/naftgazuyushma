@@ -17,18 +17,18 @@
   background-size: auto;
 }
 
-.mH_section .container .titel_mH {
-  font-size: 45px;
-  text-align: center;
-  color: white;
-}
-
 .mH_section .container .text {
   font-size: 18px;
   font-style: italic;
   margin-top: 10px;
   color: white;
   font-weight: 600;
+}
+
+.titel_mH {
+  font-size: 45px;
+  text-align: center;
+  color: white;
 }
 
 @media (max-width: 1241px) {
@@ -40,6 +40,18 @@
 @media (max-width: 1141px) {
   .container {
     width: 1000px;
+  }
+}
+
+@media (max-width: 1001px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (max-width: 951px) {
+  .container {
+    width: 900px;
   }
 }
 /*# sourceMappingURL=marsty.css.map */
