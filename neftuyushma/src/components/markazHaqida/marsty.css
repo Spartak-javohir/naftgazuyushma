@@ -17,7 +17,7 @@
   background-size: auto;
 }
 
-.mH_section .container .text {
+.text_H {
   font-size: 18px;
   font-style: italic;
   margin-top: 10px;
@@ -52,6 +52,18 @@
 @media (max-width: 951px) {
   .container {
     width: 900px;
+  }
+}
+
+@media (max-width: 901px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media (max-width: 801px) {
+  .container {
+    width: 700px;
   }
 }
 /*# sourceMappingURL=marsty.css.map */

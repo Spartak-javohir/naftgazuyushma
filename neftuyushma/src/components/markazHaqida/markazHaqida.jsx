@@ -5,7 +5,7 @@ const mH = () => {
     <section className="mH_section">
       <div className="container">
         <h3 className="titel_mH">Markaz haqida</h3>
-        <p className="text stext_mH">
+        <p className="text_H">
           O‘zbekiston Respublikasi neft va gaz sanoati, neft va gaz konlarini
           qidirish, burg‘ulash, qazib chiqarish, uglevodorodlarni qayta ishlash,
           neft mahsulotlarini ishlab chiqarish, neftkimyo va kimyo uskunalarini
@@ -25,7 +25,7 @@ const mH = () => {
           mahsulotlar ishlab chiqarish bugungi kunda oldimizda turgan juda katta
           mas’uliyatli va dolzarb vazifalardan biri bo‘lib hisoblanadi.
         </p>
-        <p className="text text_mH1">
+        <p className="text_H">
           O‘zbekiston Respublikasining «Ta’lim to‘g‘risida» va «Kadrlar
           tayyorlash milliy dasturi to‘g‘risida»gi qonunlariga, shuningdek
           O‘zbekiston Respublikasi Prezidentining neft va gaz sanoati
@@ -51,14 +51,14 @@ const mH = () => {
           ilmiy amaliy hamkorliklarni qonunchilikda belgilangan tartibda amalga
           oshirish bo‘yicha talablarni o‘rnatdilar.
         </p>
-        <p className=" text text_mH2">
+        <p className=" text_H">
           TKTI Kengashining 2021 yil 1 iyuldagi 10-sonli yig’ilish qarori va
           Institut rektorining 2021 yil 13 avgustdagi ilmiy-o‘quv markazi
           direktorini tayinlash to‘g‘risidagi №6/37 sonli buyrug’iga asosan
           Mashayev Eldor Ergashvoy o’g’li Markaz direktori lavozimiga
           tayinlandilar.
         </p>
-        <p className="text text_mH3">
+        <p className="text_H">
           Markazning asosiy maqsadi ‒ ilmiy-o‘quv bajariladigan ilmiy-tadqiqot,
           ishbilarmonlik va tadbirkorlik faoliyatidagi innovatsion ilmiy
           yangiliklarni yaratuvchi va ishlab chiqaruvchi, hamda xizmat
