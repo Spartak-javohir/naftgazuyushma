@@ -37,6 +37,7 @@ a {
     }
   }
 }
+
 nav {
   .navbar__titel {
     text-align: center;
@@ -95,4 +96,19 @@ nav {
     color: grey;
     font-size: 15px;
   }
+}
+.bg_b {
+  background-color: blue;
+  color: #fff;
+}
+.ort {
+  width: 100%;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -114,4 +114,27 @@ nav .navbar__titel {
   color: grey;
   font-size: 15px;
 }
+
+.bg_b {
+  background-color: blue;
+  color: #fff;
+}
+
+.ort {
+  width: 100%;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=login.css.map */

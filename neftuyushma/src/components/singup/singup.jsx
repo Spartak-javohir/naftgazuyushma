@@ -6,7 +6,7 @@ import { UseAuth } from "../../servise/context/AuthContext";
 
 const singup = () => {
   const [token, setToken] = UseAuth();
-// console.log(token)
+  // console.log(token)
 
   const submit = async (event) => {
     event.preventDefault();
@@ -71,12 +71,17 @@ const singup = () => {
             <label for="" className="cart__form__label btn__label">
               <button className="cart__form__label__button">sing up</button>
             </label>
+            <label for="" className="cart__form__label  bg_b">
+              <Link to={"/"} className=" ort ">
+                Ortga
+              </Link>
+            </label>
           </form>
         </div>
         <div className="bottom__cart">
           <p className="bottom__cart__pElem">
-            Agar ro'yxatdan o'tgan bo'lsangiz - <Link to="/login">sing in</Link>-
-            orqali kiring
+            Agar ro'yxatdan o'tgan bo'lsangiz - <Link to="/login">sing in</Link>
+            - orqali kiring
           </p>
         </div>
       </div>

@@ -24,11 +24,7 @@ const login = () => {
 
   return (
     <>
-      <div className="container">
-        <Link to={"/"} className="navbar__titel">
-          Ortga
-        </Link>
-      </div>
+      <div className="container"></div>
       <section className="login__section">
         <div className="container">
           <div className="cart">
@@ -54,6 +50,11 @@ const login = () => {
               </label>
               <label for="" className="cart__form__label btn__label">
                 <button className="cart__form__label__button">sing in</button>
+              </label>
+              <label for="" className="cart__form__label  bg_b">
+                <Link to={"/"} className=" ort ">
+                  Ortga
+                </Link>
               </label>
             </form>
           </div>
