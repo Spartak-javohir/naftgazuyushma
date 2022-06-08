@@ -17,6 +17,10 @@
       align-content: center;
 }
 
+.flex_column .bg_b {
+  display: none;
+}
+
 .overlay_background {
   display: -webkit-box;
   display: -ms-flexbox;
