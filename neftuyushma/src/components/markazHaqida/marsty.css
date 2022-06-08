@@ -66,4 +66,22 @@
     width: 700px;
   }
 }
+
+@media (max-width: 701px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 601px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 501px) {
+  .container {
+    width: 400px;
+  }
+}
 /*# sourceMappingURL=marsty.css.map */
