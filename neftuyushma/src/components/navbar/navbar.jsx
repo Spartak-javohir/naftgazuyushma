@@ -7,11 +7,20 @@ import Modal from "../modal/modal";
 import { UseAuth } from "../../servise/context/AuthContext";
 const nav = () => {
   let [token, setToken] = UseAuth();
+  const deletetoken = () => {
+    if (token) {
+      window.localStorage.removeItem("token");
+    }
+  };
   const rend = () => {
     if (!token) {
       return <Modal />;
     } else {
-      return <h3>logit out</h3>;
+      return (
+        <form onSubmit={deletetoken()}>
+          <button>Log Out</button>
+        </form>
+      );
     }
   };
   return (
