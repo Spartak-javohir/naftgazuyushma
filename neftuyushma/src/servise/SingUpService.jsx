@@ -5,7 +5,7 @@ export default class SingUpService {
     let resp = await fetch(constantes.API_URL + "v1/users/account", {
       method: "POST",
       headers: {
-        "Accept": "application/json",
+        Accept: "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -19,23 +19,20 @@ export default class SingUpService {
     // console.log(resp);
     return resp;
   }
-  static async PostSinIn(email, password){
-    let resp = await fetch (constantes.API_URL + "v1/users",{
-      method : "POST",
+  static async PostSinIn(email, password) {
+    let resp = await fetch(constantes.API_URL + "v1/users", {
+      method: "POST",
       headers: {
-        "Accept": "application/json",
+        Accept: "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        
         user_email: email,
         user_password: password,
       }),
     });
     resp = await resp.json();
-    // console.log(resp);
+    console.log(resp);
     return resp;
-    
-    
   }
 }

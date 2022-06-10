@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import logo from "./img/logo1.svg";
 import { Link, Routes } from "react-router-dom";
 import React from "react";
