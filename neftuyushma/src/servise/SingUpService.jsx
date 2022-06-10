@@ -32,7 +32,7 @@ export default class SingUpService {
       }),
     });
     resp = await resp.json();
-    console.log(resp);
+    // console.log(resp);
     return resp;
   }
 }

@@ -8,19 +8,14 @@ import { UseAuth } from "../../servise/context/AuthContext";
 const nav = () => {
   let [token, setToken] = UseAuth();
   const deletetoken = () => {
-    if (token) {
-      window.localStorage.removeItem("token");
-    }
+    window.localStorage.removeItem("token");
+    console.log("token removed");
   };
   const rend = () => {
     if (!token) {
       return <Modal />;
     } else {
-      return (
-        <form onSubmit={deletetoken()}>
-          <button>Log Out</button>
-        </form>
-      );
+      return <button onClick={deletetoken()}>Log Out</button>;
     }
   };
   return (
